@@ -1,18 +1,17 @@
 @charset "UTF-8";
 /* font for korean */
-@font-face {
-	font-family: 'Pretendard-Light';
-	src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-light.woff') format('woff');
-	font-weight: 200;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Pretendard-Regular';
-	src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 body {
-	font-family: 'Pretendard-Light', sans-serif;
-	line-height: 1.6;
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	font-weight: 400;
+	line-height: 1.75;
+}
+h1,h2,h3,dt,strong {
+	font-weight: 600;
+}
+h4,h5 {
+	font-weight: 500;
+}
+dt {
+	margin-bottom: 0.3rem;
 }
