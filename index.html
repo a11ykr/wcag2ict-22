@@ -2890,75 +2890,79 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:</p>
+               <p>마우스 포인터로 가리키거나(hover) 키보드 초점을 받은 다음 이를 제거했을 때 추가 콘텐츠가 보였다가 사라지도록 하는 경우, 다음을 준수해야 한다.</p>
                <dl>
-                  <dt>Dismissible</dt>
-                  <dd>A <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-mechanism" id="ref-for-dfn-mechanism-3" title="process or technique for achieving a result">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-input-error" id="ref-for-dfn-input-error-1" title="information provided by the user that is not accepted">input error</a> or does not obscure or replace other content;</dd>
-                  <dt>Hoverable</dt>
-                  <dd>If pointer hover can trigger the additional content, then the pointer can be moved  over the additional content without the additional content disappearing;</dd>
-                  <dt>Persistent</dt>
-                  <dd>The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</dd>
+                  <dt>해제 가능</dt>
+                  <dd>추가 콘텐츠가 <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-1" title="사용자가 제공하였으나 수용되지 않는 정보">입력 오류</a>를 전달하거나 다른 콘텐츠를 숨기거나 바꾸지 않는 한, 마우스 포인터로 가리키거나 키보드 포커스를 이동하지 않고 추가 콘텐츠를 해제할 수 있는 <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-3" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a>을 제공해야 한다.</dd>
+                  <dt>마우스오버</dt>
+                  <dd>마우스 포인터로 가리켜 추가 콘텐츠를 보여줄 경우, 포인터는 콘텐츠가 사라지지 않게 하면서 그 콘텐츠 위로 이동할 수 있어야 한다.</dd>
+                  <dt>지속적인</dt>
+                  <dd>추가 콘텐츠는 마우스오버, 키보드 초점이 해제되거나, 사용자가 해제하거나, 정보가 더 이상 유효하지 않을 때까지 볼 수 있어야 한다.</dd>
                </dl>
-               <p>Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.
-               </p>
+               <p>예외: 추가 콘텐츠의 표현(presentation)이 사용자 에이전트로 제어되고, 웹 콘텐츠 저작자가 그 표현(presentation)을 수정할 수 없는 경우</p>
                <div class="note" id="wcag-noteissue-container-generatedID--12" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--12" role="heading"><span>참고 1</span>
                   </div>
-                  <p class="">Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> attribute</a> [<cite><a class="bibref" data-link-type="biblio" href="https://www.w3.org/TR/wcag22/#bib-html" title="HTML Standard">HTML</a></cite>].
+                  <p>
+                     사용자 에이전트가 제어하는 추가 콘텐츠의 예로는 HTML <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> 속성</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>]을 사용하여 만든 브라우저 툴팁이 있다.
+                  </p>
                   </p>
                </div>
                <div class="note" id="wcag-noteissue-container-generatedID--13" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--13" role="heading"><span>참고 2</span>
                   </div>
-                  <p class="">Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.
-                  </p>
+                  <p class="">마우스오버나 키보드 초점에 따라 표시되는 사용자 맞춤형 툴팁, 부메뉴 및 기타 모달 방식이 아닌 팝업은 이 기준을 적용받는 추가 콘텐츠의 예이다.</p>
                </div>
                <div class="note" id="wcag-noteissue-container-generatedID--14" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--14" role="heading"><span>참고 3</span>
                   </div>
-                  <p class="">This criterion applies to content that appears in addition to the triggering component itself. Since hidden components that are made visible on keyboard focus (such as links used to skip to another part of a page) do not present additional content they are not covered by this criterion.
-                  </p>
+                  <p class="">이 기준은 트리거 구성 요소 자체 외에 표시되는 콘텐츠에도 적용된다. 키보드 초점에 표시되는 숨겨진 구성 요소(예: 페이지의 다른 부분으로 건너뛰는 링크)는 추가 콘텐츠를 제공하지 않으므로 이 기준에서 다루지 않는다.</p>
                </div>
             </blockquote>
             <section id="applying-sc-1-4-13-content-on-hover-or-focus-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-10-1-applying-sc-1-4-13-content-on-hover-or-focus-to-non-web-documents-and-software">1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-13-content-on-hover-or-focus-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-10-1-applying-sc-1-4-13-content-on-hover-or-focus-to-non-web-documents-and-software">1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-13-content-on-hover-or-focus-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/content-on-hover-or-focus.html">성공 기준 ... 이해의 의도1.4.13</a>, replacing "user agent" with "user agent or 플랫폼 소프트웨어", "browser tooltips" with "tooltips", and "the HTML title attribute" with "user interface object attributes".
-               </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/content-on-hover-or-focus.html">성공 기준 1.4.13 이해의 의도</a>에 설명된 대로 다음과 같이 용어를 대체하여 적용한다.</p>
+               <ul>
+                  <li>"사용자 에이전트"를 "사용자 에이전트나 플랫폼 소프트웨어"로</li>
+                  <li>"브라우저 툴팁"을 "툴팁"으로</li>
+                  <li>"HTML title 속성"을 "사용자 인터페이스 객체 속성"으로</li>
+               </ul>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
-                  <strong>1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠:</strong> Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:
+                  <strong>1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠:</strong> 포인터 호버(pointer hover) 또는 키보드 포커스를 받으면 추가 콘텐츠가 표시되었다가, 포인터 호버 또는 키보드 포커스가 제거되면 숨겨지는 경우, 다음 조건을 충족해야 한다.
                </p>
                <dl>
-                  <dt>Dismissible</dt>
-                  <dd>A <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an <a href="#dfn-input-error">input error</a> or does not obscure or replace other content;</dd>
-                  <dt>Hoverable</dt>
-                  <dd>If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;</dd>
-                  <dt>Persistent</dt>
-                  <dd>The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</dd>
+                  <dt>닫기 가능</dt>
+                  <dd>추가 콘텐츠가 <a href="#dfn-input-error">입력 오류</a>를 전달하지 않거나 다른 콘텐츠를 가리지 않는 경우, 포인터 호버나 키보드 포커스를 이동하지 않고도 이를 닫을 수 있는 <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">메커니즘</a>이 제공되어야 한다.</dd>
+                  <dt>호버 가능</dt>
+                  <dd>포인터 호버로 추가 콘텐츠가 표시되는 경우, 포인터를 추가 콘텐츠 위로 이동해도 추가 콘텐츠가 사라지지 않아야 한다.</dd>
+                  <dt>지속성</dt>
+                  <dd>추가 콘텐츠는 호버 또는 포커스 트리거가 제거되거나, 사용자가 닫거나, 정보가 더 이상 유효하지 않을 때까지 계속 표시되어야 한다.</dd>
                </dl>
-               <p>Exception: The visual presentation of the additional content is controlled by the <ins><strong>[<a href="#user-agent">user agent</a> or <a href="#platform-software">플랫폼 소프트웨어</a>]</strong></ins> and is not modified by the author.
-               </p>
+               <p>예외: 추가 표시 요소의 시각적 표현이 <ins><strong>[<a href="#user-agent">사용자 에이전트</a>나 <a href="#platform-software">플랫폼 소프트웨어</a>]</strong></ins>에 의해 제어되며, 작성자가 수정하지 않은 경우.</p>
                <div class="note" role="note" id="issue-container-generatedID-72">
                   <div role="heading" class="note-title marker" id="h-note-72" aria-level="7"><span>참고 1</span>
                   </div>
                   <div class="">
-                     <p>Examples of additional content controlled by the <ins><strong>[user agent or 플랫폼 소프트웨어]</strong></ins> include <ins><strong>[tooltips]</strong></ins> created through use of <ins><strong>[user interface object attributes]</strong></ins>.
+                     <p>
+                        <ins><strong>[사용자 에이전트나 플랫폼 소프트웨어]</strong></ins>에 의해 제어되는 추가 표시 요소의 예로는 <ins><strong>[사용자 인터페이스 객체 속성]</strong></ins>을 사용하여 생성된 <ins><strong>[툴팁]</strong></ins>이 있다.
                      </p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-73">
                   <div role="heading" class="note-title marker" id="h-note-73" aria-level="7"><span>참고 2</span>
                   </div>
-                  <div class="">Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.</div>
+                  <div class="">사용자가 직접 정의한 툴팁, 하위 메뉴, 포인터 호버 및 키보드 포커스로 표시되는 기타 비모달 팝업은 이 기준의 적용 대상이 되는 추가 표시 요소의 예이다.</div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-74">
                   <div role="heading" class="note-title marker" id="h-note-74" aria-level="7"><span>참고 3</span>
                   </div>
                   <div class="">
-                     <p>This criterion applies to content that appears in addition to the triggering component itself. Since hidden components that are made visible on keyboard focus (such as links used to skip to another part of a page) do not present additional content they are not covered by this criterion.
+                     <p>
+                        이 기준은 트리거 요소 외부에 추가로 나타나는 요소에 적용된다. 따라서, 키보드 포커스를 받을 때 표시되는 숨겨진 요소(예: 페이지 내 특정 위치로 이동하는 링크)는 추가 표시 요소에 해당하지 않으므로 이 기준의 적용 대상이 아니다.
                      </p>
                   </div>
                </div>
@@ -3079,7 +3083,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/no-keyboard-trap#intent">성공 기준 ... 이해의 의도2.1.2</a>, replacing “page” with “non-web document or software” and “on the Web page” with "in the non-web document or software"; and removing “See Conformance Requirement 5: Non-Interference”.
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.1.2 키보드 함정 방지:</strong> If keyboard focus can be moved to a component of the <ins><strong>[<a href="#document">non-web document</a> or <a href="#software">software</a>]</strong></ins> using a <a href="#dfn-keyboard-interface">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
                </p>
@@ -3313,7 +3317,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/pause-stop-hide#intent">성공 기준 ... 이해의 의도2.2.2</a>, replacing “page” and “Web page” with “non-web documents and software” and removing “See Conformance Requirement 5: Non-Interference” in Note 2 of the success criterion.
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.2.2 일시정지, 중지, 숨김:</strong> For moving, <a href="https://www.w3.org/TR/WCAG22/#dfn-blinking">blinking</a>, scrolling, or auto-updating information, all of the following are true:
                </p>
@@ -3407,7 +3411,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/three-flashes-or-below-threshold#intent">성공 기준 ... 이해의 의도2.3.1</a>, replacing “Web pages” with “non-web documents or software” , “the whole page” with “the whole non-web document or software”, and “the Web page” with “the non-web document or software”; and removing “See Conformance Requirement 5: Non-Interference”.
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.3.1 3회 또는 임계값 이하의 번쩍임:</strong> <ins><strong>[<a href="#document">Non-web documents</a> or <a href="#software">software</a>]</strong></ins> do not contain anything that flashes more than three times in any one second period, or the <a href="https://www.w3.org/TR/WCAG22/#dfn-flashes">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a>.
                </p>
@@ -3810,7 +3814,7 @@
                <div class="note" id="wcag-noteissue-container-generatedID--32" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--32" role="heading"><span>참고</span>
                   </div>
-                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the 사용자 에이전트나 assistive technology).
                   </p>
                </div>
             </blockquote>
@@ -3885,7 +3889,7 @@
                <div class="note" id="wcag-noteissue-container-generatedID--34" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--34" role="heading"><span>참고 2</span>
                   </div>
-                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the 사용자 에이전트나 assistive technology).
                   </p>
                </div>
             </blockquote>
@@ -3910,7 +3914,7 @@
                   <div role="heading" class="note-title marker" id="h-note-114" aria-level="7"><span>참고 2</span>
                   </div>
                   <div class="">
-                     <p>This requirement applies to <ins><strong>[<a href="#content-on-and-off-the-web">content</a>]</strong></ins> that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+                     <p>This requirement applies to <ins><strong>[<a href="#content-on-and-off-the-web">content</a>]</strong></ins> that interprets pointer actions (i.e. this does not apply to actions that are required to operate the 사용자 에이전트나 assistive technology).
                      </p>
                   </div>
                </div>
@@ -4035,7 +4039,7 @@
                <div class="note" id="wcag-noteissue-container-generatedID--36" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--36" role="heading"><span>참고</span>
                   </div>
-                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+                  <p class="">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the 사용자 에이전트나 assistive technology).
                   </p>
                </div>
             </blockquote>
@@ -4044,9 +4048,9 @@
                   <h6 id="x6-2-6-6-1-applying-sc-2-5-7-dragging-movements-to-non-web-documents-and-software">2.5.7 끌기 동작성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-2-5-7-dragging-movements-to-non-web-documents-and-software" aria-label="섹션 고유링크- 2.5.7 끌기 동작을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/dragging-movements.html#intent">성공 기준 ... 이해의 의도2.5.7</a>, replacing "user agent" with "user agent or 플랫폼 소프트웨어" and by making changes to the notes for non-web documents by replacing “web content” with "content", and for non-web software applications by replacing "web content that interprets" with "software applications that interpret" and "user agent" with "underlying 플랫폼 소프트웨어".
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/dragging-movements.html#intent">성공 기준 ... 이해의 의도2.5.7</a>, replacing "user agent" with "사용자 에이전트나 플랫폼 소프트웨어" and by making changes to the notes for non-web documents by replacing “web content” with "content", and for non-web software applications by replacing "web content that interprets" with "software applications that interpret" and "user agent" with "underlying 플랫폼 소프트웨어".
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.5.7 끌기 동작:</strong> All <a href="https://www.w3.org/TR/WCAG22/#dfn-functionality">functionality</a> that uses a <a href="https://www.w3.org/TR/WCAG22/#dfn-dragging-movements">dragging movement</a> for operation can be achieved by a <a href="https://a11ykr.github.io/wcag22/#dfn-single-pointer">single pointer</a> without dragging, unless dragging is <a href="https://a11ykr.github.io/wcag22/#dfn-essential">essential</a> or the functionality is determined by the <strong><ins>[<a href="#user-agent">user agent</a> or <a href="#platform-software">플랫폼 소프트웨어</a>]</ins></strong> and not modified by the author.
                </p>
@@ -4055,7 +4059,7 @@
                   <div role="heading" class="note-title marker" id="h-note-121" aria-level="7"><span>참고 1</span>
                   </div>
                   <div class="">
-                     <p>This requirement applies to <strong><ins>[<a href="#content-on-and-off-the-web">content</a>]</ins></strong> that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).
+                     <p>This requirement applies to <strong><ins>[<a href="#content-on-and-off-the-web">content</a>]</ins></strong> that interprets pointer actions (i.e. this does not apply to actions that are required to operate the 사용자 에이전트나 assistive technology).
                      </p>
                   </div>
                </div>
@@ -4119,9 +4123,9 @@
                   <h6 id="x6-2-6-7-1-applying-sc-2-5-8-target-size-minimum-to-non-web-documents-and-software">2.5.8 타겟 크기 (최소) to Non-Web Documents and Software:</h6>
                   <a class="self-link" href="#applying-sc-2-5-8-target-size-minimum-to-non-web-documents-and-software" aria-label="섹션 고유링크- 2.5.8 타겟 크기 (최소) to Non-Web Documents and Software:"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/target-size-minimum.html#intent">성공 기준 ... 이해의 의도2.5.8</a>, replacing "user agent" with "user agent or 플랫폼 소프트웨어" and "on the same page" with "in the same non-web document or software".
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/target-size-minimum.html#intent">성공 기준 ... 이해의 의도2.5.8</a>, replacing "user agent" with "사용자 에이전트나 플랫폼 소프트웨어" and "on the same page" with "in the same non-web document or software".
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.5.8 타겟 크기 (최소):</strong> The size of the <a href="#dfn-targets">target</a> for <a href="https://www.w3.org/TR/WCAG22/#dfn-pointer-inputs">pointer inputs</a> is at least 24 by 24 <a href="#dfn-css-pixels">CSS pixels</a>, except where:
                </p>
@@ -4378,7 +4382,7 @@
                </div>
                <p>This applies directly as written and described in <a href="https://a11ykr.github.io/wai/wcag22/understanding/consistent-navigation#intent">성공 기준 ... 이해의 의도3.2.3</a>, replacing “set of Web pages” with “set of non-web documents” and “소프트웨어 프로그램 세트”.
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>(for non-web documents)</p>
                <p>
                   <strong>3.2.3 일관된 탐색:</strong> Navigational mechanisms that are repeated on multiple <ins><strong>[<a href="#document">non-web documents</a>]</strong></ins> within a <ins><strong>[<a href="#set-of-documents">set of non-web documents</a>]</strong></ins> occur in the <a href="https://www.w3.org/TR/WCAG22/#dfn-same-relative-order">same relative order</a> each time they are repeated, unless a change is initiated by the user.
@@ -4431,7 +4435,7 @@
                </div>
                <p>This applies directly as written and described in <a href="https://a11ykr.github.io/wai/wcag22/understanding/consistent-identification#intent">성공 기준 ... 이해의 의도3.2.4</a>, replacing “set of web pages” with “set of non-web documents” and “소프트웨어 프로그램 세트”.
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>(for non-web documents)</p>
                <p>
                   <strong>3.2.4 일관된 식별:</strong> Components that have the <a href="#dfn-same-functionality">same functionality</a> within a <ins><strong>[<a href="#set-of-documents">set of non-web documents</a>]</strong></ins> are identified consistently.
@@ -4501,7 +4505,7 @@
                </div>
                <p>This applies directly as written and as described in <a href="https://a11ykr.github.io/wai/wcag22/understanding/consistent-help#intent">성공 기준 ... 이해의 의도3.2.6</a>, replacing "Web page(s)" and "page(s)" with "non-web document(s) or software program(s)", "set of Web pages" with "set of non-web documents or 소프트웨어 프로그램 세트", "page content" with "content", "on the page" with "in the non-web document or software", "page is serialized" with "non-web document or software content is serialized", "different page" with "different non-web document, software, or Web page", and "page variation" with "content layout variation".
                </p>
-               <p>With these substitutions, it would read:</p>
+               <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>3.2.6 일관된 도움말:</strong> If a <strong><ins>[<a href="#document">non-web document</a> or <a href="#software">software</a>]</ins></strong> contains any of the following help <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanisms</a>, and those mechanisms are repeated <strong><ins>[in multiple non-web documents or software]</ins></strong> within a <strong><ins>[<a href="#set-of-documents">set of non-web documents</a> or <a href="#set-of-software-programs">소프트웨어 프로그램 세트</a>]</ins></strong>, they occur in the same order relative to other <strong><ins>[<a href="#content-on-and-off-the-web">content</a>]</ins></strong>, unless a change is initiated by the user:
                </p>
@@ -5402,7 +5406,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “acts as a user agent” with “acts stand-alone”, replacing “a mainstream user agent” with “mainstream information and communication technologies (ICT)” (later “mainstream ICT”), and replacing “Web content” with “content”.
             </p>
-            <p>With these substitutions, it would read:</p>
+            <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>assistive technology (as used in this document)</dt>
                <dd>
@@ -5489,7 +5493,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “page” with “non-web document or content presented by software”.
             </p>
-            <p>With these substitutions, it would read:</p>
+            <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>changes of context</dt>
                <dd>
@@ -6134,7 +6138,7 @@
                <h5 id="x7-3-16-1-applying-large-scale-text-to-non-web-documents-and-software">Applying “large scale (text)”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
                <a class="self-link" href="#applying-large-scale-text-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “large scale (text)”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “user agent” with “user agent or non-web software” in Note 3 and “browsers” with "browsers, user agents, or 플랫폼 소프트웨어” in Note 4.
+            <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “user agent” with “사용자 에이전트나 non-web software” in Note 3 and “browsers” with "browsers, user agents, or 플랫폼 소프트웨어” in Note 4.
             </p>
             <p>With this substitution and addition, it would read:</p>
             <dl>
@@ -6175,7 +6179,7 @@
                      <div role="heading" class="note-title marker" id="h-note-182" aria-level="6"><span>참고 4</span>
                      </div>
                      <div class="">
-                        <p>The actual size of the character that a user sees is dependent both on the author-defined size and the user's display, <ins><strong>[user agent or <a href="#software">non-web software</a>]</strong></ins> settings. For many mainstream body text fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the default size for body text (assuming that the body font is 100%), but authors would need to check this for the particular fonts in use. When fonts are defined in relative units, the actual point size is calculated by the <ins><strong>[user agent or [non-web software]</strong></ins> for display. The point size should be obtained from the <ins><strong>[user agent or non-web software]</strong></ins>, or calculated based on font metrics as the <ins><strong>[user agent or non-web software]</strong></ins> does, when evaluating this success criterion. Users who have low vision would be responsible for choosing appropriate settings.
+                        <p>The actual size of the character that a user sees is dependent both on the author-defined size and the user's display, <ins><strong>[사용자 에이전트나 <a href="#software">non-web software</a>]</strong></ins> settings. For many mainstream body text fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150% of the default size for body text (assuming that the body font is 100%), but authors would need to check this for the particular fonts in use. When fonts are defined in relative units, the actual point size is calculated by the <ins><strong>[사용자 에이전트나 [non-web software]</strong></ins> for display. The point size should be obtained from the <ins><strong>[사용자 에이전트나 non-web software]</strong></ins>, or calculated based on font metrics as the <ins><strong>[사용자 에이전트나 non-web software]</strong></ins> does, when evaluating this success criterion. Users who have low vision would be responsible for choosing appropriate settings.
                         </p>
                      </div>
                   </div>
@@ -6696,7 +6700,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “a Web page” with “non-web documents or software” and replacing “collection of Web pages” with “문서 세트 or 소프트웨어 프로그램 세트”.
             </p>
-            <p>With these substitutions, it would read:</p>
+            <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>structure</dt>
                <dd>
@@ -6743,7 +6747,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “user agent(s)” with “user agent(s) or 플랫폼 소프트웨어”, "web content" with "content", replacing "in-line styles, author style sheets" with "programmatically-set styles", and replacing "user agent interface settings" with "user agent, 플랫폼 소프트웨어 or other software interface settings, or".
             </p>
-            <p>With these substitutions, it would read:</p>
+            <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>style property</dt>
                <dd>
@@ -6832,7 +6836,7 @@
                <a class="self-link" href="#applying-technology-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “technology”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “web content” with “non-web document or software”, “user agents” with “user agents or other software”, removing the notes, and replacing the example with “Example: Some common examples of non-web document and software technologies include ODF, OOXML, Java, and C++.”</p>
-            <p>With these substitutions, it would read:</p>
+            <p>이러한 대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>technology <ins>([non-web document or software])</ins></dt>
                <dd>
