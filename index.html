@@ -2499,38 +2499,40 @@
          </section>
          <section id="contrast-minimum">
             <div class="header-wrapper">
-               <h5 id="x6-1-5-4-contrast-minimum">1.4.3 명도 대비 (최소)</h5>
+               <h5 id="x6-1-5-4-contrast-minimum">1.4.3 명도 대비(최소)</h5>
                <a class="self-link" href="#contrast-minimum" aria-label="섹션 고유링크- 1.4.3 명도 대비 (최소)"></a>
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>The visual presentation of <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-text" id="ref-for-dfn-text-2" title="sequence of characters that can be programmatically determined, where the sequence is expressing something in human language">text</a> and <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-images-of-text" id="ref-for-dfn-images-of-text-1" title="text that has been rendered in a non-text form (e.g., an image) in order to achieve a particular visual effect">images of text</a> has a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-contrast-ratio" id="ref-for-dfn-contrast-ratio-1" title="(L1 + 0.05) / (L2 + 0.05), where">contrast ratio</a> of at least 4.5:1, except for the following:
+               <p>
+                  <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-2" title="프로그래밍 방식으로 판별될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a>와 <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-images-of-text-1" title="특정 시각적인 효과를 달성하기 위해 텍스트가 아닌 형식(예: 이미지)으로 렌더링된 텍스트">텍스트 이미지</a>의 표현(presentation)을 위한 <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-contrast-ratio-1" title="(L1 + 0.05) / (L2 + 0.05)">명도대비율</a>은 최소한 4.5:1 이상이 되어야 한다. 단, 다음의 경우는 제외한다.
                </p>
                <dl>
-                  <dt>Large Text</dt>
+                  <dt>큰 텍스트</dt>
+                  <dd>
+                     <p><a href="#dfn-large-scale" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-large-scale-1" title="최소 18포인트 또는 14포인트의 볼드체(bold), 또는 중국어, 일본어 및 한국어(CJK) 글꼴과 같은 크기를 산출하는 글꼴 크기">커다란</a> 텍스트와 텍스트 이미지의 명도대비가 최소 3:1 이상이어야 한다.</p>
+                  </dd>
+                  <dt>부수적인</dt>
                   <dd>
                      <p>
-                        <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-large-scale" id="ref-for-dfn-large-scale-1" title="with at least 18 point or 14 point bold or font size that would yield equivalent size for Chinese, Japanese and Korean (CJK) fonts">Large-scale</a> text and images of large-scale text have a contrast ratio of at least 3:1;
+                     비활성 <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-2" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a>의 일부, <a href="#dfn-pure-decoration" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pure-decoration-2" title="어떠한 정보도 제공하지 않고 어떠한 기능도 없는, 오직 심미적인 목적으로만 사용된">순수한 장식</a>, 사용자에게 보이지 않는, 또는 의미있는 다른 시각적 콘텐츠를 포함하고 있는 그림의 일부인
+                     텍스트 또는 텍스트 이미지에는 어떠한 명도대비 요구사항도 없다.
                      </p>
                   </dd>
-                  <dt>Incidental</dt>
+                  <dt>로고타입</dt>
                   <dd>
-                     <p>Text or images of text that are part of an inactive <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-interface-components" id="ref-for-dfn-user-interface-components-2" title="a part of the content that is perceived by users as a single control for a distinct function">user interface component</a>, that are <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-pure-decoration" id="ref-for-dfn-pure-decoration-2" title="serving only an aesthetic purpose, providing no information, and having no functionality">pure decoration</a>, that are not visible to anyone, or that are part of a picture that contains significant             other visual content, have no contrast requirement.
-                     </p>
-                  </dd>
-                  <dt>Logotypes</dt>
-                  <dd>
-                     <p>Text that is part of a logo or brand name has no contrast requirement.
+                     <p>
+                     로고 또는 상표명에 포함된 텍스트에는 어떠한 명도대비 요구사항도 없다.
                      </p>
                   </dd>
                </dl>
             </blockquote>
             <section id="applying-sc-1-4-3-contrast-minimum-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-4-1-applying-sc-1-4-3-contrast-minimum-to-non-web-documents-and-software">1.4.3 Contrast Minimum성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-3-contrast-minimum-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.3 Contrast Minimum을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-4-1-applying-sc-1-4-3-contrast-minimum-to-non-web-documents-and-software">1.4.3 명도 대비(최소) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-3-contrast-minimum-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.3 명도 대비(최소) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum#intent">성공 기준 ... 이해의 의도1.4.3</a>.
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum#intent">성공 기준 1.4.3 이해의 의도</a>에 설명된 내용과 같다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-52">
                   <div role="heading" class="note-title marker" id="h-note-52" aria-level="7"><span>참고 (추가됨)</span>
@@ -2550,21 +2552,23 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>Except for <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-captions" id="ref-for-dfn-captions-3" title="synchronized visual and/or text alternative for both speech and non-speech audio information needed to understand the media content">captions</a> and <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-images-of-text" id="ref-for-dfn-images-of-text-2" title="text that has been rendered in a non-text form (e.g., an image) in order to achieve a particular visual effect">images of text</a>, <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-text" id="ref-for-dfn-text-3" title="sequence of characters that can be programmatically determined, where the sequence is expressing something in human language">text</a> can be resized without <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-assistive-technologies" id="ref-for-dfn-assistive-technologies-2" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technology</a> up to 200 percent without loss of content or functionality.
+               <p>
+                  <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-3" title="프로그래밍 방식으로 판별될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a>는 콘텐츠나 기능의 손상 없이, 그리고 <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-2" title="보편적인 사용자 에이전트가 제공하는 것 이상으로 장애가 있는 사용자의 요구 사항을 충족하는 기능을 제공하기 위해 사용자 에이전트 역할을 하거나 보편적인 사용자 에이전트와 함께 작동하는 하드웨어 및/또는 소프트웨어">보조 기술</a> 없이 최대 200%까지 크기 조정이 가능해야 한다. 단, <a href="#dfn-captions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-captions-3" title="미디어 콘텐츠를 이해하는 데 필요한 음성 및 비음성 오디오 정보에 대한 동기화된 시각자료 대체 텍스트">자막</a>과 <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-images-of-text-2" title="특정 시각적인 효과를 달성하기 위해 텍스트가 아닌 형식(예: 이미지)으로 렌더링된 텍스트">텍스트 이미지</a>는 제외한다.
                </p>
             </blockquote>
             <section id="applying-sc-1-4-4-resize-text-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-5-1-applying-sc-1-4-4-resize-text-to-non-web-documents-and-software">1.4.4 텍스트 크기 조정성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-4-resize-text-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.4 텍스트 크기 조정을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-5-1-applying-sc-1-4-4-resize-text-to-non-web-documents-and-software">1.4.4 텍스트 크기 조정 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-4-resize-text-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.4 텍스트 크기 조정 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/resize-text#intent">성공 기준 ... 이해의 의도1.4.4</a>.
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/resize-text#intent">성공 기준 1.4.4 이해의 의도</a>에 설명된 내용과 같다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-53">
                   <div role="heading" class="note-title marker" id="h-note-53" aria-level="7"><span>참고 1 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>The Intent section refers to the ability to allow users to enlarge the text on screen at least up to 200% without needing to use <a href="#dfn-assistive-technologies">assistive technologies</a>. This means that the application provides some means for enlarging the text 200% (zoom or otherwise) without loss of <a href="#content-on-and-off-the-web">content</a> or functionality, or that the application works with the platform accessibility features to meet this success criterion.
+                     <p>
+                        의도(Intend) 섹션에서는 <a href="#dfn-assistive-technologies">보조 기술</a>을 사용하지 않고도 사용자가 화면의 텍스트를 최소 200%까지 확대할 수 있도록 하는 기능을 언급한다. 이는 애플리케이션이 200% 확대(줌 또는 기타 방법)를 지원하되 <a href="#content-on-and-off-the-web">콘텐츠</a>나 기능이 손실되지 않도록 제공하거나, 플랫폼의 접근성 기능과 연동되어 이 성공 기준을 충족해야 함을 의미한다.
                      </p>
                   </div>
                </div>
@@ -2572,7 +2576,8 @@
                   <div role="heading" class="note-title marker" id="h-note-54" aria-level="7"><span>참고 2 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>For non-web software, there may be cases where the platform does not scale all text up to 200%. In such cases, authors are encouraged to meet user needs by scaling text to the extent supported by user settings in the platform.
+                     <p>
+                        웹이 아닌 소프트웨어의 경우, 플랫폼이 모든 텍스트를 200%까지 확대하지 못하는 상황이 있을 수 있다. 이러한 경우, 저작자는 플랫폼에서 제공하는 사용자 설정을 활용하여 가능한 범위 내에서 텍스트를 확대함으로써 사용자 요구를 충족할 것을 권장한다.
                      </p>
                   </div>
                </div>
@@ -2594,33 +2599,35 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>If the technologies being used can achieve the visual presentation, <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-text" id="ref-for-dfn-text-4" title="sequence of characters that can be programmatically determined, where the sequence is expressing something in human language">text</a> is used to convey information rather than <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-images-of-text" id="ref-for-dfn-images-of-text-3" title="text that has been rendered in a non-text form (e.g., an image) in order to achieve a particular visual effect">images of text</a> except for the following:
+               <p>
+                  사용되는 기술이 표현(presentation)을 할 수 있는 경우라 하더라도, 정보는 <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-images-of-text-3" title="특정 시각적인 효과를 달성하기 위해 텍스트가 아닌 형식(예: 이미지)으로 렌더링된 텍스트">텍스트 이미지</a>보다 <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-4" title="프로그래밍 방식으로 판별될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a>로 전달해야 한다. 단, 다음의 경우는 제외한다.
                </p>
                <dl>
-                  <dt>Customizable</dt>
+                  <dt>사용자 정의 가능한</dt>
                   <dd>
-                     <p>The image of text can be <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-visually-customized" id="ref-for-dfn-visually-customized-1" title="the font, size, color, and background can be set">visually customized</a> to the user's requirements;
+                     <p>
+                     텍스트 이미지가 사용자의 요구에 따라 <a href="#dfn-visually-customized" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-visually-customized-1" title="글꼴, 크기, 색상 및 배경을 설정할 수 있는">시각적으로 조절(visually customized)</a> 가능한 경우
                      </p>
                   </dd>
-                  <dt>Essential</dt>
+                  <dt>필수적인</dt>
                   <dd>
-                     <p>A particular presentation of text is <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-essential" id="ref-for-dfn-essential-2" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a> to the information being conveyed.
+                     <p>
+                     텍스트의 특정 표현이 전달되는 정보에 <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-2" title="제거될 경우, 콘텐츠의 정보 또는 기능을 근본적으로 변경할 수 있으며, 그리고 정보와 기능이 다른 방식으로는 준수될 수 없는">필수적</a>인 경우
                      </p>
                   </dd>
                </dl>
                <div class="note" id="wcag-noteissue-container-generatedID--3" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--3" role="heading"><span>참고</span>
                   </div>
-                  <p class="">Logotypes (text that is part of a logo or brand name) are considered essential.
-                  </p>
+                  <p class="">로고타입(로고 또는 상품명의 일부인 텍스트)은 필수적인 것으로 간주한다.</p>
                </div>
             </blockquote>
             <section id="applying-sc-1-4-5-images-of-text-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-6-1-applying-sc-1-4-5-images-of-text-to-non-web-documents-and-software">1.4.5 텍스트 이미지성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-5-images-of-text-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.5 텍스트 이미지을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-6-1-applying-sc-1-4-5-images-of-text-to-non-web-documents-and-software">1.4.5 텍스트 이미지 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-5-images-of-text-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.5 텍스트 이미지 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/images-of-text#intent">성공 기준 ... 이해의 의도1.4.5</a>.
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/images-of-text#intent">성공 기준 1.4.5 이해의 의도</a>에 설명된 내용과 같다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-56">
                   <div role="heading" class="note-title marker" id="h-note-56" aria-level="7"><span>참고 (추가됨)</span>
@@ -2640,82 +2647,79 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:</p>
+               <p>콘텐츠는 정보나 기능의 손실 없이, 그리고 다음의 경우에 대하여 2차원으로 스크롤할 필요 없이 제공되어야 한다.</p>
                <ul>
-                  <li>Vertical scrolling content at a width equivalent to 320 <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-css-pixels" id="ref-for-dfn-css-pixels-1" title="visual angle of about 0.0213 degrees">CSS pixels</a>;</li>
-                  <li>Horizontal scrolling content at a height equivalent to 256 <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-css-pixels" id="ref-for-dfn-css-pixels-2" title="visual angle of about 0.0213 degrees">CSS pixels</a>.</li>
+                  <li>320 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-1" title="약 0.0213도의 시야각">CSS 픽셀</a> 너비의 세로 스크롤 콘텐츠</li>
+                  <li>256 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-2" title="약 0.0213도의 시야각">CSS 픽셀</a> 높이의 가로 스크롤 콘텐츠</li>
                </ul>
-               <p>Except for parts of the content which require two-dimensional layout for usage or meaning.
-               </p>
+               <p>사용상 또는 의미상 2차원적인 레이아웃이 필요한 콘텐츠는 예외로 한다.</p>
                <div class="note" id="wcag-noteissue-container-generatedID--8" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--8" role="heading"><span>참고 1</span>
                   </div>
-                  <p class="">320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which is designed to scroll horizontally (e.g., with vertical text), 256 CSS pixels is equivalent to a starting viewport height of 1024 CSS pixels at 400% zoom.
-                  </p>
+                  <p class="">320 CSS 픽셀은 400% 확대에서 1280 CSS 픽셀의 시작 뷰포트(viewport) 너비와 같다. 가로 방향으로 스크롤링하도록 설계된 웹 콘텐츠(예: 세로 텍스트)의 경우, 256 CSS 픽셀은 400% 확대에서 1024px 시작 뷰포트 높이와 같다.</p>
                </div>
                <div class="note" id="wcag-noteissue-container-generatedID--9" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--9" role="heading"><span>참고 2</span>
                   </div>
-                  <p class="">Examples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.
-                  </p>
+                  <p class="">2차원 레이아웃이 필요한 콘텐츠의 예로는 이미지, 지도, 다이어그램, 비디오, 게임, 프레젠테이션, 데이터 테이블, 그리고 콘텐츠를 조작하는 동안 보기(view) 탭에서 도구모음(toolbar)을 유지할 필요가 있는 인터페이스 등이 있다.</p>
                </div>
             </blockquote>
             <section id="applying-sc-1-4-10-reflow-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-7-1-applying-sc-1-4-10-reflow-to-non-web-documents-and-software">1.4.10 재정렬성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-10-reflow-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.10 재정렬을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-7-1-applying-sc-1-4-10-reflow-to-non-web-documents-and-software">1.4.10 재정렬 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-10-reflow-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.10 재정렬 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/reflow.html#intent">성공 기준 ... 이해의 의도1.4.10</a>, replacing “web content” with “content”.
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/reflow.html#intent">성공 기준 1.4.10 이해의 의도</a>에서 설명한 대로 "웹 콘텐츠"를 "콘텐츠"로 대체하여 적용한다.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
-                  <strong>1.4.10 재정렬:</strong> Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:
+                  <strong>1.4.10 재정렬:</strong> 콘텐츠는 정보나 기능의 손실 없이, 그리고 다음의 경우에 대하여 2차원으로 스크롤할 필요 없이 제공되어야 한다.
                </p>
                <ul>
-                  <li>Vertical scrolling content at a width equivalent to 320 <a href="#dfn-css-pixels">CSS pixels</a>;</li>
-                  <li>Horizontal scrolling content at a height equivalent to 256 <a href="#dfn-css-pixels">CSS pixels</a>.</li>
+                  <li>320 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-1" title="약 0.0213도의 시야각">CSS 픽셀</a> 너비의 세로 스크롤 콘텐츠</li>
+                  <li>256 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-2" title="약 0.0213도의 시야각">CSS 픽셀</a> 높이의 가로 스크롤 콘텐츠</li>
                </ul>
-               <p>Except for parts of the content which require two-dimensional layout for usage or meaning.
-               </p>
+               <p>사용상 또는 의미상 2차원적인 레이아웃이 필요한 콘텐츠는 예외로 한다.</p>
                <div class="note" role="note" id="issue-container-generatedID-57">
                   <div role="heading" class="note-title marker" id="h-note-57" aria-level="7"><span>참고 1</span>
                   </div>
                   <div class="">
-                     <p>320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For <ins><strong>[content]</strong></ins> which is designed to scroll horizontally (e.g., with vertical text), 256 CSS pixels is equivalent to a starting viewport height of 1024 CSS pixels at 400% zoom.
-                     </p>
+                     <p>320 CSS 픽셀은 400% 확대에서 1280 CSS 픽셀의 시작 뷰포트(viewport) 너비와 같다. 가로 방향으로 스크롤링하도록 설계된 콘텐츠(예: 세로 텍스트)의 경우, 256 CSS 픽셀은 400% 확대에서 1024px 시작 뷰포트 높이와 같다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-58">
                   <div role="heading" class="note-title marker" id="h-note-58" aria-level="7"><span>참고 2</span>
                   </div>
                   <div class="">
-                     <p>Examples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.
-                     </p>
+                     <p>2차원 레이아웃이 필요한 콘텐츠의 예로는 이미지, 지도, 다이어그램, 비디오, 게임, 프레젠테이션, 데이터 테이블, 그리고 콘텐츠를 조작하는 동안 도구모음을 유지해야 하는 인터페이스 등이 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-59">
                   <div role="heading" class="note-title marker" id="h-note-59" aria-level="7"><span>참고 3 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>In technologies where CSS is not used, the definition of 'CSS pixel' applies as described in <a href="#applying-css-pixel-to-non-web-documents-and-software">Applying “CSS pixel” to Non-Web Documents and Software</a>.
+                     <p>
+                        CSS가 사용되지 않는 기술에서는 "CSS 픽셀"의 정의를 <a href="#applying-css-pixel-to-non-web-documents-and-software">웹이 아닌 문서 및 소프트웨어에서 CSS 픽셀 적용</a>에서 설명한 방식대로 적용한다.
                      </p>
                   </div>
                </div>
-               <p>(for non-web documents)</p>
+               <p>(웹이 아닌 문서의 경우)</p>
                <div class="note" role="note" id="issue-container-generatedID-60">
                   <div role="heading" class="note-title marker" id="h-note-60" aria-level="7"><span>참고 4 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>If a <a href="#document">non-web document</a> type and its available <a href="#user-agent">user agents</a> do not support reflow, it may not be possible for a document of that type to meet this success criterion.
+                     <p>
+                        <a href="#document"> 웹이 아닌 문서</a> 유형과 해당 문서를 지원하는 <a href="#user-agent">사용자 에이전트</a>가 재정렬(Reflow)을 지원하지 않는 경우, 해당 문서 유형에서는 이 성공 기준을 충족하는 것이 불가능할 수 있다.
                      </p>
                   </div>
                </div>
-               <p>(for non-web software)</p>
+               <p>(웹이 아닌 소프트웨어의 경우)</p>
                <div class="note" role="note" id="issue-container-generatedID-61">
                   <div role="heading" class="note-title marker" id="h-note-61" aria-level="7"><span>참고 5 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>The intent section refers to the ability for content to reflow (for vertical scrolling content at a width equivalent to 320 CSS pixels, or for horizontal scrolling content at a height equivalent to 256 CSS pixels) when user agent zooming is used to scale content or when the <a href="#dfn-viewport">viewport</a> changes in width. For <a href="#software">non-web software</a>, this means that when users scale content, adjust the size of a window, dialog, or other resizable content area, or change the screen resolution, the content will reflow without loss of information or functionality, and without requiring scrolling in two dimensions; or that the application works with platform features that meet this success criterion.
+                     <p>
+                        의도 섹션에서는 사용자가 사용자 에이전트의 확대 기능을 사용하여 콘텐츠 크기를 조정하거나 <a href="#dfn-viewport">뷰포트(viewport)</a> 너비가 변경될 때, 콘텐츠가 정보나 기능의 손실 없이 재정렬되어야 한다고 설명한다. <a href="#software">웹이 아닌 소프트웨어</a>에서는 사용자가 콘텐츠를 확대하거나, 창·대화 상자·기타 조절 가능한 영역의 크기를 변경하거나, 화면 해상도를 조정할 때, 콘텐츠가 320 CSS 픽셀 너비 또는 256 CSS 픽셀 높이에서 정보나 기능의 손실 없이 재정렬되어야 한다. 또한, 애플리케이션이 해당 성공 기준을 충족하는 플랫폼 기능과 연동되어 이 기준을 만족할 수도 있다.
                      </p>
                   </div>
                </div>
@@ -2723,9 +2727,9 @@
                   <div role="heading" class="note-title marker" id="h-note-62" aria-level="7"><span>참고 6 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Non-web software will have more frequent cases where two-dimensional layout is relied upon for usage or meaning than what occurs on the Web. For example:</p>
+                     <p>웹이 아닌 소프트웨어에서는 웹보다 2차원적 배치가 의미 전달이나 사용에 필수적인 경우가 더 자주 발생할 수 있다. 예를 들어,</p>
                      <ul>
-                        <li>When the software has a complex user interface with toolbars that need to be visible while manipulating content, as explained in the Intent from Understanding 1.4.10 재정렬.</li>
+                        <li>사용자가 콘텐츠를 조작하는 동안 툴바가 유지되어야 하는 복잡한 사용자 인터페이스(1.4.10 재정렬 이해의 의도 참고).</li>
                      </ul>
                   </div>
                </div>
@@ -2733,20 +2737,16 @@
                   <div role="heading" class="note-title marker" id="h-note-63" aria-level="7"><span>참고 7 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>As written, this success criterion can only be met by non-web documents or software where the underlying user agent or platform can present content at a width equivalent to 320 CSS pixels for vertical scrolling content and a height equivalent to 256 CSS pixels for horizontal scrolling content.
-                     </p>
-                     <p>When the underlying user agent or platform does not support these dimensions for scrolling, reflow is encouraged as this capability is important to people with low vision. As a reasonable benchmark, evaluate at the nearest size to what the 재정렬 success criterion specifies.
-                     </p>
-                     <p>When users modify zoom, scaling, and/or display resolution at the 플랫폼 소프트웨어 level (e.g. Operating System), it impacts the size of all applications and the 플랫폼 소프트웨어 itself. This can result in improved readability in some applications but unwanted consequences in others.
-                     </p>
+                     <p>이 성공 기준은 기본 사용자 에이전트나 플랫폼이 세로 스크롤 콘텐츠의 경우 320 CSS 픽셀 너비, 가로 스크롤 콘텐츠의 경우 256 CSS 픽셀 높이에서 콘텐츠를 표시할 수 있는 경우에만 충족할 수 있다.</p>
+                     <p>기본 사용자 에이전트나 플랫폼이 이러한 크기의 스크롤을 지원하지 않는 경우에도, 재정렬 기능은 저시력 사용자를 위해 중요한 기능이므로 권장된다. 현실적인 기준으로, 재정렬 성공 기준에서 제시된 크기에 가장 근접한 크기로 평가하는 것이 적절하다.</p>
+                     <p>사용자가 플랫폼 소프트웨어 수준(운영 체제 등)에서 확대, 크기 조정, 해상도 변경을 수행하면, 모든 애플리케이션과 플랫폼 소프트웨어 자체의 크기에 영향을 미친다. 이는 일부 애플리케이션에서는 가독성을 개선할 수 있지만, 다른 애플리케이션에서는 원치 않는 결과를 초래할 수도 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-64">
                   <div role="heading" class="note-title marker" id="h-note-64" aria-level="7"><span>참고 8 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Some software applications provide a mode of operation where reflow is possible, while other modes are unable to reflow. An example is a document authoring tool, which includes both a "print preview mode" (without reflow, for users to view the spatial formatting) and a "drafting view mode" where reflow is supported. Such software would satisfy this success criterion as long as there is no loss of information or functionality in the drafting view.
-                     </p>
+                     <p>일부 소프트웨어 애플리케이션은 특정 모드에서는 재정렬을 지원하지만, 다른 모드에서는 재정렬이 불가능할 수도 있다. 예를 들어, 문서 작성 도구는 "인쇄 미리 보기 모드"(공간적 서식을 확인하기 위한 모드로, 재정렬을 지원하지 않음)와 "초안 보기 모드"(재정렬을 지원하는 모드)를 모두 포함할 수 있다. 이 경우, 초안 보기 모드에서 정보나 기능의 손실 없이 콘텐츠가 재정렬된다면, 해당 소프트웨어는 이 성공 기준을 충족한 것으로 간주할 수 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-65">
@@ -2767,37 +2767,39 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>The visual <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-presentation" id="ref-for-dfn-presentation-2" title="rendering of the content in a form to be perceived by users">presentation</a> of the following have a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-contrast-ratio" id="ref-for-dfn-contrast-ratio-3" title="(L1 + 0.05) / (L2 + 0.05), where">contrast ratio</a> of at least 3:1 against adjacent color(s):</p>
+               <p>
+                  다음과 같은 <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-2" title="사용자가 인식할 수 있는 형태로 콘텐츠를 렌더링하는 것">시각 표현</a>은 인접 색상 대비 <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-contrast-ratio-3" title="(L1 + 0.05) / (L2 + 0.05)">명도대비율</a>이 최소한 3:1 이상이어야 한다.
+               </p>
                <dl>
-                  <dt>User Interface Components</dt>
-                  <dd>Visual information required to identify <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-interface-components" id="ref-for-dfn-user-interface-components-4" title="a part of the content that is perceived by users as a single control for a distinct function">user interface components</a> and <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-states" id="ref-for-dfn-states-1" title="dynamic property expressing characteristics of a user interface component that may change in response to user action or automated processes">states</a>, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;</dd>
-                  <dt>Graphical Objects</dt>
-                  <dd>Parts of graphics required to understand the content, except when a particular presentation of graphics is <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-essential" id="ref-for-dfn-essential-4" title="if removed, would fundamentally change the information or functionality of the content, and information and functionality cannot be achieved in another way that would conform">essential</a> to the information being conveyed.</dd>
+                  <dt>사용자 인터페이스 구성요소</dt>
+                  <dd><a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-4" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a>와 <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-1" title="사용자 행동 또는 자동화된 과정에 따라 반응이 변경될 수 있는 사용자 인터페이스 구성요소의 특성을 표현하는 동적 속성">상태</a>를 식별하기 위해 요구되는 시각적 정보. 단, 비활성 구성요소
+                     또는 구성요소의 모양이 사용자 에이전트에 의해 결정되고 저작자에 의해 수정되지 않는 경우는 제외</dd>
+                  <dt>그래픽 객체</dt>
+                  <dd>콘텐츠를 이해하기 위해서 요구되는 그래픽의 일부. 단, 특정 그래픽 표현이 전달되는 정보에 <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-4" title="제거될 경우, 콘텐츠의 정보 또는 기능을 근본적으로 변경할 수 있으며, 그리고 정보와 기능이 다른 방식으로는 준수될 수 없는">필수적인</a> 경우는 제외</dd>
                </dl>
             </blockquote>
             <section id="applying-sc-1-4-11-non-text-contrast-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-1-5-8-1-applying-sc-1-4-11-non-text-contrast-to-non-web-documents-and-software">1.4.11 텍스트 아닌 콘텐츠의 명도대비성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-1-4-11-non-text-contrast-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.11 텍스트 아닌 콘텐츠의 명도대비을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-1-5-8-1-applying-sc-1-4-11-non-text-contrast-to-non-web-documents-and-software">1.4.11 텍스트 아닌 콘텐츠의 명도대비 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-1-4-11-non-text-contrast-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.11 텍스트 아닌 콘텐츠의 명도대비 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>This applies directly as written and as described in <a href="https://a11ykr.github.io/wai/wcag22/understanding/non-text-contrast.html#intent">성공 기준 ... 이해의 의도1.4.11</a>, replacing "user agent" with "user agent or 플랫폼 소프트웨어".
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/non-text-contrast.html#intent">성공 기준 1.4.11 이해의 의도</a>에서 설명한 대로 "사용자 에이전트"를 "사용자 에이전트나 플랫폼 소프트웨어"로 대체하여 적용한다.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
-                  <strong>1.4.11 텍스트 아닌 콘텐츠의 명도대비:</strong> The visual <a href="https://www.w3.org/TR/WCAG22/#dfn-presentation">presentation</a> of the following have a <a href="#dfn-contrast-ratio">contrast ratio</a> of at least 3:1 against adjacent color(s):
+                  다음과 같은 <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-2" title="사용자가 인식할 수 있는 형태로 콘텐츠를 렌더링하는 것">시각 표현</a>은 인접 색상 대비 <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-contrast-ratio-3" title="(L1 + 0.05) / (L2 + 0.05)">명도대비율</a>이 최소한 3:1 이상이어야 한다.
                </p>
                <dl>
-                  <dt>User Interface Components</dt>
-                  <dd>Visual information required to identify <a href="#dfn-user-interface-components">user interface components</a> and <a href="https://www.w3.org/TR/WCAG22/#dfn-states">states</a>, except for inactive components or where the appearance of the component is determined by the <ins><strong>[<a href="#user-agent">user agent</a> or <a href="#platform-software">플랫폼 소프트웨어</a>]</strong></ins> and not modified by the author;</dd>
-                  <dt>Graphical Objects</dt>
-                  <dd>Parts of graphics required to understand the content, except when a particular presentation of graphics is <a href="https://www.w3.org/TR/WCAG22/#dfn-essential">essential</a> to the information being conveyed.</dd>
+                  <dt>사용자 인터페이스 구성요소</dt>
+                  <dd><a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-4" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a>와 <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-1" title="사용자 행동 또는 자동화된 과정에 따라 반응이 변경될 수 있는 사용자 인터페이스 구성요소의 특성을 표현하는 동적 속성">상태</a>를 식별하기 위해 요구되는 시각적 정보. 단, 비활성 구성요소 또는 구성요소의 모양이 <ins><strong>[<a href="#user-agent">사용자 에이전트</a>나 <a href="#platform-software">플랫폼 소프트웨어</a>]</strong></ins>에 의해 결정되고 저작자에 의해 수정되지 않는 경우는 제외</dd>
+                  <dt>그래픽 객체</dt>
+                  <dd>콘텐츠를 이해하기 위해서 요구되는 그래픽의 일부. 단, 특정 그래픽 표현이 전달되는 정보에 <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-4" title="제거될 경우, 콘텐츠의 정보 또는 기능을 근본적으로 변경할 수 있으며, 그리고 정보와 기능이 다른 방식으로는 준수될 수 없는">필수적인</a> 경우는 제외</dd>
                </dl>
                <div class="note" role="note" id="issue-container-generatedID-66">
                   <div role="heading" class="note-title marker" id="h-note-66" aria-level="7"><span>참고 1 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>An example of appearance modification by the author is content that sets the visual style of a control, such as a color or border, to differ from the default style for the user agent or platform.
-                     </p>
+                     <p>저작자가 외형을 수정하는 예로는 사용자 에이전트나 플랫폼의 기본 스타일과 다르게 컨트롤의 색상이나 테두리와 같은 시각적 스타일을 설정하는 경우가 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-67">
@@ -2818,26 +2820,25 @@
             </div>
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
-               <p>In content implemented using markup languages that support the following <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-text" id="ref-for-dfn-text-7" title="sequence of characters that can be programmatically determined, where the sequence is expressing something in human language">text</a> <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-style-properties" id="ref-for-dfn-style-properties-1" title="property whose value determines the presentation (e.g. font, color, size, location, padding, volume, synthesized speech prosody) of content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille display) by user agents">style properties</a>, no loss of content or functionality occurs by setting all of the following and by changing no other style property:</p>
-               <ul>
-                  <li>Line height (line spacing) to at least 1.5 times the font size;</li>
-                  <li>Spacing following paragraphs to at least 2 times the font size;</li>
-                  <li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
-                  <li>Word spacing to at least 0.16 times the font size.</li>
-               </ul>
-               <p>Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.
+               <p>
+                  다음의 <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-7" title="프로그래밍 방식으로 판별될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> <a href="#dfn-style-properties" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-style-properties-1" title="사용자 에이전트가 콘텐츠 요소들을 렌더링할 때(예: 화면에서, 확성기를 통해, 점자 표시장치를 통해), 그 요소들의 프레젠테이션(예: 글꼴, 색상, 크기, 위치, 패딩, 볼륨, 합성된 음성 운율)을 결정하는 속성값">스타일 속성</a>을 지원하는 마크업 언어를 사용하여 구현된 콘텐츠의 경우, 다음과 같은 것을 모두 설정한 후 추가적인 스타일 속성의 변경 없이도 콘텐츠나 기능에 손상이 없어야 한다.
                </p>
+               <ul>
+                  <li>줄 높이(줄 간격)는 글자 크기보다 최소 1.5배 이상</li>
+                  <li>문단 간격이 글자 크기보다 최소 2배 이상</li>
+                  <li>글자 간격이 글자 크기보다 최소 0.12배 이상</li>
+                  <li>단어 간격이 글자 크기보다 최소 0.16배 이상</li>
+               </ul>
+               <p>예외: 특정 언어와 문자 체계에서 해당 텍스트 스타일 속성 중 하나 이상을 사용하지 않는 경우, 해당 언어와 문자 체계에서 존재하는 속성만을 사용하여 준수할 수 있다.</p>
                <div class="note" id="wcag-noteissue-container-generatedID--10" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--10" role="heading"><span>참고 1</span>
                   </div>
-                  <p class="">Content is not required to use these text spacing values. The requirement is to ensure that when a user overrides the authored text spacing, content or functionality is not lost.
-                  </p>
+                  <p class="">텍스트 간격 값을 사용하는 것은 필수 사항이 아니다. 이 기준은 사용자가 원래 제작된 텍스트 간격을 무시하고 재설정할 때, 콘텐츠나 기능성이 손실되지 않도록 하는 것이다.</p>
                </div>
                <div class="note" id="wcag-noteissue-container-generatedID--11" role="note">
                   <div aria-level="5" class="note-title marker" id="wcag-noteh-note--11" role="heading"><span>참고 2</span>
                   </div>
-                  <p class="">Writing systems for some languages use different text spacing settings, such as paragraph start indent. Authors are encouraged to follow locally available guidance for improving readability and legibility of text in their writing system.
-                  </p>
+                  <p class="">일부 언어의 쓰기 체계는 단락 시작 들여쓰기와 같은 다른 텍스트 간격  설정을 사용한다. 저작자는 쓰기 체계에서 텍스트의 가독성을 향상시키기 위해 현지에서 제공하는 지침을 따르는 것이 좋다.</p>
                </div>
             </blockquote>
             <section id="applying-sc-1-4-12-text-spacing-to-non-web-documents-and-software">
@@ -2845,20 +2846,20 @@
                   <h6 id="x6-1-5-9-1-applying-sc-1-4-12-text-spacing-to-non-web-documents-and-software">1.4.12 텍스트 간격성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-1-4-12-text-spacing-to-non-web-documents-and-software" aria-label="섹션 고유링크- 1.4.12 텍스트 간격을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>This applies directly as  written and as described in <a href="https://a11ykr.github.io/wai/wcag22/understanding/text-spacing.html#intent">성공 기준 ... 이해의 의도1.4.12</a>. </p>
+               <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/text-spacing.html#intent">성공 기준 1.4.12 이해의 의도</a>에서 설명한 그대로 적용된다. </p>
                <div class="note" role="note" id="issue-container-generatedID-68">
                   <div role="heading" class="note-title marker" id="h-note-68" aria-level="7"><span>참고 1 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>This success criterion only applies to <a href="#document">non-web documents</a> and <a href="#software">software</a> that are implemented using markup languages and allow the user to modify these text spacing properties.
-                     </p>
+                     <p>이 성공 기준은 마크업 언어를 사용하여 구현된 <a href="#document">웹이 아닌 문서</a> 및 <a href="#software">소프트웨어</a> 중에서 사용자가 이러한 텍스트 간격 속성을 수정할 수 있도록 허용하는 경우에만 적용된다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-69">
                   <div role="heading" class="note-title marker" id="h-note-69" aria-level="7"><span>참고 2 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>"Content implemented using markup languages" includes parts of software that use markup internally to define a user interface. Examples of markup languages that are used internally to define a software user interface include but are not limited to: HTML (e.g., in <a href="https://www.electronjs.org/">Electron</a> applications or iOS application Web views), XAML, XML (e.g., in Android application layouts), and XUL.
+                     <p>
+                        "마크업 언어를 사용하여 구현된 콘텐츠"에는 사용자 인터페이스를 정의하기 위해 내부적으로 마크업을 사용하는 소프트웨어의 일부도 포함된다. 예를 들어, 소프트웨어의 사용자 인터페이스를 정의하는 데 사용되는 마크업 언어에는 HTML(예: <a href="https://www.electronjs.org/">Electron</a> 애플리케이션이나 iOS 애플리케이션의 WebView), XAML, XML(예: Android 애플리케이션 레이아웃), XUL 등이 있다.
                      </p>
                   </div>
                </div>
@@ -2866,7 +2867,8 @@
                   <div role="heading" class="note-title marker" id="h-note-70" aria-level="7"><span>참고 3 (추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>There are several mechanisms that allow users to modify text spacing properties of content implemented in markup languages. For example, an eBook technology may have an available user agent that allows users to override document text styles, or a software application may provide a "user style sheet" facility to modify the appearance of the software's own user interface. This success criterion does not mean that documents and software need to implement their own mechanisms to allow users to set text spacing; however, when such a mechanism is available, the success criterion requires that content respond appropriately to it.
+                     <p>
+                        마크업 언어로 구현된 콘텐츠의 텍스트 간격 속성을 사용자가 수정할 수 있도록 하는 여러 가지 메커니즘이 존재한다. 예를 들어, 전자책(eBook) 기술에서는 사용자가 문서의 텍스트 스타일을 변경할 수 있는 사용자 에이전트가 제공될 수 있으며, 소프트웨어 애플리케이션에서는 자체 사용자 인터페이스의 스타일을 수정할 수 있는 "사용자 스타일 시트" 기능을 제공할 수 있다. 이 성공 기준은 문서나 소프트웨어가 반드시 자체적으로 텍스트 간격 설정 기능을 제공해야 한다는 의미는 아니다. 그러나 이러한 기능이 제공되는 경우, 콘텐츠는 이에 적절히 반응해야 한다.
                      </p>
                   </div>
                </div>
@@ -3230,7 +3232,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/timing-adjustable#intent">성공 기준 ... 이해의 의도2.2.1</a>, replacing “the content” with “non-web documents or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.2.1 시간 제한 조정:</strong> For each time limit that is set by <ins><strong>[<a href="#document">non-web documents</a> or <a href="#software">software</a>]</strong></ins>, at least one of the following is true:
                </p>
@@ -3524,7 +3526,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/page-titled#intent">성공 기준 ... 이해의 의도2.4.2</a> replacing “Web pages” with “non-web documents or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.4.2 페이지 제목 제공:</strong> <ins><strong>[<a href="#document">Non-web documents</a> or <a href="#software">software</a>]</strong></ins> have titles that describe topic or purpose.
                </p>
@@ -3572,7 +3574,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/focus-order#intent">성공 기준 ... 이해의 의도2.4.3</a> replacing “a Web page” with “non-web documents or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>2.4.3 초점 순서:</strong> If <ins><strong>[<a href="#document">non-web documents</a> or <a href="#software">software</a>]</strong></ins> can be <a href="https://www.w3.org/TR/WCAG22/#dfn-navigated-sequentially">navigated sequentially</a> and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
                </p>
@@ -4228,7 +4230,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/language-of-page#intent">성공 기준 ... 이해의 의도3.1.1</a> replacing “each web page” with “non-web documents or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>3.1.1 페이지 언어 표시:</strong> The default <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">human language</a> of <ins><strong>[<a href="#document">non-web documents</a> or <a href="#software">software</a>]</strong></ins> can be <a href="#dfn-programmatically-determinable">programmatically determined</a>.
                </p>
@@ -4268,7 +4270,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/language-of-parts#intent">성공 기준 ... 이해의 의도3.1.2</a> replacing “content” with “non-web document or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>3.1.2 부분적인 언어 표시:</strong> The <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">human language</a> of each passage or phrase in the <ins><strong>[<a href="#document">non-web document</a> or <a href="#software">software</a>]</strong></ins> can be <a href="#dfn-programmatically-determinable">programmatically determined</a> except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
                </p>
@@ -4308,7 +4310,7 @@
             </div>
             <p>WCAG 2에서는 지침이 해당 지침 아래에 있는 성공 기준을 이해하고 구성하는 틀을 제공하지만, WCAG 준수를 위한 요건은 아니다.  Guideline 3.2 applies directly as written, replacing “web pages” with “non-web documents or software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <p>
                <strong>Guideline 3.2 예측 가능성:</strong> Make <ins><strong>[<a href="#document">non-web documents</a> or <a href="#software">software</a>]</strong></ins> appear and operate in predictable ways.
             </p>
@@ -4645,7 +4647,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/error-prevention-legal-financial-data#intent">성공 기준 ... 이해의 의도3.3.4</a> replacing “web pages” with “non-web documents or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>3.3.4 오류 예방 (법률, 금융, 데이터):</strong> For <ins><strong>[<a href="#document">non-web documents</a> or <a href="#software">software</a>]</strong></ins> that cause <a href="https://www.w3.org/TR/WCAG22/#dfn-legal-commitments">legal commitments</a> or financial transactions for the user to occur, that modify or delete <a href="https://www.w3.org/TR/WCAG22/#dfn-user-controllable">user-controllable</a> data in data storage systems, or that submit user test responses, at least one of the following is true:
                </p>
@@ -4730,7 +4732,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/accessible-authentication-minimum.html">성공 기준 ... 이해의 의도3.3.8</a>, replacing “the Web site” with “a Web site, non-web document, or software”.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>3.3.8 접근 가능한 인증 (최소):</strong> A <a href="#dfn-cognitive-function-test">cognitive function test</a> (such as remembering a password or solving a puzzle) is not required for any step in an authentication <a href="https://www.w3.org/TR/WCAG22/#dfn-processes">process</a> unless that step provides at least one of the following:
                </p>
@@ -4809,7 +4811,7 @@
          </div>
          <p>In WCAG 2, the Principles are provided for framing and understanding the success criteria under them but are not used for conformance to WCAG. Principle 4 applies directly as written replacing “user agents, including assistive technologies” with “assistive technologies and accessibility features of software”.
          </p>
-         <p>With this substitution, it would read:</p>
+         <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
          <p>
             <strong>Principle 4 견고성:</strong> Content must be robust enough that it can be interpreted by a wide variety of <ins><strong>[<a href="#dfn-assistive-technologies">assistive technologies</a> and accessibility features of software]</strong></ins>.
          </p>
@@ -4830,7 +4832,7 @@
             </div>
             <p>WCAG 2에서는 지침이 해당 지침 아래에 있는 성공 기준을 이해하고 구성하는 틀을 제공하지만, WCAG 준수를 위한 요건은 아니다.  Guideline 4.1 applies directly as written, replacing “user agents, including assistive technologies” with “assistive technologies and accessibility features of software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <p>
                <strong>Guideline 4.1 호환성:</strong> Maximize compatibility with current and future <ins><strong>[<a href="#dfn-assistive-technologies">assistive technologies</a> and accessibility features of software]</strong></ins>.
             </p>
@@ -4869,7 +4871,7 @@
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing#intent">성공 기준 ... 이해의 의도4.1.1</a>, replacing “In content implemented using markup languages” with “For non-web documents or software that use markup languages, in such a way that the markup is separately exposed and available to assistive technologies and accessibility features of software or to a user-selectable user agent” and replacing the WCAG notes with notes applicable to non-web documents and software.
                </p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>4.1.1 파싱:</strong> <strong><ins>[For <a href="#document">non-web documents</a> or <a href="#software">software</a> that use markup languages, in such a way that the markup is separately exposed and available to <a href="#dfn-assistive-technologies">assistive technologies</a> and accessibility features of software or to a user-selectable <a href="#user-agent">user agent</a>]</ins></strong>, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
                </p>
@@ -4972,7 +4974,7 @@
                   <a class="self-link" href="#applying-sc-4-1-2-name-role-value-to-non-web-documents-and-software" aria-label="섹션 고유링크- 4.1.2 이름, 역할, 값을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
                <p>이는 원문 그대로 적용되며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/name-role-value#intent">성공 기준 ... 이해의 의도4.1.2</a>, replacing the note with: “This success criterion is primarily for software developers who develop or use custom user interface components. For example, standard user interface components on most accessibility-supported platforms already meet this success criterion when used according to specification.”</p>
-               <p>With this substitution, it would read:</p>
+               <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
                <p>
                   <strong>4.1.2 이름, 역할, 값:</strong> For all <a href="#dfn-user-interface-components">user interface components</a> (including but not limited to: form elements, links and components generated by scripts), the <a href="#dfn-name">name</a> and <a href="#dfn-role">role</a> can be <a href="#dfn-programmatically-determinable">programmatically determined</a>; states, properties, and values that can be set by the user can be <a href="#dfn-programmatically-set">programmatically set</a>; and notification of changes to these items is available to <a href="#user-agent">user agents</a>, including <a href="#dfn-assistive-technologies">assistive technologies</a>.
                </p>
@@ -5336,7 +5338,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “Web page” with “non-web document or software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>ambiguous to users in general</dt>
                <dd>
@@ -5566,7 +5568,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “Web sites” with “Web sites, non-web documents, and software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>cognitive function test</dt>
                <dd>
@@ -5743,8 +5745,8 @@
       </section>
       <section id="dfn-css-pixels">
          <div class="header-wrapper">
-            <h4 id="x7-3-9-dfn-css-pixels">CSS pixel</h4>
-            <a class="self-link" href="#dfn-css-pixels" aria-label="섹션 고유링크- CSS pixel"></a>
+            <h4 id="x7-3-9-dfn-css-pixels">CSS 픽셀</h4>
+            <a class="self-link" href="#dfn-css-pixels" aria-label="섹션 고유링크- CSS 픽셀"></a>
          </div>
          <blockquote class="wcag-quote">
             <p>visual angle of about 0.0213 degrees</p>
@@ -5753,8 +5755,8 @@
          </blockquote>
          <section id="applying-css-pixel-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-9-1-applying-css-pixel-to-non-web-documents-and-software">Applying “CSS pixel”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-css-pixel-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “CSS pixel”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-9-1-applying-css-pixel-to-non-web-documents-and-software">웹이 아닌 문서 및 소프트웨어에서 CSS 픽셀 적용</h5>
+               <a class="self-link" href="#applying-css-pixel-to-non-web-documents-and-software" aria-label="섹션 고유링크- 웹이 아닌 문서 및 소프트웨어에서 CSS 픽셀 적용"></a>
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary.
             </p>
@@ -5920,7 +5922,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “Web page” with “non-web document or software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>input error</dt>
                <dd>
@@ -6343,7 +6345,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “user agents, including assistive technologies” with “assistive technologies and accessibility features of software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>programmatically set</dt>
                <dd>
@@ -6429,7 +6431,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “Web content” with “content”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>relative luminance</dt>
                <dd>
@@ -6535,7 +6537,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “Web content” with “content”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>role</dt>
                <dd>
@@ -6620,7 +6622,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “page” with “non-web document or software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>satisfies a success criterion</dt>
                <dd>
@@ -6777,7 +6779,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “page” with “non-web document or content presented by software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>target</dt>
                <dd>
@@ -6940,7 +6942,7 @@
                <a class="self-link" href="#applying-user-interface-component-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “user interface component”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing the example with “Example: A software program has 2 controls: a text field for entering a file name and a drop down list box for choosing a folder. Each is a user interface component with a name that is settable by the software.”</p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>user interface component</dt>
                <dd>
@@ -7013,7 +7015,7 @@
             </div>
             <p>This applies directly as written and as described in the WCAG 2 glossary, replacing “user agent” with “software”.
             </p>
-            <p>With this substitution, it would read:</p>
+            <p>대체 문구를 적용하면 다음과 같이 읽을 수 있다.</p>
             <dl>
                <dt>viewport</dt>
                <dd>
