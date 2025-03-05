@@ -20,3 +20,23 @@ h2, h3, h4, h5, h6 {
 	margin-top: 2.5rem;
 	margin-bottom: .5rem;
 }
+
+@media screen and (min-width: 1280px) {
+	#comments-by-guideline-and-success-criterion {
+		section:has(> .header-wrapper > h4):not(:first-of-type) blockquote.wcag-quote, blockquote.wcag-quote + section:has(> .header-wrapper > h5), blockquote.wcag-quote + section:has(> .header-wrapper > h6) {
+			display: inline-block;
+			vertical-align: top;
+			width: 46%;
+			margin: 1% 0;
+		}
+		blockquote.wcag-quote + section:has(> .header-wrapper > h5) {
+			margin: -4.3rem 0 1rem 2%;
+		}
+		blockquote.wcag-quote + section:has(> .header-wrapper > h6) {
+			margin: -7.6rem 0 0  2%;
+		}
+		blockquote.wcag-quote + section:has(> .header-wrapper > h6) h6 {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
