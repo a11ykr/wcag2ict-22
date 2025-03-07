@@ -4126,14 +4126,13 @@
                <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/language-of-page#intent">성공 기준 3.1.1 이해의 의도</a>에 설명한 것을 "각 웹 페이지"를 "웹이 아닌 문서 또는 소프트웨어"로 대체한다.</p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>3.1.1 페이지 언어 표시:</strong> The default <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">human language</a> of <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins> can be <a href="#dfn-programmatically-determinable">programmatically determined</a>.
+                  <strong>3.1.1 페이지 언어 표시:</strong> <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins>의 기본 <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">인간 언어</a>는 <a href="#dfn-programmatically-determinable">프로그래밍 방식으로 판별</a>할 수 있어야 한다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-130">
                   <div role="heading" class="note-title marker" id="h-note-130" aria-level="7"><span>참고 1(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Where software platforms provide a “locale / language” setting, applications that use that setting and render their interface in that “locale / language” would comply with this success criterion. Applications that do not use the platform “locale / language” setting but instead use an <a href="#dfn-accessibility-supported">accessibility-supported</a> method for exposing the human language of the <a href="#software">소프트웨어</a> would also comply with this success criterion. Applications implemented in technologies where <a href="#dfn-assistive-technologies">assistive technologies</a> cannot determine the human language and that do not support the platform “locale / language” setting may not be able to meet this success criterion in that locale / language.
-                     </p>
+                     <p>소프트웨어 플랫폼이 "지역/언어(locale/language)" 설정을 제공하는 경우, 해당 설정을 사용하여 인터페이스를 렌더링하는 애플리케이션은 이 성공 기준을 준수하는 것으로 간주된다. 플랫폼의 "지역/언어" 설정을 사용하지 않더라도, <a href="#dfn-accessibility-supported">접근성 지원</a> 방식으로 <a href="#software">소프트웨어</a>의 사용 언어를 노출하는 애플리케이션 역시 이 성공 기준을 충족할 수 있다. 그러나 <a href="#dfn-assistive-technologies">보조 기술</a>이 사용 언어를 인식할 수 없는 기술로 구현된 애플리케이션이나, 플랫폼의 "지역/언어" 설정을 지원하지 않는 애플리케이션은 특정 지역/언어 환경에서 이 성공 기준을 충족하지 못할 수도 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-131">
@@ -4155,7 +4154,7 @@
             <p>(Level AA)</p>
             <blockquote class="wcag-quote">
                <p>
-                  콘텐츠에서 각 절이나 문구의 <a href="#dfn-human-language-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-language-s-2" title="인간 간에 의사소통을 하기 위해 (시각적 또는 촉각적 수단을 통해) 말을 하거나 쓰거나 신호를 보내는 언어">인간 언어</a>는 적절한 명칭, 전문용어, 불확실한 단어, 텍스트의 모국어(방언)에 포함된 단어나 구절을 제외하고는 <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-6" title="저작자가 제공한 데이터를 소프트웨어가 판별할 수 있도록 구성하여, 보조 기술을 포함한 다양한 사용자 에이전트가 이를 추출하고 여러 방식으로 사용자에게 제공할 수 있도록 한">프로그래밍 방식으로 판별</a>될 수 있어야 한다.
+                  콘텐츠에서 각 절이나 문구의 <a href="#dfn-human-language-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-language-s-2" title="인간 간에 의사소통을 하기 위해 (시각적 또는 촉각적 수단을 통해) 말을 하거나 쓰거나 신호를 보내는 언어">인간 언어</a>는 적절한 명칭, 전문용어, 불확실한 단어, 텍스트의 주변 언어에 포함된 단어나 구절을 제외하고는 <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-6" title="저작자가 제공한 데이터를 소프트웨어가 판별할 수 있도록 구성하여, 보조 기술을 포함한 다양한 사용자 에이전트가 이를 추출하고 여러 방식으로 사용자에게 제공할 수 있도록 한">프로그래밍 방식으로 판별</a>될 수 있어야 한다.
                </p>
             </blockquote>
             <section id="applying-sc-3-1-2-language-of-parts-to-non-web-documents-and-software">
@@ -4163,17 +4162,19 @@
                   <h6 id="x6-3-2-3-1-applying-sc-3-1-2-language-of-parts-to-non-web-documents-and-software">3.1.2 부분적인 언어 표시 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-3-1-2-language-of-parts-to-non-web-documents-and-software" aria-label="섹션 고유링크- 3.1.2 부분적인 언어 표시 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/language-of-parts#intent">성공 기준 3.1.2 이해의 의도</a> replacing “content” with “웹이 아닌 문서나 소프트웨어”.
+               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/language-of-parts#intent">성공 기준 3.1.2 이해의 의도</a>에서 설명한 것 중 “콘텐츠”를 “웹이 아닌 문서나 소프트웨어”로 대체한다.
                </p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>3.1.2 부분적인 언어 표시:</strong> The <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">human language</a> of each passage or phrase in the <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins> can be <a href="#dfn-programmatically-determinable">programmatically determined</a> except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+                  <strong>3.1.2 부분적인 언어 표시:</strong> 
+                  <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]에서 각 부분이나 구절의 <a href="https://www.w3.org/TR/WCAG22/#dfn-human-language-s">인간 언어</a>는 적절한 명칭, 전문 용어, 불확실한 단어, 그리고 바로 주변 텍스트의 일상적인 언어 또는 구절을 제외하고는 <a href="#dfn-programmatically-determinable">프로그래밍 방식으로 판별</a>할 수 있어야 한다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-132">
                   <div role="heading" class="note-title marker" id="h-note-132" aria-level="7"><span>참고 1(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Examples of programmatic identification include language metadata or markup. There are some <a href="#software">소프트웨어</a> and <a href="#document">웹이 아닌 문서</a> technologies where there is no assistive technology supported method for marking the language for the different passages or phrases in the 웹이 아닌 문서나 소프트웨어, and it would not be possible to meet this success criterion with those technologies.
+                     <p>
+                        프로그램 방식으로 언어를 식별하는 예로는 언어 메타데이터나 마크업이 있다. 그러나 일부 <a href="#software">소프트웨어</a> 및 <a href="#document">웹이 아닌 문서</a> 기술에서는 각 절이나 문구의 언어를 표시할 수 있는 보조 기술 지원 방법이 없으며, 이러한 기술들에서는 이 성공 기준을 충족하는 것이 불가능할 수 있다.
                      </p>
                   </div>
                </div>
