@@ -732,7 +732,7 @@
                <a class="tocxref" href="#glossary-items-with-specific-guidance">특정 지침이 포함된 용어집 항목</a>
                <ol class="toc">
                   <li class="tocline">
-                     <a class="tocxref" href="#dfn-accessibility-supported">accessibility supported</a>
+                     <a class="tocxref" href="#dfn-accessibility-supported">접근성 지원</a>
                      <ol class="toc">
                      </ol>
                   </li>
@@ -5038,100 +5038,93 @@
       <p>웹이 아닌 문서 및 소프트웨어에 적용할 때 WCAG 2의 다음 용어집 항목에 대한 추가 지침이 제공됩니다.</p>
       <section id="dfn-accessibility-supported">
          <div class="header-wrapper">
-            <h4 id="x7-3-1-dfn-accessibility-supported">accessibility supported</h4>
+            <h4 id="x7-3-1-dfn-accessibility-supported">접근성 지원</h4>
             <a class="self-link" href="#dfn-accessibility-supported" aria-label="섹션 고유링크- accessibility supported"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>supported by users' <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-assistive-technologies" id="ref-for-dfn-assistive-technologies-5" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a> as well as the accessibility features in browsers and other <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-agents" id="ref-for-dfn-user-agents-5" title="any software that retrieves and presents Web content for users">사용자 에이전트s</a></p>
-            <p>To qualify as an accessibility-supported use of a Web content technology (or feature       of a technology), both 1 and 2 must be satisfied for a Web content technology (or       feature):
+            <p>
+               사용자의 <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-5" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>뿐만 아니라 브라우저와 다른 <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-5" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>에 있는 접근성 특성들에 의해 지원된
+            </p>
+            <p>
+               웹 콘텐츠 기술(또는 어떤 기술의 특성)이 접근성이 지원하는 것으로 인정을 받으려면, 해당 웹 콘텐츠 기술(또는 특성)은 다음의 1과 2를 모두 충족해야 한다.
             </p>
             <ol>
                <li>
                   <p>
-                     <strong>The way that the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-technologies" id="ref-for-dfn-technologies-5" title="mechanism for encoding instructions to be rendered, played or executed by user agents">Web content technology</a> is used must be supported by users' assistive technology (AT). </strong> This means that the way that the technology is used has been tested for interoperability             with users' assistive technology in the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-human-language-s" id="ref-for-dfn-human-language-s-3" title="language that is spoken, written or signed (through visual or tactile means) to communicate with humans">human language(s)</a> of the content,
+                  <strong><a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-5" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">웹 콘텐츠 기술</a>이 사용되는 방법은 사용자의 보조 기술(AT)에 의해 지원되어야 한다.</strong> 이는 기술이 사용되는 방법이 콘텐츠의 <a href="#dfn-human-language-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-language-s-3" title="인간 간에 의사소통을 하기 위해 (시각적 또는 촉각적 수단을 통해) 말을 하거나 쓰거나 신호를 보내는 언어">인간 언어</a>에서 사용자의 보조 기술과의 상호운용성이 테스트되었음을 의미한다.
                   </p>
-                  <p>
-                     <strong>AND</strong>
-                  </p>
+                  <p><strong>그리고</strong></p>
                </li>
                <li>
                   <p>
-                     <strong>The Web content technology must have accessibility-supported user agents that are                available to users. </strong> This means that at least one of the following four statements is true:
+                  <strong>웹 콘텐츠 기술은 사용자가 사용할 수 있는, 접근성을 지원하는 사용자 에이전트를 가지고 있어야 한다.</strong> 이는 다음 4개의 항목 중 최소 하나를 준수해야 함을 의미한다.
                   </p>
                   <ol>
-                     <li>
-                        <p>The technology is supported natively in widely-distributed user agents that are also                   accessibility supported (such as HTML and CSS);
-                        </p>
-                        <p>
-                           <strong>OR</strong>
-                        </p>
-                     </li>
-                     <li>
-                        <p>The technology is supported in a widely-distributed plug-in that is also accessibility                   supported;
-                        </p>
-                        <p>
-                           <strong>OR</strong>
-                        </p>
-                     </li>
-                     <li>
-                        <p>The content is available in a closed environment, such as a university or corporate                   network, where the user agent required by the technology and used by the organization                   is also accessibility supported;
-                        </p>
-                        <p>
-                           <strong>OR</strong>
-                        </p>
-                     </li>
-                     <li>
-                        <p>The user agent(s) that support the technology are accessibility supported and are                   available for download or purchase in a way that:
-                        </p>
-                        <ul>
-                           <li>does not cost a person with a disability any more than a person without a disability                      <strong>and</strong>
-                           </li>
-                           <li>is as easy to find and obtain for a person with a disability as it is for a person                      without disabilities.                 </li>
-                        </ul>
-                     </li>
+                  <li>
+                     <p>해당 기술은 접근성이 지원되면서 널리 사용되는 사용자 에이전트에서 기본적으로 지원(예: HTML과 CSS)한다.</p>
+                     <p><strong>또는</strong></p>
+                  </li>
+                  <li>
+                     <p>해당 기술은 접근성이 지원되면서 널리 사용되는 플러그인에서도 지원한다.</p>
+                     <p><strong>또는</strong></p>
+                  </li>
+                  <li>
+                     <p>콘텐츠는 대학교 또는 기업 네트워크와 같은 폐쇄된 환경에서 사용할 수 있는데, 이때 폐쇄된 환경이란 해당 기술이 요구하고 조직이 사용하는 사용자 에이전트 또한 접근성이 지원되는 곳이다.</p>
+                     <p><strong>또는</strong></p>
+                  </li>
+                  <li>
+                     <p>해당 기술을 지원하는 사용자 에이전트는 접근성이 지원되고, 다음과 같은 방법으로 다운로드 또는 구입할 수 있다.</p>
+                     <ul>
+                        <li>장애인이 비장애인보다 더 많은 비용을 지불하지 않는다. <strong>그리고</strong></li>
+                        <li>비장애인처럼, 장애인도 쉽게 찾고 다운로드/구매할 수 있다.</li>
+                     </ul>
+                  </li>
                   </ol>
                </li>
             </ol>
             <div class="note" id="wcag-noteissue-container-generatedID--59" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--59" role="heading"><span>참고 1</span>
                </div>
-               <p class="">The Accessibility Guidelines Working Group and the <abbr title="World Wide Web Consortium">W3C</abbr> do not specify which or how much support by assistive       technologies there must be for a particular use of a Web technology in order for it       to be classified as accessibility supported. (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#support-level">Level of Assistive Technology Support Needed for "Accessibility Support"</a>.)
+               <p>
+                  WCAG 실무그룹과 W3C는 웹 기술을 접근성이 지원되는 것으로 분류하기 위해 보조 기술에 의해 지원되는 어떤 특정 웹 기술을 사용해야 하는지 또는 얼마나 많이 지원되어야 하는지를 명시하지 않는다. (<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#support-level">"접근성 지원"에 필요한 보조 기술의 수준</a>을 참고하라.)
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--60" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--60" role="heading"><span>참고 2</span>
                </div>
-               <p class="">Web technologies can be used in ways that are not accessibility supported as long       as they are not <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-relied-upon" id="ref-for-dfn-relied-upon-7" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> and the page as a whole meets the conformance requirements, including <a href="https://www.w3.org/TR/wcag22/#cc4">Conformance Requirement 4</a> and <a href="https://www.w3.org/TR/wcag22/#cc5">Conformance Requirement 5</a>.
+               <p>
+                  웹 기술이 <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-7" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>하지 않고, 그리고 전체 페이지가 <a href="#cc4">준수 요구사항 4</a>와 <a href="#cc5">준수 요구사항 5</a>를 포함한 준수 기준을 충족하는 한 접근성이 지원되지 않는 방식으로 사용될 수 있다.
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--61" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--61" role="heading"><span>참고 3</span>
                </div>
-               <p class="">When a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-technologies" id="ref-for-dfn-technologies-6" title="mechanism for encoding instructions to be rendered, played or executed by user agents">Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire       technology or all uses of the technology are supported. Most technologies, including       HTML, lack support for at least one feature or use. Pages conform to WCAG only if       the uses of the technology that are accessibility supported can be relied upon to       meet WCAG requirements.
+               <p>
+                  웹 기술이 <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-7" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>하지 않고, 그리고 전체 페이지가 <a href="#cc4">준수 요구사항 4</a>와 <a href="#cc5">준수 요구사항 5</a>를 포함한 준수 기준을 충족하는 한 접근성이 지원되지 않는 방식으로 사용될 수 있다.
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--62" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--62" role="heading"><span>참고 4</span>
                </div>
-               <p class="">When citing Web content technologies that have multiple versions, the version(s) supported       should be specified.
-               </p>
+               <p class="">여러 버전이 있는 웹 콘텐츠 기술을 인용할 경우, 지원되는 버전을 구체적으로 명시해야 한다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--63" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--63" role="heading"><span>참고 5</span>
                </div>
-               <p class="">One way for authors to locate uses of a technology that are accessibility supported       would be to consult compilations of uses that are documented to be accessibility supported.     (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#documented-lists">Understanding Accessibility-Supported Web Technology Uses</a>.) Authors, companies, technology vendors, or others may document accessibility-supported       ways of using Web content technologies. However, all ways of using technologies in       the documentation would need to meet the definition of accessibility-supported Web       content technologies above.
+               <p>
+                  개발자가 접근성이 지원되는 기술의 사용을 찾는 한, 가지 방법은 접근성이 지원되는 것으로 문서화된 사용 책자를 참고하는 것이다. (<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#documented-lists">접근성이 지원되는 웹 기술 활용 이해</a>를 참고하라.) 웹 콘텐츠 저작자, 회사, 기술공급업체 또는 기타 업체가 웹 콘텐츠 기술을 사용하는 접근성이 지원되는 방법을 문서화할 수 있다. 그러나 문서에서 기술을 사용하는 모든 방법은 위의 접근성이 지원되는 웹 콘텐츠 기술의 정의를 충족해야 한다.
                </p>
             </div>
          </blockquote>
          <section id="applying-accessibility-supported-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-1-1-applying-accessibility-supported-to-non-web-documents-and-software">Applying “accessibility supported”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-accessibility-supported-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “accessibility supported” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-1-1-applying-accessibility-supported-to-non-web-documents-and-software">“접근성 지원” 용어을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-accessibility-supported-to-non-web-documents-and-software" aria-label="섹션 고유링크- “접근성 지원” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
             <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “browsers and other user agents” with “user agents or other software”, replacing “user agents” with “user agents or other software”, replacing “web content technology” with “웹이 아닌 문서나 소프트웨어 technology”, adding “or other software extension” after “plug-in”, and replacing all five of the Notes with a single Note: “Note: The concepts behind the five Notes and in Understanding Accessibility Supported are applicable to web technologies. The same or similar factors are applicable for non-web technologies.”</p>
             <p>With these substitutions and addition, it would read:</p>
             <dl>
-               <dt>accessibility supported</dt>
+               <dt>접근성 지원</dt>
                <dd>
                   <p>supported by users' <a href="#dfn-assistive-technologies">assistive technologies</a> as well as the accessibility features in <ins><strong>[<a href="#dfn-user-agents">사용자 에이전트s</a>나 other <a href="#software">소프트웨어</a>]</strong></ins></p>
                   <p>To qualify as an accessibility-supported use of a <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 software]</strong></ins> <a href="#dfn-technologies">technology</a> (or feature of a technology), both 1 and 2 must be satisfied for a <ins><strong>[웹이 아닌 문서나 소프트웨어]</strong></ins> technology (or feature):</p>
@@ -7037,8 +7030,8 @@
    <p>For non-web software on products with closed functionality, those who implement this document (WCAG2ICT) should consider the applicability of individual WCAG 2 success criteria on a criterion-by-criterion basis. Alternate accessibility provisions might be needed to cover the user needs addressed by the following success criteria:</p>
    <ul>
       <li><a href="#non-text-content">1.1.1 텍스트가 아닌 콘텐츠</a> — Depends upon text (or a text alternative) being in a programmatically determinable form.</li>
-      <li><a href="#audio-only-and-video-only-prerecorded">1.2.1 Pre-recorded video</a> — One of the options available to authors for Success Criterion 1.2.1 is providing a media alternative that is text which, in the absence of connected assistive technology, would need to be made available in different modalities.</li>
-      <li><a href="#audio-description-or-media-alternative-prerecorded">1.2.3 Audio description or Media Alternative</a> — One of the options available to authors for Success Criterion 1.2.3 is providing a media alternative that is text which, in the absence of connected assistive technology, would need to be made available in different modalities.</li>
+      <li><a href="#audio-only-and-video-only-prerecorded">1.2.1 사전 녹화된 동영상</a> — One of the options available to authors for Success Criterion 1.2.1 is providing a media alternative that is text which, in the absence of connected assistive technology, would need to be made available in different modalities.</li>
+      <li><a href="#audio-description-or-media-alternative-prerecorded">1.2.3 오디오 해설이나 미디어 대체수단</a> — One of the options available to authors for Success Criterion 1.2.3 is providing a media alternative that is text which, in the absence of connected assistive technology, would need to be made available in different modalities.</li>
       <li><a href="#info-and-relationships">1.3.1 정보와 관계</a> — Requires that information be in a programmatically determinable form or in text (that is programmatically determinable).</li>
       <li><a href="#meaningful-sequence">1.3.2 의미있는 순서</a> — Requires information (i.e, a correct reading sequence) in a programmatically determinable form.  An equivalent for software with closed functionality would be to provide a meaningful reading sequence through auditory output or some other non-visual means that helps users correlate the output with the corresponding information displayed on the screen.</li>
       <li><a href="#orientation">1.3.4 방향</a> — Products with closed functionality that have fixed-in-place displays or other limitations that prevent modifying the physical display orientation should be considered as examples that are covered under the essential exception. See the note in the section <a href="#applying-sc-1-3-4-orientation-to-non-web-documents-and-software">1.3.4 방향 to Non-Web Documents and Software</a>.</li>
@@ -7193,7 +7186,7 @@
          <h3 id="b-3-applying-wcag-2-to-text-applications">B.3 Applying WCAG 2 to text applications</h3>
          <a class="self-link" href="#applying-wcag-2-to-text-applications" aria-label="섹션 고유링크- B.3 Applying WCAG 2 to text applications"></a>
       </div>
-      <p>To apply WCAG to text applications, it is necessary to apply the glossary terms <a href="#dfn-accessibility-supported">accessibility supported</a> and <a href="#dfn-programmatically-determinable">programmatically determined</a> in the context of how text applications are rendered and the history of assistive technologies that made them accessible.
+      <p>To apply WCAG to text applications, it is necessary to apply the glossary terms <a href="#dfn-accessibility-supported">접근성 지원</a> and <a href="#dfn-programmatically-determinable">programmatically determined</a> in the context of how text applications are rendered and the history of assistive technologies that made them accessible.
       </p>
       <p>As noted above, in a text interface the terminal application renders the characters on the screen, just as a Web browser typically renders content for a Web application. As an example, for success criterion <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a>, a text application could achieve 200 percent resizing when the terminal application client that is rendering it has this capability (cf. WCAG 2 Technique <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G142">G142 Using a technology that has commonly-available user agents that support zoom</a>). Many web pages and web applications use this approach to meet success criterion <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a> through no explicit action of their own.
       </p>

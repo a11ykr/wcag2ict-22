@@ -22,7 +22,7 @@ h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 1280px) {
-	#comments-by-guideline-and-success-criterion {
+	#comments-by-guideline-and-success-criterion, #glossary-items-with-specific-guidance {
 		section:has(> .header-wrapper > h4):not(:first-of-type) blockquote.wcag-quote, blockquote.wcag-quote + section:has(> .header-wrapper > h5), blockquote.wcag-quote + section:has(> .header-wrapper > h6) {
 			display: inline-block;
 			vertical-align: top;
@@ -39,5 +39,11 @@ h2, h3, h4, h5, h6 {
 			margin-top: 2rem;
 			margin-bottom: 2.5rem;
 		}
+	}
+	#dfn-accessibility-supported > blockquote.wcag-quote, #dfn-accessibility-supported > blockquote.wcag-quote + section {
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		margin: 1% 0;
 	}
 }
