@@ -4541,11 +4541,11 @@
                   <h6 id="x6-3-4-5-1-applying-sc-3-3-4-error-prevention-legal-financial-data-to-non-web-documents-and-software">3.3.4 오류 예방(법률, 금융, 데이터) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-3-3-4-error-prevention-legal-financial-data-to-non-web-documents-and-software" aria-label="섹션 고유링크- 3.3.4 오류 예방(법률, 금융, 데이터) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/error-prevention-legal-financial-data#intent">성공 기준 3.3.4 이해의 의도</a> replacing “web pages” with “non-web documents or software”.
-               </p>
+               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/error-prevention-legal-financial-data#intent">성공 기준 3.3.4 이해의 의도</a>에 설명한 내용에 따라 "웹 페이지"를 "웹이 아닌 문서 또는 소프트웨어"로 치환하여 적용한다.</p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>3.3.4 오류 예방 (법률, 금융, 데이터):</strong> For <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins> that cause <a href="https://www.w3.org/TR/WCAG22/#dfn-legal-commitments">legal commitments</a>나 financial transactions for the user to occur, that modify or delete <a href="https://www.w3.org/TR/WCAG22/#dfn-user-controllable">user-controllable</a> data in data storage systems, or that submit user test responses, at least one of the following is true:
+                  <strong>3.3.4 오류 예방 (법률, 금융, 데이터):</strong> 
+                  사용자에게 <a href="https://www.w3.org/TR/WCAG22/#dfn-legal-commitments">법적 구속력</a> 또는 금융 거래를 발생시키거나, 데이터 저장 시스템 내에서 <a href="https://www.w3.org/TR/WCAG22/#dfn-user-controllable">사용자가 제어 가능한</a> 데이터를 수정 또는 삭제하거나, 사용자 테스트 응답을 제출하게 하는 <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins>의 경우, 다음 중 적어도 하나가 참이어야 한다.
                </p>
                <dl>
                   <dt>되돌릴 수 있는</dt>
@@ -4629,11 +4629,12 @@
                   <h6 id="x6-3-4-7-1-applying-sc-3-3-8-accessible-authentication-minimum-to-non-web-documents-and-software">3.3.8 접근 가능한 인증(최소) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-3-3-8-accessible-authentication-minimum-to-non-web-documents-and-software" aria-label="섹션 고유링크- 3.3.8 접근 가능한 인증(최소) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/accessible-authentication-minimum.html">성공 기준 3.3.8 이해의 의도</a>, replacing “the Web site” with “a Web site, non-web document, or software”.
+               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/accessible-authentication-minimum.html">성공 기준 3.3.8 이해의 의도</a>에 설명한 것과 같으며 "웹 사이트"를 "웹 사이트, 웹이 아닌 문서나 소프트웨어"로 대체한다.
                </p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>3.3.8 접근 가능한 인증 (최소):</strong> A <a href="#dfn-cognitive-function-test">cognitive function test</a> (such as remembering a password or solving a puzzle) is not required for any step in an authentication <a href="https://www.w3.org/TR/WCAG22/#dfn-processes">process</a> unless that step provides at least one of the following:
+                  <strong>3.3.8 접근 가능한 인증 (최소):</strong> 
+                  다음 중 하나 이상을 제공하지 않는 한, 인증 <a href="https://www.w3.org/TR/WCAG22/#dfn-processes">과정</a>의 어떤 단계에서도 <a href="#dfn-cognitive-function-test">인지 기능 검사</a>(예: 비밀번호 기억 또는 퍼즐 풀기)를 요구할 수 없다.
                </p>
                <dl>
                   <dt>대체 수단</dt>
@@ -4667,16 +4668,14 @@
                   <div role="heading" class="note-title marker" id="h-note-147" aria-level="7"><span>참고 3(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Any passwords used to unlock underlying <a href="#platform-software">플랫폼 소프트웨어</a> (running below the non-web software) are out of scope for this requirement since these are not under control of the non-web software’s author.
-                     </p>
+                     <p>기반 <a href="#platform-software">플랫폼 소프트웨어</a>(웹이 아닌 소프트웨어 아래서 실행)의 잠금 해제에 사용되는 모든 비밀번호는 웹이 아닌 소프트웨어 작성자의 제어 범위 밖에 있으므로, 이 요구 사항의 범위에서 제외된다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-148">
                   <div role="heading" class="note-title marker" id="h-note-148" aria-level="7"><span>참고 4(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>There are cases where non-web software has an authentication process and no alternative or assistance mechanism is feasible, for example when entering a password when starting, powering on / turning on an ICT (device or otherwise). In such situations, it may not be possible for the non-web software to meet this success criterion.
-                     </p>
+                     <p>웹이 아닌 소프트웨어가 인증 프로세스를 가지고 있지만, 대체 수단이나 지원 메커니즘을 제공하는 것이 불가능한 경우가 있다. 예를 들어, ICT(기기 또는 기타)를 시작하거나 켤 때 비밀번호를 입력하는 상황이다. 이러한 상황의 웹이 아닌 소프트웨어는 이 성공 기준을 준수하지 못할 수 있다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-149">
@@ -4725,11 +4724,11 @@
                <h5 id="x6-4-2-1-applying-guideline-4-1-compatible-to-non-web-documents-and-software">4.1 호환성 지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
                <a class="self-link" href="#applying-guideline-4-1-compatible-to-non-web-documents-and-software" aria-label="섹션 고유링크- 4.1 호환성 지침을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>WCAG 2에서는 지침이 해당 지침 아래에 있는 성공 기준을 이해하고 구성하는 틀을 제공하지만, WCAG 준수를 위한 요건은 아니다.  지침 4.1 applies directly as written, replacing “user agents, including assistive technologies” with “assistive technologies and accessibility features of software”.
+            <p>WCAG 2에서는 지침이 해당 지침 아래에 있는 성공 기준을 이해하고 구성하는 틀을 제공하지만, WCAG 준수를 위한 요건은 아니다.  지침 4.1 “보조 기술을 포함한 사용자 에이전트”를 “보조 기술 및 소프트웨어의 접근성 기능”으로 바꾸어 그대로 적용할 수 있다.
             </p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <p>
-               <strong>지침 4.1 호환성:</strong> Maximize compatibility with current and future <ins><strong>[<a href="#dfn-assistive-technologies">assistive technologies</a> and accessibility features of software]</strong></ins>.
+               <strong>지침 4.1 호환성:</strong> 현재 및 미래의 <ins><strong>[<a href="#dfn-assistive-technologies">보조 기술</a> 소프트웨어의 접근성 기능]</strong></ins>과의 호환성을 극대화해야 한다.
             </p>
          </section>
          <section id="parsing21">
@@ -4756,50 +4755,48 @@
             </blockquote>
             <section id="applying-sc-4-1-1-parsing-wcag-2-0-and-2-1-to-non-web-documents-and-software">
                <div class="header-wrapper">
-                  <h6 id="x6-4-2-2-1-applying-sc-4-1-1-parsing-wcag-2-0-and-2-1-to-non-web-documents-and-software">4.1.1 파싱 (WCAG 2.0 and 2.1)성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
-                  <a class="self-link" href="#applying-sc-4-1-1-parsing-wcag-2-0-and-2-1-to-non-web-documents-and-software" aria-label="섹션 고유링크- 4.1.1 파싱 (WCAG 2.0 and 2.1) 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+                  <h6 id="x6-4-2-2-1-applying-sc-4-1-1-parsing-wcag-2-0-and-2-1-to-non-web-documents-and-software">4.1.1 파싱 (WCAG 2.0 and 2.1) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
+                  <a class="self-link" href="#applying-sc-4-1-1-parsing-wcag-2-0-and-2-1-to-non-web-documents-and-software" aria-label="섹션 고유링크- 4.1.1 파싱 (WCAG 2.0 and 2.1) 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 쓰이며, <a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing#intent">성공 기준 ... 이해의 의도4.1.1</a>, replacing “In content implemented using markup languages” with “For non-web documents or software that use markup languages, in such a way that the markup is separately exposed and available to assistive technologies and accessibility features of software or to a user-selectable user agent” and replacing the WCAG notes with notes applicable to non-web documents and software.
-               </p>
+               <p>이는 원문 그대로 쓰이며, <a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing#intent">성공 기준 4.1.1 이해의 의도</a>에서 설명한 바와 같이, “마크업 언어를 사용하여 구현된 콘텐츠”를 “보조 기술 및 소프트웨어의 접근성 기능 또는 사용자가 선택 가능한 사용자 에이전트에 마크업이 별도로 노출되고 접근 가능한 방식으로 마크업 언어를 사용하는 웹이 아닌 문서 또는 소프트웨어”로 대체하고, WCAG의 주석을 웹이 아닌 문서 및 소프트웨어에 적절한 주석으로 바꾸어 그대로 적용할 수 있다.</p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>4.1.1 파싱:</strong> <strong><ins>[For <a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a> that use markup languages, in such a way that the markup is separately exposed and available to <a href="#dfn-assistive-technologies">assistive technologies</a> and accessibility features of software or to a user-selectable <a href="#user-agent">사용자 에이전트</a>]</ins></strong>, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
+                  <strong>4.1.1 파싱:</strong> 
+                   <strong><ins></ins>[<a href="#dfn-assistive-technologies">보조 기술</a> 및 소프트웨어의 접근성 기능 또는 사용자가 선택 가능한 <a href="#user-agent">사용자 에이전트</a>에 마크업이 별도로 노출되고 접근 가능한 방식으로 마크업 언어를 사용하는 <a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>의 경우]</ins></strong>, 요소에는 완전한 시작 및 종료 태그가 있어야 하며, 요소는 명세에 따라 중첩되어야 하고, 중복 속성을 포함하지 않아야 하며, 모든 ID는 고유해야 한다. 단, 명세에서 이러한 예외를 허용하는 경우는 제외한다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-150">
                   <div role="heading" class="note-title marker" id="h-note-150" aria-level="7"><span>참고 1(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>Markup is not always available to <a href="#dfn-assistive-technologies">assistive technologies</a>나 to user selectable <a href="#user-agent">사용자 에이전트s</a> such as browsers. Software sometimes uses markup languages internally for persistence of the software user interface, in ways where the markup is never available to assistive technology (either directly or through a document object model (DOM)), or to a user agent (such as a browser). In such cases, conformance to this provision would have no impact on accessibility as it can have for web content where it is exposed.
-                     </p>
-                     <p>Accessibility issues introduced through poor markup would surface as errors in the programmatic information and would be reported using success criteria that rely on that information, such as 1.3.1 정보와 관계 and 4.1.2 이름, 역할, 값.
-                     </p>
+                     <p>마크업은 항상 <a href="#dfn-assistive-technologies">보조 기술</a>이나 사용자가 선택 가능한 브라우저 같은 <a href="#user-agent">사용자 에이전트</a>에 노출되는 것은 아니다. 일부 소프트웨어는 사용자 인터페이스를 내부적으로 저장하기 위해 마크업 언어를 사용하지만, 이러한 마크업은 보조 기술(직접 또는 문서 객체 모델(DOM, document object model)을 통해)이나 사용자 에이전트에 전혀 노출되지 않기도 한다. 이와 같은 경우, 해당 조항을 준수하더라도 접근성에 미치는 영향은 웹 콘텐츠의 경우처럼 크지 않을 수 있다.</p>
+                     <p>잘못된 마크업으로 인해 발생한 접근성 문제는 프로그램적으로 제공되는 정보 오류로 나타나며, 이러한 정보를 활용하는 성공 기준(예: 1.3.1 정보 및 관계, 4.1.2 이름, 역할, 값)을 통해 드러나게 된다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-151">
                   <div role="heading" class="note-title marker" id="h-note-151" aria-level="7"><span>참고 2(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>This success criterion would be satisfied in cases where:</p>
+                     <p>다음의 경우, 본 성공 기준을 준수한 것으로 간주한다:</p>
                      <ul>
-                        <li>Content is implemented using HTML or XML (as outlined in the <a href="https://www.w3.org/TR/WCAG21/#h-note-27">WCAG 2.1 note on 4.1.1</a> and the <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial">WCAG 2.0 editorial errata</a> in the thirteenth list item)</li>
-                        <li>Non-web documents or software are not authored using a markup language.</li>
-                        <li>Non-web documents or software are authored using a markup language, but accessibility information is exposed via platform accessibility APIs, not by making the markup itself available to assistive technologies.</li>
+                        <li>콘텐츠가 HTML 또는 XML로 구현된 경우 (<a href="https://www.w3.org/TR/WCAG21/#h-note-27">WCAG 2.1의 4.1.1 주석</a> 및 <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial">WCAG 2.0 정오표</a> 제13항 참고)</li>
+                        <li>웹이 아닌 문서 또는 소프트웨어가 마크업 언어로 작성되지 않은 경우</li>
+                        <li>웹이 아닌 문서 또는 소프트웨어가 마크업 언어로 작성되었지만, 보조 기술에 접근성 정보를 제공하는 방식이 마크업 자체가 아니라 플랫폼 접근성 API를 통한 경우</li>
                      </ul>
                   </div>
                </div>
                <div class="example wcag2ict">
                   <p>
-                     <span>Example (Added): </span>Examples where 4.1.1 파싱 would be satisfied:
+                     <span>예제 (추가됨): </span>4.1.1 파싱을 충족하는 사례:
                   </p>
                   <ul>
-                     <li>An HTML page embedded inside a desktop application (as outlined in the <a href="https://www.w3.org/TR/WCAG21/#h-note-27">WCAG 2.1 note on 4.1.1</a> and the <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial">WCAG 2.0 editorial errata</a> in the thirteenth list item)</li>
-                     <li>A PDF document (not authored using a markup language)</li>
-                     <li>Android or iOS apps which use a markup language to specify UI layout (accessibility information is exposed via platform accessibility APIs, not the markup)</li>
+                     <li>데스크톱 애플리케이션에 내장된 HTML 페이지 (<a href="https://www.w3.org/TR/WCAG21/#h-note-27">WCAG 2.1의 4.1.1 주석</a> 및 <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial">WCAG 2.0 정오표</a> 제13항 참고)</li>
+                     <li>PDF 문서 (마크업 언어로 작성되지 않은 경우)</li>
+                     <li>UI 레이아웃을 마크업 언어로 지정하는 Android 또는 iOS 앱 (접근성 정보는 마크업이 아닌 플랫폼 접근성 API를 통해 제공됨)</li>
                   </ul>
-                  <p>Examples of markup that might be separately exposed and available to assistive technologies and to user agents include:</p>
+                  <p>보조 기술 및 사용자 에이전트에 인식 가능한 형태로 제공되어 접근 가능한 마크업 사례</p>
                   <ul>
-                     <li>LaTeX documents</li>
-                     <li>Markdown documents</li>
+                     <li>LaTeX 문서</li>
+                     <li>마크다운(Markdown) 문서</li>
                   </ul>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-152">
@@ -4835,8 +4832,7 @@
                   <div role="heading" class="note-title marker" id="h-note-153" aria-level="7"><span>참고(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>WCAG 2.2 has made this success criterion obsolete and removed it as a requirement in the standard. Therefore, the interpretation of this success criterion for <a href="#document">웹이 아닌 문서</a>와 <a href="#software">소프트웨어</a> has been removed.
-                     </p>
+                     <p>WCAG 2.2 에서 이 성공 기준은 폐지되어 표준 요구 사항에서 제외되었다. 이에 따라 <a href="#document">웹이 아닌 문서</a> 및 <a href="#software">소프트웨어</a>에 대한 해석 역시 삭제되었다.</p>
                   </div>
                </div>
             </section>
@@ -4863,33 +4859,31 @@
                   <h6 id="x6-4-2-4-1-applying-sc-4-1-2-name-role-value-to-non-web-documents-and-software">4.1.2 이름, 역할, 값 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용</h6>
                   <a class="self-link" href="#applying-sc-4-1-2-name-role-value-to-non-web-documents-and-software" aria-label="섹션 고유링크- 4.1.2 이름, 역할, 값 성공 기준을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
                </div>
-               <p>이는 원문 그대로 쓰이며, <a href="https://a11ykr.github.io/wai/wcag22/understanding/name-role-value#intent">성공 기준 4.1.2 이해의 의도</a>, replacing the note with: “This success criterion is primarily for software developers who develop or use custom user interface components. For example, standard user interface components on most accessibility-supported platforms already meet this success criterion when used according to specification.”</p>
+               <p>이는 <a href="https://a11ykr.github.io/wai/wcag22/understanding/name-role-value#intent">성공 기준 4.1.2 이해의 의도</a>에서 설명한 바와 같이 원문 그대로 적용되며, 기존 참고 문구를 다음과 같이 대체한다. “이 성공 기준은 주로 사용자 정의 인터페이스 구성요소를 개발하거나 사용하는 소프트웨어 개발자를 위한 것이다. 예를 들어, 대부분의 접근성 지원 플랫폼에서 제공하는 표준 사용자 인터페이스 구성요소는 사양에 따라 사용하면 이미 이 성공 기준을 충족한다.”</p>
                <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
                <p>
-                  <strong>4.1.2 이름, 역할, 값:</strong> For all <a href="#dfn-user-interface-components">user interface components</a> (including but not limited to: form elements, links and components generated by scripts), the <a href="#dfn-name">name</a> and <a href="#dfn-role">role</a> can be <a href="#dfn-programmatically-determinable">programmatically determined</a>; states, properties, and values that can be set by the user can be <a href="#dfn-programmatically-set">programmatically set</a>; and notification of changes to these items is available to <a href="#user-agent">사용자 에이전트s</a>, including <a href="#dfn-assistive-technologies">assistive technologies</a>.
+                  <strong>4.1.2 이름, 역할, 값:</strong> 
+                  모든 <a href="#dfn-user-interface-components">사용자 인터페이스 구성요소</a>(예: 폼 요소, 링크, 스크립트로 생성된 구성요소 등 포함)에 대해, <a href="#dfn-name">이름(name)</a>과 <a href="#dfn-role">역할(role)</a>은 <a href="#dfn-programmatically-determinable">프로그래밍 방식으로 판별</a> 가능해야 하며, 사용자가 설정할 수 있는 상태(state), 속성(property), 값(value)은 <a href="#dfn-programmatically-set">프로그래밍 방식으로 설정</a> 가능해야 하고, 이 항목들의 변경 사항은 <a href="#dfn-assistive-technologies">보조 기술</a>을 포함한 <a href="#user-agent">사용자 에이전트</a>에 전달되어야 한다.
                </p>
                <div class="note" role="note" id="issue-container-generatedID-154">
                   <div role="heading" class="note-title marker" id="h-note-154" aria-level="7"><span>참고 1</span>
                   </div>
                   <div class="">
-                     <p>This success criterion is primarily for software developers who develop or use custom user interface components. Standard user interface components on most <a href="#dfn-accessibility-supported">accessibility-supported</a> platforms already meet this success criterion when used according to specification.
-                     </p>
+                     <p>이 성공 기준은 주로 사용자 정의 인터페이스 구성요소를 개발하거나 사용하는 소프트웨어 개발자를 위한 것이다. 대부분의 <a href="#dfn-accessibility-supported">접근성 지원</a> 플랫폼에서 제공하는 표준 사용자 인터페이스 구성요소는 사양에 따라 사용하면 이미 이 성공 기준을 충족한다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-155">
                   <div role="heading" class="note-title marker" id="h-note-155" aria-level="7"><span>참고 2(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>For conforming to this success criterion, it is usually best practice for software user interfaces to use the accessibility services provided by <a href="#platform-software">플랫폼 소프트웨어</a>. These accessibility services enable interoperability between software user interfaces and both assistive technologies and accessibility features of software in standardized ways. Most platform accessibility services go beyond programmatic exposure of name and role, and programmatic setting of states, properties and values (and notification of same), and specify additional information that could be exposed and / or set (for instance, a list of the available actions for a given user interface component, and a means to programmatically execute one of the listed actions).
-                     </p>
+                     <p>이 성공 기준을 충족하기 위해서는 일반적으로 소프트웨어 사용자 인터페이스가 <a href="#platform-software">플랫폼 소프트웨어</a>에서 제공하는 접근성 서비스를 사용하는 것이 최선의 방법이다. 이러한 접근성 서비스는 소프트웨어 사용자 인터페이스와 보조 기술 및 소프트웨어의 접근성 기능 간의 상호운용성을 표준화된 방식으로 가능하게 한다. 대부분의 플랫폼 접근성 서비스는 이름과 역할의 프로그래밍 방식 노출, 상태·속성·값의 설정 및 변경 알림을 넘어서, 특정 사용자 인터페이스 구성요소에 대해 사용 가능한 동작 목록과 그 중 하나를 프로그래밍 방식으로 실행하는 수단 등의 추가 정보를 정의하기도 한다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-156">
                   <div role="heading" class="note-title marker" id="h-note-156" aria-level="7"><span>참고 3(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>For document formats that support interoperability with assistive technology, standard user interface components often meet this success criterion when used according to the general design and accessibility guidance for the document format.
-                     </p>
+                     <p>보조 기술과의 상호운용을 지원하는 문서 형식의 경우, 해당 문서 형식에 대한 일반적인 설계 및 접근성 지침을 따르면 표준 사용자 인터페이스 구성요소는 대개 이 성공 기준을 충족한다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-157">
@@ -4925,8 +4919,7 @@
                   <div role="heading" class="note-title marker" id="h-note-158" aria-level="7"><span>참고 1(추가됨)</span>
                   </div>
                   <div class="wcag2ict">
-                     <p>For <a href="#document">웹이 아닌 문서</a>와 <a href="#software">소프트웨어</a> where status messages are not implemented using markup languages, there is still a user need to have status messages be programmatically exposed so that they can be presented to the user by assistive technologies without receiving focus. This is typically enabled through the use of accessibility services of the <a href="#user-agent">사용자 에이전트</a>나 <a href="#platform-software">플랫폼 소프트웨어</a>.
-                     </p>
+                     <p>마크업 언어를 사용하지 않는 <a href="#document">웹이 아닌 문서</a> 및<a href="#software">소프트웨어</a>에서도, 상태 메시지를 포커스를 받지 않고도 보조 기술이 사용자에게 전달할 수 있도록 프로그래밍 방식으로 노출해야 한다는 사용자 요구가 존재한다. 이러한 기능은 일반적으로 <a href="#user-agent">사용자 에이전트</a>나 <a href="#platform-software">플랫폼 소프트웨어</a>의 접근성 서비스를 통해 구현된다.</p>
                   </div>
                </div>
                <div class="note" role="note" id="issue-container-generatedID-159">
