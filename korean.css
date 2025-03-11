@@ -39,6 +39,9 @@ h2, h3, h4, h5, h6 {
 			margin-top: 2rem;
 			margin-bottom: 2.5rem;
 		}
+		section:has(> .header-wrapper > h4):first-of-type > .header-wrapper {
+			width: 46%;
+		}
 	}
 	#dfn-accessibility-supported > blockquote.wcag-quote, #dfn-accessibility-supported > blockquote.wcag-quote + section {
 		display: inline-block;
