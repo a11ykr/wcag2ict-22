@@ -49,4 +49,7 @@ h2, h3, h4, h5, h6 {
 		width: 46%;
 		margin: 1% 0;
 	}
+	.break {
+		display:block;
+	}
 }

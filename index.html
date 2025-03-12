@@ -5155,7 +5155,7 @@
       </section>
       <section id="dfn-ambiguous-to-users-in-general">
          <div class="header-wrapper">
-            <h4 id="x7-3-2-dfn-ambiguous-to-users-in-general">일반적으로 사용자에게 애매한<br>(ambiguous to users in general)</h4>
+            <h4 id="x7-3-2-dfn-ambiguous-to-users-in-general">일반적으로 사용자에게 애매한<i class="break"></i>(ambiguous to users in general)</h4>
             <a class="self-link" href="#dfn-ambiguous-to-users-in-general" aria-label="섹션 고유링크- ambiguous to users in general"></a>
          </div>
          <blockquote class="wcag-quote">
@@ -5640,7 +5640,7 @@
       </section>
       <section id="dfn-general-flash-and-red-flash-thresholds">
          <div class="header-wrapper">
-            <h4 id="x7-3-11-dfn-general-flash-and-red-flash-thresholds">일반 번쩍임과 적색 번쩍임 임계값<br>(general flash and red flash thresholds)</h4>
+            <h4 id="x7-3-11-dfn-general-flash-and-red-flash-thresholds">일반 번쩍임과 적색 번쩍임 임계값<i class="break"></i>(general flash and red flash thresholds)</h4>
             <a class="self-link" href="#dfn-general-flash-and-red-flash-thresholds" aria-label="섹션 고유링크- 일반 번쩍임과 적색 번쩍임 임계값"></a>
          </div>
          <blockquote class="wcag-quote">
@@ -6053,7 +6053,7 @@
       </section>
       <section id="dfn-programmatically-determinable">
          <div class="header-wrapper">
-            <h4 id="x7-3-18-dfn-programmatically-determinable">프로그래밍 방식으로 판별되는<br>(programmatically determined)</h4>
+            <h4 id="x7-3-18-dfn-programmatically-determinable">프로그래밍 방식으로 판별되는<i class="break"></i>(programmatically determined)</h4>
             <a class="self-link" href="#dfn-programmatically-determinable" aria-label="섹션 고유링크- 프로그래밍 방식으로 판별되는"></a>
          </div>
          <blockquote class="wcag-quote">
@@ -6149,93 +6149,104 @@
       </section>
       <section id="dfn-relative-luminance">
          <div class="header-wrapper">
-            <h4 id="x7-3-20-dfn-relative-luminance">relative luminance</h4>
-            <a class="self-link" href="#dfn-relative-luminance" aria-label="섹션 고유링크- relative luminance"></a>
+            <h4 id="x7-3-20-dfn-relative-luminance">상대 휘도(relative luminance)</h4>
+            <a class="self-link" href="#dfn-relative-luminance" aria-label="섹션 고유링크- 상대 휘도"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest       black and 1 for lightest white
-            </p>
+            <p>색 공간상에 있는 모든 지점의 상대적 밝기. 가장 어두운 검은색의 경우 0으로, 가장 밝은 흰색의 경우 1로 표준화되어 있음</p>
             <div class="note" id="wcag-noteissue-container-generatedID--136" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--136" role="heading"><span>참고 1</span>
                </div>
                <div class="">
-                  <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126       * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+                  <p>
+                  sRGB 색 공간의 경우, 색의 상대적인 휘도는 L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong>로 정의되는데, 여기에서 <strong>R</strong>, <strong>G</strong>, <strong>B</strong>는 다음과 같다.
                   </p>
                   <ul>
-                     <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4       </li>
-                     <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4       </li>
-                     <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4       </li>
+                     <li>RsRGB &lt;= 0.04045일 경우, <strong>R</strong> = RsRGB/12.92 아니라면 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+                     </li>
+                     <li>GsRGB &lt;= 0.04045일 경우, <strong>G</strong> = GsRGB/12.92 아니라면 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+                     </li>
+                     <li>BsRGB &lt;= 0.04045일 경우, <strong>B</strong> = BsRGB/12.92 아니라면 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+                     </li>
                   </ul>
-                  <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                  <p>RsRGB, GsRGB, BsRGB은 다음과 같이 정의된다.</p>
                   <ul>
                      <li>RsRGB = R8bit/255</li>
                      <li>GsRGB = G8bit/255</li>
                      <li>BsRGB = B8bit/255</li>
                   </ul>
-                  <p>The "^" character is the exponentiation operator. (Formula taken from        [<cite><a class="bibref" data-link-type="biblio" href="https://www.w3.org/TR/wcag22/#bib-srgb" title="Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB">SRGB</a></cite>].)
+                  <p>
+                  "^"는 지수 연산자이다. ([<cite><a class="bibref" data-link-type="biblio" href="#bib-srgb" title="Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB">SRGB</a></cite>]에서 가져온 공식)
                   </p>
                </div>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--137" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--137" role="heading"><span>참고 2</span>
                </div>
-               <p class="">Before May 2021 the value of 0.04045 in the definition was different (0.03928). It was taken from an older version of the specification and has been updated. It has no practical effect on the calculations in the context of these guidelines.
+               <p>
+                  2021년 5월 이전에는 정의의 0.04045 값이 달랐다(0.03928). 이는 이전 버전의 명세서에서 가져와 업데이트되었다. 이는 본 지침의 맥락에서 계산에 실질적인 영향을 미치지 않는다.
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--138" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--138" role="heading"><span>참고 3</span>
                </div>
-               <p class="">Almost all systems used today to view Web content assume sRGB encoding. Unless it       is known that another color space will be used to process and display the content,       authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+               <p>
+                  오늘날 웹 콘텐츠를 보는 데 사용하는 거의 모든 시스템은 sRGB 인코딩을 사용한다고 가정한다. 콘텐츠를 처리하고 표시하기 위하여 다른 색 공간이 사용되지 않는 한, 웹 콘텐츠 저작자는 sRGB 색 공간을 사용하여 평가해야 한다. 다른 색 공간을 사용하는 경우, “<a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum">성공기준 4.1.3 이해</a>”를 참고하라.
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--139" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--139" role="heading"><span>참고 4</span>
                </div>
-               <p class="">If dithering occurs after delivery, then the source color value is used. For colors       that are dithered at the source, the average values of the colors that are dithered       should be used (average R, average G, and average B).
-               </p>
+               <p class="">전달 후 디더링이 발생할 경우, 원본 색상 값이 사용된다. 원본에서 디더링되는 색상의 경우, 디더링되는 색상의 평균값(평균 R, 평균 G, 평균 B)을 사용해야 한다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--140" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--140" role="heading"><span>참고 5</span>
                </div>
-               <p class="">Tools are available that automatically do the calculations when testing contrast and       flash.
-               </p>
+               <p class="">명도대비 및 번쩍임을 검사할 경우, 자동으로 계산해 주는 도구를 사용할 수 있다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--141" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--141" role="heading"><span>참고 6</span>
                </div>
-               <p class="">A <a href="https://www.w3.org/TR/wcag22/relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+               <p>
+                  <a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">상대 휘도 정의를 MathML을 이용한 별도의 페이지</a>를 이용해  수식으로 표시할 수 있다.
                </p>
             </div>
          </blockquote>
          <section id="applying-relative-luminance-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-20-1-applying-relative-luminance-to-non-web-documents-and-software">Applying “relative luminance”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-relative-luminance-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “relative luminance” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-20-1-applying-relative-luminance-to-non-web-documents-and-software">“상대 휘도”를 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-relative-luminance-to-non-web-documents-and-software" aria-label="섹션 고유링크- “상대 휘도”를 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “Web content” with “content”.
-            </p>
+            <p>WCAG 2 용어집 정의를 그대로 적용하되, “웹 콘텐츠”를 “콘텐츠”로 대체한다.</p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <dl>
-               <dt>relative luminance</dt>
+               <dt>상대 휘도</dt>
                <dd>
-                  <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white</p>
+                  <p>색 공간상에 있는 모든 지점의 상대적 밝기. 가장 어두운 검은색의 경우 0으로, 가장 밝은 흰색의 경우 1로 표준화되어 있음</p>
                   <div class="note" role="note" id="issue-container-generatedID-189">
                      <div role="heading" class="note-title marker" id="h-note-189" aria-level="6"><span>참고 1</span>
                      </div>
-                     <div class="">
-                        For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+                      <div class="">
+                        <p>
+                        sRGB 색 공간의 경우, 색의 상대적인 휘도는 L = 0.2126 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong>로 정의되는데, 여기에서 <strong>R</strong>, <strong>G</strong>, <strong>B</strong>는 다음과 같다.
+                        </p>
                         <ul>
-                           <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4</li>
-                           <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4</li>
-                           <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4</li>
+                           <li>RsRGB &lt;= 0.04045일 경우, <strong>R</strong> = RsRGB/12.92 아니라면 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+                           </li>
+                           <li>GsRGB &lt;= 0.04045일 경우, <strong>G</strong> = GsRGB/12.92 아니라면 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+                           </li>
+                           <li>BsRGB &lt;= 0.04045일 경우, <strong>B</strong> = BsRGB/12.92 아니라면 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+                           </li>
                         </ul>
-                        <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                        <p>RsRGB, GsRGB, BsRGB은 다음과 같이 정의된다.</p>
                         <ul>
                            <li>RsRGB = R8bit/255</li>
                            <li>GsRGB = G8bit/255</li>
                            <li>BsRGB = B8bit/255</li>
                         </ul>
-                        <p>The “^” character is the exponentiation operator. (Formula taken from <a href="https://www.w3.org/TR/WCAG22/#bib-srgb">[sRGB]</a>.)</p>
+                        <p>
+                        "^"는 지수 연산자이다. ([<cite><a class="bibref" data-link-type="biblio" href="#bib-srgb" title="Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB">SRGB</a></cite>]에서 가져온 공식)
+                        </p>
                      </div>
                   </div>
                   <p>
@@ -6243,13 +6254,14 @@
                   <div class="note" role="note" id="issue-container-generatedID-190">
                      <div role="heading" class="note-title marker" id="h-note-190" aria-level="6"><span>참고 2</span>
                      </div>
-                     <div class="">Before May 2021 the value of 0.04045 in the definition was different (0.03928). It was taken from an older version of the specification and has been updated. It has no practical effect on the calculations in the context of these guidelines.</div>
+                     <div class="">2021년 5월 이전에는 정의의 0.04045 값이 달랐다(0.03928). 이는 이전 버전의 명세서에서 가져와 업데이트되었다. 이는 본 지침의 맥락에서 계산에 실질적인 영향을 미치지 않는다.</div>
                   </div>
                   <div class="note" role="note" id="issue-container-generatedID-191">
                      <div role="heading" class="note-title marker" id="h-note-191" aria-level="6"><span>참고 3</span>
                      </div>
                      <div class="">
-                        <p>Almost all systems used today to view <ins><strong>[<a href="#content-on-and-off-the-web">content</a>]</strong></ins> assume sRGB encoding. Unless it is known that another color space will be used to process and display the content, authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                        <p>
+                           오늘날 <ins><strong>[<a href="#content-on-and-off-the-web">콘텐츠</a>]</strong></ins>를 보는 데 사용하는 거의 모든 시스템은 sRGB 인코딩을 사용한다고 가정한다. 콘텐츠를 처리하고 표시하기 위하여 다른 색 공간이 사용되지 않는 한, 콘텐츠 저작자는 sRGB 색 공간을 사용하여 평가해야 한다. 다른 색 공간을 사용하는 경우, “<a href="https://a11ykr.github.io/wai/wcag22/understanding/contrast-minimum">성공기준 4.1.3 이해</a>”를 참고하라.
                         </p>
                      </div>
                   </div>
@@ -6259,8 +6271,7 @@
                      <div role="heading" class="note-title marker" id="h-note-192" aria-level="6"><span>참고 4</span>
                      </div>
                      <div class="">
-                        <p>If dithering occurs after delivery, then the source color value is used. For colors that are dithered at the source, the average values of the colors that are dithered should be used (average R, average G, and average B).
-                        </p>
+                        <p>전달 후 디더링이 발생할 경우, 원본 색상 값이 사용된다. 원본에서 디더링되는 색상의 경우, 디더링되는 색상의 평균값(평균 R, 평균 G, 평균 B)을 사용해야 한다.</p>
                      </div>
                   </div>
                   <p>
@@ -6269,8 +6280,7 @@
                      <div role="heading" class="note-title marker" id="h-note-193" aria-level="6"><span>참고 5</span>
                      </div>
                      <div class="">
-                        <p>Tools are available that automatically do the calculations when testing contrast and flash.
-                        </p>
+                        <p>명도대비 및 번쩍임을 검사할 경우, 자동으로 계산해 주는 도구를 사용할 수 있다.</p>
                      </div>
                   </div>
                   <p>
@@ -6279,7 +6289,8 @@
                      <div role="heading" class="note-title marker" id="h-note-194" aria-level="6"><span>참고 6</span>
                      </div>
                      <div class="">
-                        <p>A <a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+                        <p>
+                           <a href="https://www.w3.org/TR/WCAG22/relative-luminance.html">상대 휘도 정의를 MathML을 이용한 별도의 페이지</a>를 이용해  수식으로 표시할 수 있다.
                         </p>
                      </div>
                   </div>
@@ -6289,7 +6300,7 @@
                      <div role="heading" class="note-title marker" id="h-note-195" aria-level="6"><span>참고 7(추가됨)</span>
                      </div>
                      <div class="wcag2ict">
-                        <p>Because relative luminance is defined such that it cannot directly apply to hardware, please note the text in the introduction which reads: “This document does not comment on hardware aspects of products, because the basic constructs on which WCAG 2 is built do not apply to these.”</p>
+                        <p>상대 휘도는 하드웨어에 직접 적용할 수 없도록 정의되어 있기 때문에, 서문에 있는 다음 문구를 참고해야 한다. “이 문서는 제품의 하드웨어 측면에 대해서는 언급하지 않는다. 이는 WCAG 2가 기반하고 있는 기본 개념들이 하드웨어에는 적용되지 않기 때문이다.”</p>
                      </div>
                   </div>
                </dd>
@@ -6300,34 +6311,32 @@
       </section>
       <section id="dfn-role">
          <div class="header-wrapper">
-            <h4 id="x7-3-21-dfn-role">role</h4>
-            <a class="self-link" href="#dfn-role" aria-label="섹션 고유링크- role"></a>
+            <h4 id="x7-3-21-dfn-role">역할(role)</h4>
+            <a class="self-link" href="#dfn-role" aria-label="섹션 고유링크- 역할"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>text or number by which software can identify the function of a component within Web       content
-            </p>
+            <p>소프트웨어가 웹 콘텐츠 내에 있는 구성요소의 기능을 식별할 수 있도록 해 주는 텍스트나 숫자</p>
             <aside class="example" id="example-26">
-               <div class="marker">Example</div>
+               <div class="marker">예제</div>
                <p>
-                  <span>Example: </span>A number that indicates whether an image functions as a hyperlink, command button,       or check box.
+                  <span>예제: </span>이미지가 하이퍼링크, 명령어 버튼 또는 체크박스로 작동하는지 여부를 나타내는 숫자
                </p>
             </aside>
          </blockquote>
          <section id="applying-role-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-21-1-applying-role-to-non-web-documents-and-software">Applying “role”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-role-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “role” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-21-1-applying-role-to-non-web-documents-and-software">“역할”을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-role-to-non-web-documents-and-software" aria-label="섹션 고유링크- “역할”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “Web content” with “content”.
-            </p>
+            <p>WCAG 2 용어집 정의를 그대로 적용하되, “웹 콘텐츠”를 “콘텐츠”로 대체한다.</p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <dl>
-               <dt>role</dt>
+               <dt>역할</dt>
                <dd>
-                  <p>text or number by which software can identify the function of a component within <ins><strong>[<a href="#content-on-and-off-the-web">content</a>]</strong></ins></p>
+                  <p>소프트웨어가 <ins><strong>[<a href="#content-on-and-off-the-web">콘텐츠</a>]</strong></ins> 내에 있는 구성요소의 기능을 식별할 수 있도록 해 주는 텍스트나 숫자</p>
                   <div class="example">
                      <p>
-                        <span>Example: </span>A number that indicates whether an image functions as a hyperlink, command button, or check box.
+                        <span>예제: </span>이미지가 하이퍼링크, 명령어 버튼 또는 체크박스로 작동하는지 여부를 나타내는 숫자
                      </p>
                   </div>
                   <p>
@@ -6336,8 +6345,7 @@
                      <div role="heading" class="note-title marker" id="h-note-196" aria-level="6"><span>참고(추가됨)</span>
                      </div>
                      <div class="wcag2ict">
-                        <p>“AccessibleRole” (or the corresponding term used in different APIs) of the Accessibility API of the platform is an example of such a role.
-                        </p>
+                        <p>플랫폼 접근성 API에서 사용되는 “접근 가능한 역할(AccessibleRole)”(또는 각 접근성 API에서 사용하는 해당 용어)은 이러한 역할을 나타내는 예이다.</p>
                      </div>
                   </div>
                </dd>
@@ -6348,40 +6356,39 @@
       </section>
       <section id="dfn-same-functionality">
          <div class="header-wrapper">
-            <h4 id="x7-3-22-dfn-same-functionality">same functionality</h4>
-            <a class="self-link" href="#dfn-same-functionality" aria-label="섹션 고유링크- same functionality"></a>
+            <h4 id="x7-3-22-dfn-same-functionality">동일한 기능(same functionality)</h4>
+            <a class="self-link" href="#dfn-same-functionality" aria-label="섹션 고유링크- 동일한 기능"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>same result when used</p>
+            <p>사용했을 때 동일한 결과가 도출되는</p>
             <aside class="example" id="example-27">
-               <div class="marker">Example</div>
+               <div class="marker">예제</div>
                <p>
-                  <span>Example: </span>A submit "search" button on one Web page and a "find" button on another Web page may       both have a field to enter a term and list topics in the Web site related to the term       submitted. In this case, they would have the same functionality but would not be labeled       consistently.
+                  <span>예제: </span>한 웹 페이지의 “검색(search)” 버튼과 다른 웹 페이지의 “찾기(find)” 버튼은 모두 검색어를 입력할 수 있는 양식(field)을 가지고 있고, 입력한 검색어와 관련된 주제를 웹사이트 내에 나열한다. 이 경우, 두 버튼은 동일한 기능을 가지고 있지만 레이블이 일관성 있게 부여되지 않은 것이다.
                </p>
             </aside>
          </blockquote>
          <section id="applying-same-functionality-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-22-1-applying-same-functionality-to-non-web-documents-and-software">Applying “same functionality”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-same-functionality-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “same functionality” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-22-1-applying-same-functionality-to-non-web-documents-and-software">“동일한 기능”을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-same-functionality-to-non-web-documents-and-software" aria-label="섹션 고유링크- “동일한 기능”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, adding a second example (and numbering the first).
-            </p>
-            <p>With this addition, it would read:</p>
+            <p>WCAG 2 용어집에 기술된 내용을 따르되 두 번째 예제를 추가하고 첫 번째 예제에 번호를 부여한다.</p>
+            <p>이 추가 사항을 반영하면 다음과 같이 해석된다.</p>
             <dl>
-               <dt>same functionality</dt>
+               <dt>동일한 기능</dt>
                <dd>
-                  <p>same result when used</p>
+                  <p>사용했을 때 동일한 결과가 도출되는</p>
                   <div class="example">
                      <p>
-                        <span>Example 1: </span>A submit “search” button on one Web page and a “find” button on another Web page may both have a field to enter a term and list topics in the Web site related to the term submitted. In this case, they would have the same functionality but would not be labeled consistently.
+                        <span>예제 1: </span>한 웹 페이지의 “검색(search)” 버튼과 다른 웹 페이지의 “찾기(find)” 버튼은 모두 검색어를 입력할 수 있는 양식(field)을 가지고 있고, 입력한 검색어와 관련된 주제를 웹사이트 내에 나열한다. 이 경우, 두 버튼은 동일한 기능을 가지고 있지만 레이블이 일관성 있게 부여되지 않은 것이다.
                      </p>
                   </div>
                   <p>
                   </p>
                   <div class="example">
                      <p>
-                        <span>Example 2: </span>A ribbon icon that saves the document that looks like an arrow pointing into a folder in one case, and an arrow pointing into a hard drive in another. In this case as well, they would have the same functionality but would not be labeled consistently.
+                        <span>예제 2: </span>리본 아이콘 중 하나는 폴더에 화살표가 들어가는 모양이고, 다른 하나는 하드 드라이브에 화살표가 들어가는 모양일 수 있다. 둘 다 문서를 저장하는 기능을 한다면, 동일한 기능이지만 시각적 레이블에 일관성이 없는 경우다.
                      </p>
                   </div>
                </dd>
