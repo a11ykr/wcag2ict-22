@@ -5155,7 +5155,7 @@
       </section>
       <section id="dfn-ambiguous-to-users-in-general">
          <div class="header-wrapper">
-            <h4 id="x7-3-2-dfn-ambiguous-to-users-in-general">일반적으로 사용자에게 애매한(ambiguous to users in general)</h4>
+            <h4 id="x7-3-2-dfn-ambiguous-to-users-in-general">일반적으로 사용자에게 애매한<br>(ambiguous to users in general)</h4>
             <a class="self-link" href="#dfn-ambiguous-to-users-in-general" aria-label="섹션 고유링크- ambiguous to users in general"></a>
          </div>
          <blockquote class="wcag-quote">
@@ -5612,27 +5612,25 @@
       </section>
       <section id="dfn-down-event">
          <div class="header-wrapper">
-            <h4 id="x7-3-10-dfn-down-event">down-event</h4>
-            <a class="self-link" href="#dfn-down-event" aria-label="섹션 고유링크- down-event"></a>
+            <h4 id="x7-3-10-dfn-down-event">다운 이벤트(down-event)</h4>
+            <a class="self-link" href="#dfn-down-event" aria-label="섹션 고유링크- 다운 이벤트"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>platform event that occurs  when the trigger stimulus of a pointer is depressed</p>
-            <p>The down-event may have different names on different platforms, such as "touchstart" or "mousedown".
-            </p>
+            <p>포인터의 트리거 자극을 눌렀을 때 발생하는 플랫폼 이벤트</p>
+            <p>다운이벤트는, “터치 스타트(touchstart)” 또는 “마우스다운(mousedown)”과 같이, 플랫폼에 따라 다른 이름으로 불릴 수 있다.</p>
          </blockquote>
          <section id="applying-down-event-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-10-1-applying-down-event-to-non-web-documents-and-software">Applying “down-event”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-down-event-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “down-event” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-10-1-applying-down-event-to-non-web-documents-and-software">“다운 이벤트”를 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-down-event-to-non-web-documents-and-software" aria-label="섹션 고유링크- “다운 이벤트”를 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary.
-               &nbsp;
-            </p>
+            <p>WCAG 2 용어집에서 정의된 내용을 그대로 적용한다.</p>
             <div class="note" role="note" id="issue-container-generatedID-171">
                <div role="heading" class="note-title marker" id="h-note-171" aria-level="6"><span>참고(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  <p>The down-event may have different names on different platforms. For example <ins><strong>["PointerPressed” or “mousedown”]</strong></ins>.
+                  <p>
+                     "다운이벤트는 플랫폼에 따라 명칭이 다를 수 있으며, 예를 들어 <ins><strong>["포인터 프레스드(PointerPressed)” 또는 “마우스다운(mousedown)”]</strong></ins>과 같이 불릴 수 있다."
                   </p>
                </div>
             </div>
@@ -5642,61 +5640,60 @@
       </section>
       <section id="dfn-general-flash-and-red-flash-thresholds">
          <div class="header-wrapper">
-            <h4 id="x7-3-11-dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</h4>
-            <a class="self-link" href="#dfn-general-flash-and-red-flash-thresholds" aria-label="섹션 고유링크- general flash and red flash thresholds"></a>
+            <h4 id="x7-3-11-dfn-general-flash-and-red-flash-thresholds">일반 번쩍임과 적색 번쩍임 임계값<br>(general flash and red flash thresholds)</h4>
+            <a class="self-link" href="#dfn-general-flash-and-red-flash-thresholds" aria-label="섹션 고유링크- 일반 번쩍임과 적색 번쩍임 임계값"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-flashes" id="ref-for-dfn-flashes-4" title="a pair of opposing changes in relative luminance that can cause seizures in some people if it is large enough and in the right frequency range">flash</a>나 rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+            <p>
+               <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-flashes-4" title="충분히 크고 적절한 주파수 범위에 있지만 일부 사람들에게 발작을 일으킬 수 있는 상대 휘도에서의 상반되는 변경의 쌍">번쩍임</a> 또는 연속된 이미지의 빠른 변화가 다음 중 하나에 해당되는 경우 임계값 이하(즉, 콘텐츠 <strong>통과</strong>)이다.
             </p>
             <ol>
-               <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or       </li>
-               <li>the combined area of flashes occurring concurrently occupies no more than a total          of .006 steradians within any 10 degree visual field on the screen (25% of any 10          degree visual field on the screen) at typical viewing distance       </li>
+               <li>1초 이내에 3회 이하의 <strong>일반 번쩍임</strong>과 <strong>적색 번쩍임</strong>이 있다.</li>
+               <li>동시에 발생하는 번쩍임의 결합 영역이 일반적인 시야 거리의 화면에서 10도 시야 범위 내에서 총 0.006의 스테라디안(10도 시야 범위 내 화면의 25%)보다 적게 차지한다.</li>
             </ol>
-            <p>where:</p>
+            <p>여기서:</p>
             <ul>
-               <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-relative-luminance" id="ref-for-dfn-relative-luminance-4" title="the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white">relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance of          the darker image is below 0.80; and where "a pair of opposing changes" is an increase          followed by a decrease, or a decrease followed by an increase, and       </li>
-               <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red       </li>
+               <li><strong>일반 번쩍임</strong>은 더 어두운 이미지의 <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relative-luminance-4" title="색 공간상에 있는 모든 지점의 상대적 밝기. 가장 어두운 검은색의 경우 0으로, 가장 밝은 흰색의 경우 1로 표준화되어 있음">상대 휘도</a>가 0.80 이하일 때 최대 상대 휘도(1.0) 기준으로 10% 이상의 변화가 있는 한 쌍이 상반되게 전환하는 상태로 정의한다. “한 쌍이 서로 상반되게 전환하는 상태”는 휘도가 증가했다가 감소하거나 감소했다가 증가하는 경우를 말한다.</li>
+               <li><strong>적색 번쩍임</strong>은 강렬한 적색을 포함해 상반되는 전환의 쌍으로 정의한다.</li>
             </ul>
             <p>
-               <em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating       checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical       viewing distance) on a side does not violate the thresholds.
+               <em>예외:</em> 백색잡음(white noise)이나 측면에 0.1도(일반적인 시야 거리의 가시범위)보다 더 작은 “사각형” 모양으로 교차하는 바둑판 패턴과 같은 미세하고 균형 잡힌 패턴으로 번쩍이는 경우는 임계값을 위반한 것이 아니다.
             </p>
+            <p>[역자주] 백색잡음(white noise)은 송출 중이 아닌 TV 화면 전체에 작은 불규칙적인 점들이 고르게 분포된 모습처럼 모든 색상의 빛이 고르게 혼합된 무작위 패턴을 말하기도 한다.</p>
             <div class="note" id="wcag-noteissue-container-generatedID--101" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--101" role="heading"><span>참고 1</span>
                </div>
-               <p class="">For general software or Web content, using a 341 x 256 pixel rectangle anywhere on the displayed screen area when the content is viewed at 1024 x 768 pixels will provide a good estimate of a 10 degree visual field for standard screen sizes and viewing distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi is known to be lower, and thus more conservative than the nominal CSS pixel resolution of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering of the content yield smaller and safer images so it is lower resolutions that are used to define the thresholds.
-               </p>
+               <p class="">일반 소프트웨어 또는 웹 콘텐츠의 경우, 콘텐츠를 1024×768픽셀에서 볼 때 디스플레이된 화면 영역의 어느 곳에서나 341×256픽셀의 직사각형을 사용하면 표준 화면크기와 시청거리(예: 22-26인치 거리에 있는 15-17인치 크기의 화면)에 대해 10도의 시야각을 예측할 수 있다. (동일한 콘텐츠 렌더링을 보여주는 고해상도 디스플레이는 더 작고 안전한 이미지를 산출하므로 임계값을 정의하는 데 사용되는 해상도가 더 낮다.)</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--102" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--102" role="heading"><span>참고 2</span>
                </div>
-               <p class="">A transition is the change in relative luminance (or relative luminance/color for       red flashing) between adjacent peaks and valleys in a plot of relative luminance (or       relative luminance/color for red flashing) measurement against time. A flash consists       of two opposing transitions.
-               </p>
+               <p class="">전환(transition)이란 시간 대비 상대 휘도(또는 적색 번쩍임에 대한 상대 휘도/색상) 측정 도표에서 인접한 최대값과 최소값 간의 상대 휘도(또는 적색 번쩍임에 대한 상대 휘도/색상)의 변화를 말한다. 번쩍임은 두 개의 상반되는 전환으로 구성된다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--103" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--103" role="heading"><span>참고 3</span>
                </div>
-               <p class="">The new working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> (from WCAG 2.2) is a pair of opposing transitions where, one transition is either to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8, and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS chromaticity diagram. [<cite><a class="bibref" data-link-type="biblio" href="https://www.w3.org/TR/wcag22/#bib-iso_9241-391" title="Ergonomics of human-system interaction—Part 391: Requirements, analysis and compliance test methods for the reduction of photosensitive seizures">ISO_9241-391</a></cite>] </p>
+               <p>
+                  <strong>"강렬한 적색이 포함된 상반되는 전환의 쌍"</strong>에 대한 (WCAG 2.2에서) 새로운 정의는 다음과 같다. 한 쪽의 R/(R + G + B) 값이 0.8이상이고 CIE 1976 UCS 색도도(chromaticity diagram)에서 반대 쪽과의 차이가 0.2(단위 없음)보다 큰 한 쌍의 전환이다. [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso_9241-391" title="Ergonomics of human-system interaction—Part 391: Requirements, analysis and compliance test methods for the reduction of photosensitive seizures">ISO_9241-391</a></cite>]
+               </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--104" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--104" role="heading"><span>참고 4</span>
                </div>
-               <p class="">Tools are available that will carry out analysis from video screen capture. However,       no tool is necessary to evaluate for this condition if flashing is less than or equal       to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
-               </p>
+               <p class="">비디오 화면 캡처에서 분석을 수행할 수 있는 도구가 있다. 그러나 깜빡임이 1초에 3회 이하인 경우, 이 상태를 평가하기 위해서는 어떠한 도구도 필요하지 않다. 콘텐츠는 자동으로 통과된다(위의 1번과 2번 참고).</p>
             </div>
          </blockquote>
          <section id="applying-general-flash-and-red-flash-thresholds-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-11-1-applying-general-flash-and-red-flash-thresholds-to-non-web-documents-and-software">Applying “general flash and red flash thresholds”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-general-flash-and-red-flash-thresholds-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “general flash and red flash thresholds” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-11-1-applying-general-flash-and-red-flash-thresholds-to-non-web-documents-and-software">“일반 번쩍임과 적색 번쩍임 임계값”을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-general-flash-and-red-flash-thresholds-to-non-web-documents-and-software" aria-label="섹션 고유링크- “일반 번쩍임과 적색 번쩍임 임계값”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary.
-            </p>
+            <p>WCAG 2 용어집에서 정의된 내용을 그대로 적용한다.</p>
             <div class="note" role="note" id="issue-container-generatedID-172">
                <div role="heading" class="note-title marker" id="h-note-172" aria-level="6"><span>참고(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  <p>Because this deals with relative luminance and not luminance, it can only be applied to information on a display, not to hardware sources of light.
-                  </p>
+                  <p>이 기준은 휘도가 아니라 상대 휘도(relative luminance)를 다루기 때문에, 디스플레이에 표시되는 정보에만 적용되며, 하드웨어의 광원에는 적용할 수 없다.</p>
                </div>
             </div>
             <p>
@@ -5705,46 +5702,46 @@
       </section>
       <section id="dfn-input-error">
          <div class="header-wrapper">
-            <h4 id="x7-3-12-dfn-input-error">input error</h4>
-            <a class="self-link" href="#dfn-input-error" aria-label="섹션 고유링크- input error"></a>
+            <h4 id="x7-3-12-dfn-input-error">입력 오류(input error)</h4>
+            <a class="self-link" href="#dfn-input-error" aria-label="섹션 고유링크- 입력 오류"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>information provided by the user that is not accepted</p>
+            <p>사용자가 제공하였으나 수용되지 않는 정보</p>
             <div class="note" id="wcag-noteissue-container-generatedID--109" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--109" role="heading"><span>참고</span>
                </div>
                <div class="">
-                  <p>This includes:</p>
+                  <p>여기에는 다음과 같은 것이 포함된다.</p>
                   <ol>
-                     <li>Information that is required by the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-web-page-s" id="ref-for-dfn-web-page-s-18" title="a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a user agent">Web page</a> but omitted by the user       </li>
-                     <li>Information that is provided by the user but that falls outside the required data          format or values       </li>
+                     <li><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-18" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 리소스(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 리소스">웹 페이지</a>에 필요하지만 사용자가 빠뜨린 정보</li>
+                     <li>사용자가 제공하지만 필요한 데이터 형식 또는 허용 값을 벗어나는 정보</li>
                   </ol>
                </div>
             </div>
          </blockquote>
          <section id="applying-input-error-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-12-1-applying-input-error-to-non-web-documents-and-software">Applying “input error”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-input-error-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “input error” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-12-1-applying-input-error-to-non-web-documents-and-software">“입력 오류”를 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-input-error-to-non-web-documents-and-software" aria-label="섹션 고유링크- “입력 오류”를 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “Web page” with “웹이 아닌 문서나 소프트웨어”.
+            <p>WCAG 2 용어집 정의를 그대로 적용하되, “웹 페이지”를 “웹이 아닌 문서나 소프트웨어”로 대체한다.
             </p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <dl>
-               <dt>input error</dt>
+               <dt>입력 오류</dt>
                <dd>
-                  <p>information provided by the user that is not accepted</p>
+                  <p>사용자가 제공하였으나 수용되지 않는 정보</p>
                   <div class="note" role="note" id="issue-container-generatedID-173">
                      <div role="heading" class="note-title marker" id="h-note-173" aria-level="6"><span>참고</span>
                      </div>
                      <div class="">
-                        This includes:
+                        여기에는 다음과 같은 것이 포함된다.
                         <ol>
                            <li>
-                              <p>Information that is required by the <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins> but omitted by the user</p>
+                              <p><ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins>에 필요하지만 사용자가 빠뜨린 정보</p>
                            </li>
                            <li>
-                              <p>Information that is provided by the user but that falls outside the required data format or values</p>
+                              <p>사용자가 제공하지만 필요한 데이터 형식 또는 허용 값을 벗어나는 정보</p>
                            </li>
                         </ol>
                      </div>
