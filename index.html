@@ -757,7 +757,7 @@
                      </ol>
                   </li>
                   <li class="tocline">
-                     <a class="tocxref" href="#dfn-conforming-alternate-versions">conforming alternate version</a>
+                     <a class="tocxref" href="#dfn-conforming-alternate-versions">준수 대체 버전</a>
                      <ol class="toc">
                      </ol>
                   </li>
@@ -5189,63 +5189,60 @@
       </section>
       <section id="dfn-assistive-technologies">
          <div class="header-wrapper">
-            <h4 id="x7-3-3-dfn-assistive-technologies">assistive technology</h4>
+            <h4 id="x7-3-3-dfn-assistive-technologies">보조 기술(assistive technology)</h4>
             <a class="self-link" href="#dfn-assistive-technologies" aria-label="섹션 고유링크- assistive technology"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>hardware and/or software that acts as a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-agents" id="ref-for-dfn-user-agents-6" title="any software that retrieves and presents Web content for users">사용자 에이전트</a>, or along with a mainstream user agent, to provide functionality to meet the requirements       of users with disabilities that go beyond those offered by mainstream user agents
+            <p>
+               <a class="internalDFN" data-link-type="dfn" href="#dfn-user-agents" id="ref-for-dfn-user-agents-6" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 모든 소프트웨어">사용자 에이전트</a> 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애가 있는 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어
             </p>
             <div class="note" id="wcag-noteissue-container-generatedID--65" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--65" role="heading"><span>참고 1</span>
                </div>
-               <p class="">Functionality provided by assistive technology includes alternative presentations       (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,       voice), additional navigation or orientation mechanisms, and content transformations       (e.g., to make tables more accessible).
-               </p>
+               <p>보조 기술이 제공하는 기능에는 대체 표현(예: 합성 음성이나 확대된 콘텐츠), 대체 입력 방법(예: 음성), 추가적인 탐색이나 방향 찾기 기능, 콘텐츠 변환(예: 표를 더 접근성 있게 만들기) 등이 포함된다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--66" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--66" role="heading"><span>참고 2</span>
                </div>
-               <p class="">Assistive technologies often communicate data and messages with mainstream user agents       by using and monitoring APIs.
-               </p>
+               <p>보조 기술은 API를 사용하고 모니터링하여 주류 사용자 에이전트와 데이터 및 메시지를 주고받는 경우가 많다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--67" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--67" role="heading"><span>참고 3</span>
                </div>
-               <p class="">The distinction between mainstream user agents and assistive technologies is not absolute.     Many mainstream user agents provide some features to assist individuals with disabilities.     The basic difference is that mainstream user agents target broad and diverse audiences       that usually include people with and without disabilities. Assistive technologies       target narrowly defined populations of users with specific disabilities. The assistance       provided by an assistive technology is more specific and appropriate to the needs       of its target users. The mainstream user agent may provide important functionality       to assistive technologies like retrieving Web content from program objects or parsing       markup into identifiable bundles.
-               </p>
+               <p>주류 사용자 에이전트와 보조 기술의 구분이 절대적인 것은 아니다. 많은 주류 사용자 에이전트가 장애가 있는 개인을 지원하는 일부 기능을 제공한다. 기본적인 차이는 주류 사용자 에이전트가 일반적으로 장애가 있는 사람과 없는 사람을 모두 포함하는 광범위하고 다양한 사용자를 대상으로 한다는 점이다. 보조 기술은 특정 장애가 있는 사용자의 좁게 정의된 집단을 대상으로 한다. 보조 기술이 제공하는 지원은 대상 사용자의 요구에 더 구체적이고 적절하다. 주류 사용자 에이전트는 프로그램 객체에서 웹 콘텐츠를 검색하거나 마크업을 식별 가능한 번들로 구문 분석하는 것과 같이 보조 기술에 중요한 기능을 제공할 수 있다.</p>
             </div>
             <aside class="example" id="example-6">
-               <div class="marker">Example</div>
+               <div class="marker">예제</div>
                <p>
-                  <span>Example: </span>Assistive technologies that are important in the context of this document include       the following:
+                  <span>예제: </span>이 문서의 맥락에서 중요하게 여겨지는 보조 기술은 다음과 같은 것을 포함한다.
                </p>
                <ul>
-                  <li>screen magnifiers, and other visual reading assistants, which are used by people with          visual, perceptual and physical print disabilities to change text font, size, spacing,          color, synchronization with speech, etc. in order to improve the visual readability          of rendered text and images;       </li>
-                  <li>screen readers, which are used by people who are blind to read textual information          through synthesized speech or braille;       </li>
-                  <li>text-to-speech software, which is used by some people with cognitive, language, and          learning disabilities to convert text into synthetic speech;       </li>
-                  <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                  <li>alternative keyboards, which are used by people with certain physical disabilities          to simulate the keyboard (including alternate keyboards that use head pointers, single          switches, sip/puff and other special input devices.);       </li>
-                  <li>alternative pointing devices, which are used by people with certain physical disabilities          to simulate mouse pointing and button activations.     </li>
-               </ul>
+                  <li>시각장애, 지각장애, 인쇄물 판독 장애를 지닌 사용자가 렌더링된 텍스트 및 이미지의 시각적 가독성을 개선하기 위해 텍스트 글꼴, 크기, 간격, 색상, 음성 동기화 등을 변경하기 위하여 사용하는 화면 확대기와 기타 시각적 읽기 보조장치</li>
+                  <li>시각장애인이 합성된 음성 또는 점자를 통해 텍스트 정보를 읽기 위해 사용하는 화면낭독기</li>
+                  <li>인지장애, 언어장애, 학습장애를 지닌 사용자가 텍스트를 합성 음성으로 변환하기 위하여 사용하는 문자를 음성으로 변환해 주는(TTS) 소프트웨어</li>
+                  <li>특정 신체장애를 지닌 사용자가 사용할 수 있는 음성 인식 소프트웨어</li>
+                  <li>특정 신체장애를 지닌 사용자가 키보드를 시뮬레이션하기 위하여 사용하는 대체 키보드(헤드 포인터, 단일 스위치, 들여마시기/불기(sip/puff) 입력 보조 장치 및 기타 특수 입력 장치를 사용하는 대체 키보드 포함)</li>
+                  <li>특정 신체장애를 지닌 사용자가 마우스 포인팅 및 버튼 작동을 시뮬레이션하기 위하여 사용하는 대체 포인팅 장치</li>
+                </ul>
             </aside>
          </blockquote>
          <section id="applying-assistive-technology-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-3-1-applying-assistive-technology-to-non-web-documents-and-software">Applying “assistive technology”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-assistive-technology-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “assistive technology” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-3-1-applying-assistive-technology-to-non-web-documents-and-software">"보조 기술"의 웹이 아닌 문서 및 소프트웨어 적용</h5>
+
+               <a class="self-link" href="#applying-assistive-technology-to-non-web-documents-and-software" aria-label="섹션 고유링크- “보조 기술” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “acts as a user agent” with “acts stand-alone”, replacing “a mainstream user agent” with “mainstream information and communication technologies (ICT)” (later “mainstream ICT”), and replacing “Web content” with “content”.
-            </p>
+            <p>이 정의는 WCAG 2 용어집에서 "웹 콘텐츠"를 "웹이 아닌 문서나 소프트웨어"로 대체하여 적용된다.</p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <dl>
-               <dt>assistive technology (as used in this document)</dt>
+               <dt>보조 기술(이 문서에서 사용된 대로)</dt>
                <dd>
-                  <p>hardware and/or software that acts <ins><strong>[stand-alone]</strong></ins>, or along with <ins><strong>[mainstream information and communication technologies (ICT)]</strong></ins>, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by <ins><strong>[mainstream ICT]</strong></ins></p>
+                  <p><ins><strong>[독립적으로(stand-alone)]</strong></ins> 작동하거나 <ins><strong>[주류 정보통신기술(ICT)]</strong></ins>과 함께 작동하며, <ins><strong>[주류 ICT]</strong></ins>가 제공하는 것 이상의, 장애가 있는 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어</p>
                   <div class="note" role="note" id="issue-container-generatedID-161">
                      <div role="heading" class="note-title marker" id="h-note-161" aria-level="6"><span>참고 1</span>
                      </div>
                      <div class="">
-                        <p>Functionality provided by assistive technology includes alternative presentations (e.g., as synthesized speech or magnified content), alternative input methods (e.g., voice), additional navigation or orientation mechanisms, and content transformations (e.g., to make tables more accessible).
-                        </p>
+                        <p>보조 기술이 제공하는 기능에는 대체 표현(예: 합성 음성이나 확대된 콘텐츠), 대체 입력 방법(예: 음성), 추가적인 탐색이나 방향 찾기 기능, 콘텐츠 변환(예: 표를 더 접근성 있게 만들기) 등이 포함된다.</p>
                      </div>
                   </div>
                   <p>
@@ -5254,8 +5251,7 @@
                      <div role="heading" class="note-title marker" id="h-note-162" aria-level="6"><span>참고 2</span>
                      </div>
                      <div class="">
-                        <p>Assistive technologies often communicate data and messages with <ins><strong>[mainstream ICTs]</strong></ins> by using and monitoring APIs.
-                        </p>
+                        <p>보조 기술은 API를 사용하고 모니터링하여 <ins><strong>[주류 ICT]</strong></ins>와 데이터 및 메시지를 주고받는 경우가 많다.</p>
                      </div>
                   </div>
                   <p>
@@ -5264,23 +5260,22 @@
                      <div role="heading" class="note-title marker" id="h-note-163" aria-level="6"><span>참고 3</span>
                      </div>
                      <div class="">
-                        <p>The distinction between <ins><strong>[mainstream ICTs]</strong></ins> and assistive technologies is not absolute. Many <ins><strong>[mainstream ICTs]</strong></ins> provide some features to assist individuals with disabilities. The basic difference is that <ins><strong>[mainstream ICTs]</strong></ins> target broad and diverse audiences that usually include people with and without disabilities. Assistive technologies target narrowly defined populations of users with specific disabilities. The assistance provided by an assistive technology is more specific and appropriate to the needs of its target users. The <ins><strong>[mainstream ICT]</strong></ins> may provide important functionality to assistive technologies like retrieving <ins><strong>[<a href="#content-on-and-off-the-web">content</a>]</strong></ins> from program objects or parsing markup into identifiable bundles.
-                        </p>
+                        <p><ins><strong>[주류 ICT]</strong></ins>와 보조 기술의 구분이 절대적인 것은 아니다. 많은 <ins><strong>[주류 ICT]</strong></ins>가 장애가 있는 개인을 지원하는 일부 기능을 제공한다. 기본적인 차이는 <ins><strong>[주류 ICT]</strong></ins>가 일반적으로 장애가 있는 사람과 없는 사람을 모두 포함하는 광범위하고 다양한 사용자를 대상으로 한다는 점이다. 보조 기술은 특정 장애가 있는 사용자의 좁게 정의된 집단을 대상으로 한다. 보조 기술이 제공하는 지원은 대상 사용자의 요구에 더 구체적이고 적절하다. <ins><strong>[주류 ICT]</strong></ins>는 프로그램 객체에서 <ins><strong>[<a href="#content-on-and-off-the-web">콘텐츠</a>]</strong></ins>를 검색하거나 마크업을 식별 가능한 번들로 구문 분석하는 것과 같이 보조 기술에 중요한 기능을 제공할 수 있다.</p>
                      </div>
                   </div>
                   <p>
                   </p>
                   <div class="example">
                      <p>
-                        <span>Example: </span>Assistive technologies that are important in the context of this document include the following:
+                        <span>예제: </span>이 문서의 맥락에서 중요한 보조 기술에는 다음이 포함된다.
                      </p>
                      <ul>
-                        <li>screen magnifiers, and other visual reading assistants, which are used by people with visual, perceptual and physical print disabilities to change text font, size, spacing, color, synchronization with speech, etc. in order to improve the visual readability of rendered text and images;    </li>
-                        <li>screen readers, which are used by people who are blind to read textual information through synthesized speech or braille;</li>
-                        <li>text-to-speech software, which is used by some people with cognitive, language, and learning disabilities to convert text into synthetic speech;</li>
-                        <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                        <li>alternative keyboards, which are used by people with certain physical disabilities to simulate the keyboard (including alternate keyboards that use head pointers, single switches, sip/puff and other special input devices.);</li>
-                        <li>alternative pointing devices, which are used by people with certain physical disabilities to simulate mouse pointing and button activations.</li>
+                        <li>시각장애, 지각장애, 인쇄물 판독 장애를 지닌 사용자가 렌더링된 텍스트 및 이미지의 시각적 가독성을 개선하기 위해 텍스트 글꼴, 크기, 간격, 색상, 음성 동기화 등을 변경하기 위하여 사용하는 화면 확대기와 기타 시각적 읽기 보조장치</li>
+                        <li>시각장애인이 합성된 음성 또는 점자를 통해 텍스트 정보를 읽기 위해 사용하는 화면낭독기</li>
+                        <li>인지장애, 언어장애, 학습장애를 지닌 사용자가 텍스트를 합성 음성으로 변환하기 위하여 사용하는 문자를 음성으로 변환해 주는(TTS) 소프트웨어</li>
+                        <li>특정 신체장애를 지닌 사용자가 사용할 수 있는 음성 인식 소프트웨어</li>
+                        <li>특정 신체장애를 지닌 사용자가 키보드를 시뮬레이션하기 위하여 사용하는 대체 키보드(헤드 포인터, 단일 스위치, 들여마시기/불기(sip/puff) 입력 보조 장치 및 기타 특수 입력 장치를 사용하는 대체 키보드 포함)</li>
+                        <li>특정 신체장애를 지닌 사용자가 마우스 포인팅 및 버튼 작동을 시뮬레이션하기 위하여 사용하는 대체 포인팅 장치</li>
                      </ul>
                   </div>
                </dd>
@@ -5289,78 +5284,62 @@
       </section>
       <section id="dfn-change-of-context">
          <div class="header-wrapper">
-            <h4 id="x7-3-4-dfn-change-of-context">changes of context</h4>
-            <a class="self-link" href="#dfn-change-of-context" aria-label="섹션 고유링크- changes of context"></a>
+            <h4 id="x7-3-4-dfn-change-of-context">맥락의 변화(changes of context)</h4>
+            <a class="self-link" href="#dfn-change-of-context" aria-label="섹션 고유링크- 맥락의 변화"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>major changes that, if made without user awareness, can disorient users who are not able to view       the entire page simultaneously
-            </p>
-            <p>Changes in context include changes of:</p>
+            <p>사용자가 인식하지 못한 채 실행되면 전체 페이지를 동시에 볼 수 없는 사용자에게 혼란을 줄 수 있는 중요한 변화</p>
+            <p>맥락에서의 변화는 다음과 같은 변경을 포함한다.</p>
             <ol>
-               <li><a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-agents" id="ref-for-dfn-user-agents-7" title="any software that retrieves and presents Web content for users">사용자 에이전트</a>;       </li>
-               <li><a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-viewport" id="ref-for-dfn-viewport-1" title="object in which the user agent presents content">viewport</a>;       </li>
-               <li>focus;</li>
-               <li><a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-content" id="ref-for-dfn-content-2" title="information and sensory experience to be communicated to the user by means of a user agent, including code or markup that defines the content's structure, presentation, and interactions">content</a> that changes the meaning of the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-web-page-s" id="ref-for-dfn-web-page-s-17" title="a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a user agent">Web page</a> </li>
+               <li><a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-7" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a></li>
+               <li><a href="#dfn-viewport" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-viewport-1" title="object in which the user agent presents content">뷰포트</a></li>
+               <li>초점(focus)</li>
+               <li><a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-17" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 리소스(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 리소스">웹 페이지</a>의 의미를 변경하는 콘텐츠</li>
             </ol>
             <div class="note" id="wcag-noteissue-container-generatedID--82" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--82" role="heading"><span>참고</span>
                </div>
-               <p class="">A change of content is not always a change of context. Changes in content, such as       an expanding outline, dynamic menu, or a tab control do not necessarily change the       context, unless they also change one of the above (e.g., focus).
-               </p>
+               <p>
+                  콘텐츠가 변경되었다고 해서 항상 맥락이 변경된 것은 아니다. 확장 개요(outline), 동적 메뉴 또는 탭 제어와 같은 콘텐츠의 변경은 앞에서 언급한 것 중 하나(예: 초점)가 변경되지 않는 한 반드시 맥락이 변경된 것은 아니다.
+                </p>
             </div>
             <aside class="example" id="example-7">
-               <div class="marker">Example</div>
+               <div class="marker">예제</div>
                <p>
-                  <span>Example: </span>Opening a new window, moving focus to a different component, going to a new page (including       anything that would look to a user as if they had moved to a new page) or significantly       re-arranging the content of a page are examples of changes of context.
+                  새 창 열기, 다른 구성요소로 초점 이동, 새 페이지로 이동(사용자가 새 페이지로 이동한 것처럼 보이는 모든 항목 포함) 또는 페이지 내용을 대대적으로 재배치하는 것 등이 맥락 변경의 예이다.
                </p>
             </aside>
          </blockquote>
          <section id="applying-changes-of-context-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-4-1-applying-changes-of-context-to-non-web-documents-and-software">Applying “changes of context”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-changes-of-context-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “changes of context” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-4-1-applying-changes-of-context-to-non-web-documents-and-software">"맥락의 변화"를 웹이 아닌 문서 및 소프트웨어 적용</h5>
+               <a class="self-link" href="#applying-changes-of-context-to-non-web-documents-and-software" aria-label="섹션 고유링크- '맥락의 변화'를 웹이 아닌 문서 및 소프트웨어 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “page” with “non-web document or content presented by software”.
-            </p>
-            <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
+            <p>이 정의는 WCAG 2 용어집에서 "웹 페이지"를 "웹이 아닌 문서나 소프트웨어"로 대체하여 적용된다.</p>
+            <p>이러한 대체 용어를 적용하여 다음과 같이 서술한다.</p>
             <dl>
-               <dt>changes of context</dt>
+               <dt>맥락의 변화</dt>
                <dd>
-                  <p>major changes that, if made without user awareness, can disorient users who are not able to view the entire <ins><strong><a href="#document">웹이 아닌 문서</a>나 <a href="#content-on-and-off-the-web">content</a> presented by <a href="#software">소프트웨어</a>]</strong></ins> simultaneously</p>
-                  <p>Changes in context include changes of:</p>
+                  <p>사용자가 인식하지 못한 채 실행되면 전체 <ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>가 표시하는 <a href="#content-on-and-off-the-web">콘텐츠</a>]</strong></ins>를 동시에 볼 수 없는 사용자에게 혼란을 줄 수 있는 중요한 변화</p>
+                  <p>맥락의 변화에는 다음의 변화가 포함된다.</p>
                   <ol>
-                     <li>
-                        <p>
-                           <a href="#dfn-user-agents">사용자 에이전트</a>;
-                        </p>
-                     </li>
-                     <li>
-                        <p>
-                           <a href="#dfn-viewport">viewport</a>;
-                        </p>
-                     </li>
-                     <li>
-                        <p>focus;</p>
-                     </li>
-                     <li>
-                        <p>
-                           <a href="#dfn-content">content</a> that changes the meaning of the <ins><strong>[non-web document or content presented by software]</strong></ins>.
-                        </p>
-                     </li>
+                     <li><a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-7" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a></li>
+                     <li><a href="#dfn-viewport" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-viewport-1" title="사용자 에이전트가 콘텐츠를 표시하는 객체">뷰포트</a></li>
+                     <li>초점(focus)</li>
+                     <li><ins><strong>[<a href="#document">웹이 아닌 문서</a>나 <a href="#software">소프트웨어</a>]</strong></ins>의 의미를 변경하는 콘텐츠</li>
                   </ol>
                   <div class="note" role="note" id="issue-container-generatedID-164">
                      <div role="heading" class="note-title marker" id="h-note-164" aria-level="6"><span>참고 1</span>
                      </div>
                      <div class="">
-                        <p>A change of content is not always a change of context. Changes in content, such as an expanding outline, dynamic menu, or a tab control do not necessarily change the context, unless they also change one of the above (e.g., focus).
-                        </p>
+                        <p>콘텐츠가 변경되었다고 해서 항상 맥락이 변경된 것은 아니다. 확장 개요(outline), 동적 메뉴 또는 탭 제어와 같은 콘텐츠의 변경은 앞에서 언급한 것 중 하나(예: 초점)가 변경되지 않는 한 반드시 맥락이 변경된 것은 아니다.</p>
                      </div>
                   </div>
                   <p>
                   </p>
                   <div class="example">
                      <p>
-                        <span>Example: </span>Opening a new window, moving focus to a different component, going to a new page (including anything that would look to a user as if they had moved to a new page) or significantly re-arranging the content of a page are examples of changes of context.
+                        <span>예제: </span>새 창 열기, 다른 구성요소로 초점 이동, 새 페이지로 이동(사용자가 새 페이지로 이동한 것처럼 보이는 모든 항목 포함) 또는 페이지 내용을 대대적으로 재배치하는 것 등이 맥락 변경의 예이다.
                      </p>
                   </div>
                   <p>
@@ -5369,8 +5348,7 @@
                      <div role="heading" class="note-title marker" id="h-note-165" aria-level="6"><span>참고 2(추가됨)</span>
                      </div>
                      <div class="wcag2ict">
-                        <p>A change in the user agent might include bringing up a new window, or might be a significant change in the menus and/or toolbars that are displayed and available for interacting with some portion of the document.
-                        </p>
+                        <p>사용자 에이전트의 변경에는 새 창을 띄우거나, 문서의 일부와 상호작용하는 데 사용할 수 있는 메뉴나 도구 모음이 크게 변경되는 것이 포함될 수 있다.</p>
                      </div>
                   </div>
                </dd>
@@ -5381,37 +5359,36 @@
       </section>
       <section id="dfn-cognitive-function-test">
          <div class="header-wrapper">
-            <h4 id="x7-3-5-dfn-cognitive-function-test">Cognitive function test</h4>
-            <a class="self-link" href="#dfn-cognitive-function-test" aria-label="섹션 고유링크- Cognitive function test"></a>
+            <h4 id="x7-3-5-dfn-cognitive-function-test">인지 기능 검사(Cognitive function test)</h4>
+            <a class="self-link" href="#dfn-cognitive-function-test" aria-label="섹션 고유링크- 인지 기능 검사(Cognitive function test)"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>A task that requires the user to remember, manipulate, or transcribe information. Examples include, but are not limited to:</p>
+            <p>사용자가 정보를 기억, 조작 또는 전사(transcribe)해야 하는 작업이다다. 예시는 다음과 같지만 이에 국한되지는 않는다.</p>
             <ul>
-               <li>memorization, such as remembering a username, password, set of characters, images, or patterns. The common identifiers name, e-mail, and phone number are not considered cognitive function tests as they are personal to the user and consistent across Web sites;</li>
-               <li>transcription, such as typing in characters;</li>
-               <li>use of correct spelling;</li>
-               <li>performance of calculations;</li>
-               <li>solving of puzzles.</li>
+               <li>사용자 이름, 비밀번호, 문자 집합, 이미지 또는 패턴 등을 기억하는 것과 같은 암기. 이름, 이메일, 전화번호와 같은 일반적인 식별자는 개인 정보이며 웹사이트 간에 일관되므로 인지 기능 테스트로 간주되지 않는다.</li>
+               <li>문자를 입력하는 것과 같은 전사</li>
+               <li>정확한 철자 사용</li>
+               <li>계산 수행</li>
+               <li>퍼즐 풀기</li>
             </ul>
          </blockquote>
          <section id="applying-cognitive-function-test-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-5-1-applying-cognitive-function-test-to-non-web-documents-and-software">Applying “cognitive function test”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-cognitive-function-test-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “cognitive function test” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-5-1-applying-cognitive-function-test-to-non-web-documents-and-software">“인지 기능 검사”를 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-cognitive-function-test-to-non-web-documents-and-software" aria-label="섹션 고유링크- “인지 기능 검사”를 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary, replacing “Web sites” with “Web sites, non-web documents, and software”.
-            </p>
+            <p>이 정의는 WCAG 2 용어집의 "웹사이트"를 "웹이 아닌 문서나 소프트웨어"로 대체하여 적용한다.</p>
             <p>이러한 용어를 반영하여 다음과 같이 적용할 수 있다.</p>
             <dl>
-               <dt>cognitive function test</dt>
+               <dt>인지 기능 검사</dt>
                <dd>
-                  <p>A task that requires the user to remember, manipulate, or transcribe information. Examples include, but are not limited to:</p>
-                  <p>memorization, such as remembering a username, password, set of characters, images, or patterns. The common identifiers name, e-mail, and phone number are not considered cognitive function tests as they are personal to the user and consistent across <strong><ins>[Web sites, <a href="#document">웹이 아닌 문서</a>, and <a href="#software">소프트웨어</a>]</ins></strong>;</p>
+                  <p>사용자가 정보를 기억, 조작 또는 전사해야 하는 작업. 예시로는 다음과 같은 것들이 포함되지만 이에 국한되지는 않는다.</p>
+                  <p>사용자 이름, 비밀번호, 문자 집합, 이미지 또는 패턴을 기억하는 것과 같은 암기. 이름, 이메일, 전화번호와 같은 일반적인 식별자는 개인 정보이며 <strong><ins>[웹 사이트, <a href="#document">웹이 아닌 문서</a>, 및 <a href="#software">소프트웨어</a>]</ins></strong> 간에 일관되므로 인지 기능 검사로 간주되지 않는다.</p>
                   <ul>
-                     <li>transcription, such as typing in characters;</li>
-                     <li>use of correct spelling;</li>
-                     <li>performance of calculations;</li>
-                     <li>solving of puzzles.</li>
+                     <li>문자를 입력하는 것과 같은 전사</li>
+                     <li>정확한 철자 사용</li>
+                     <li>계산 수행</li>
+                     <li>퍼즐 풀기</li>
                   </ul>
                </dd>
             </dl>
@@ -5419,157 +5396,145 @@
       </section>
       <section id="dfn-conforming-alternate-versions">
          <div class="header-wrapper">
-            <h4 id="x7-3-6-dfn-conforming-alternate-versions">conforming alternate version</h4>
-            <a class="self-link" href="#dfn-conforming-alternate-versions" aria-label="섹션 고유링크- conforming alternate version"></a>
+            <h4 id="x7-3-6-dfn-conforming-alternate-versions">준수 대체 버전(conforming alternate version)</h4>
+            <a class="self-link" href="#dfn-conforming-alternate-versions" aria-label="섹션 고유링크- 준수 대체 버전"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>version that</p>
+            <p>다음과 같은 버전을 말함</p>
             <ol>
-               <li>conforms at the designated level, and</li>
-               <li>provides all of the same information and <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-functionality" id="ref-for-dfn-functionality-7" title="processes and outcomes achievable through user action">functionality</a> in the same <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-human-language-s" id="ref-for-dfn-human-language-s-4" title="language that is spoken, written or signed (through visual or tactile means) to communicate with humans">human language</a>, and       </li>
-               <li>is as up to date as the non-conforming content, and</li>
+               <li>지정된 수준을 준수한</li>
+               <li>모든 동일한 정보와 <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-functionality-7" title="사용자의 행동을 통해 달성할 수 있는 과정과 결과">기능</a>을 동일한 <a href="#dfn-human-language-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-human-language-s-4" title="인간 간에 의사소통을 하기 위해 (시각적 또는 촉각적 수단을 통해) 말을 하거나 쓰거나 신호를 보내는 언어">인간 언어</a>로 제공하는</li>
+               <li>미준수 콘텐츠의 최신 정보</li>
                <li>
-                  <p>for which at least one of the following is true:</p>
+                  <p>최소한 다음 중 하나를 준수한 경우:</p>
                   <ol>
-                     <li>the conforming version can be reached from the non-conforming page via an <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-accessibility-supported" id="ref-for-dfn-accessibility-supported-6" title="supported by users' assistive technologies as well as the accessibility features in browsers and other user agents">accessibility-supported</a> <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-mechanism" id="ref-for-dfn-mechanism-15" title="process or technique for achieving a result">mechanism</a>, or             </li>
-                     <li>the non-conforming version can only be reached from the conforming version, or</li>
-                     <li>the non-conforming version can only be reached from a conforming page that also provides                a mechanism to reach the conforming version             </li>
+                  <li><a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-6" title="사용자의 보조 기술뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성이 지원된</a> <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-15" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a>을 통해 미준수 페이지에서 준수 버전으로 도달할 수 있는 경우</li>
+                  <li>미준수 버전이 준수 버전을 통해서만 도달할 수 있는 경우</li>
+                  <li>미준수 버전이 준수 버전에 도달할 수 있는 메커니즘을 제공하는 준수페이지를 통해서만 도달할 수 있는 경우</li>
                   </ol>
                </li>
             </ol>
             <div class="note" id="wcag-noteissue-container-generatedID--83" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--83" role="heading"><span>참고 1</span>
                </div>
-               <p class="">In this definition, "can only be reached" means that there is some mechanism, such       as a conditional redirect, that prevents a user from "reaching" (loading) the non-conforming       page unless the user had just come from the conforming version.
-               </p>
+               <p class="">이 정의에서, “~도달할 수 있는”이라는 표현은 조건부 리디렉션(redirect)과 같은 메커니즘이 있고, 사용자가 준수 버전을 경유하지 않으면 미준수 페이지에 “도달하는 것”(로딩)을 방지한다는 것을 의미한다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--84" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--84" role="heading"><span>참고 2</span>
                </div>
-               <p class="">The alternate version does not need to be matched page for page with the original       (e.g., the conforming alternate version may consist of multiple pages).
-               </p>
+               <p class="">대체 버전 페이지는 원본 페이지와 일치할 필요가 없다(예: 준수 대체 버전은 여러 페이지로 구성될 수 있다).</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--85" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--85" role="heading"><span>참고 3</span>
                </div>
-               <p class="">If multiple language versions are available, then conforming alternate versions are       required for each language offered.
-               </p>
+               <p class="">여러 언어 버전을 사용하는 경우, 제공되는 각 언어에 대한 준수 대체 버전이 요구된다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--86" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--86" role="heading"><span>참고 4</span>
                </div>
-               <p class="">Alternate versions may be provided to accommodate different technology environments       or user groups. Each version should be as conformant as possible. One version would       need to be fully conformant in order to meet <a href="https://www.w3.org/TR/wcag22/#cc1">conformance requirement 1</a>.
+               <p>
+                  다양한 기술 환경이나 사용자 그룹을 수용하기 위하여 대안 버전을 제공할 수 있다. 각 버전은 가능한 한 준수되어야 한다. 하나의 버전은 <a href="#cc1">준수 요구사항 1</a>을 준수하기 위하여 완전히 준수되어야 한다.
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--87" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--87" role="heading"><span>참고 5</span>
                </div>
-               <p class="">The conforming alternative version does not need to reside within the scope of conformance,       or even on the same Web site, as long as it is as freely available as the non-conforming       version.
-               </p>
+               <p class="">준수 대체 버전은, 미준수 버전처럼 자유롭게 이용할 수 있는 한, 준수 범위 내에 또는 심지어 동일한 웹 사이트에 있을 필요는 없다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--88" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--88" role="heading"><span>참고 6</span>
                </div>
-               <p class="">Alternate versions should not be confused with <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-supplementary-content" id="ref-for-dfn-supplementary-content-2" title="additional content that illustrates or clarifies the primary content">supplementary content</a>, which support the original page and enhance comprehension.
+               <p class="">대체 버전은 원본 페이지를 지원하고 이해를 도와주는 <a href="#dfn-supplementary-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-supplementary-content-2" title="기본 콘텐츠를 설명하거나 명확하게 해 주는 부가적인 콘텐츠">보충 콘텐츠</a>와 혼동하지 않아야 한다.</p>
                </p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--89" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--89" role="heading"><span>참고 7</span>
                </div>
-               <p class="">Setting user preferences within the content to produce a conforming version is an       acceptable mechanism for reaching another version as long as the method used to set       the preferences is accessibility supported.
-               </p>
+               <p class="">콘텐츠 내에서 사용자 환경설정을 조정하여 준수 버전을 생성하는 것은 허용되는 매커니즘이다. 다만, 그 환경설정 자체가 접근성을 지원해야 한다.</p>
             </div>
-            <p>See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conforming-alt-versions">Understanding Conforming Alternate Versions</a></p>
+            <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conforming-alt-versions">준수 대체 버전 이해</a>를 참고하라.</p>
          </blockquote>
          <section id="applying-conforming-alternate-version-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-6-1-applying-conforming-alternate-version-to-non-web-documents-and-software">Applying “conforming alternate version”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-conforming-alternate-version-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “conforming alternate version” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-6-1-applying-conforming-alternate-version-to-non-web-documents-and-software">“준수 대체 버전”을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-conforming-alternate-version-to-non-web-documents-and-software" aria-label="섹션 고유링크- “준수 대체 버전”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>The guidance in this document does not use the term “conforming alternate version”.
-            </p>
-            <p>See the section <a href="#comments-on-conformance">Comments on Conformance</a>.
-            </p>
+            <p>이 문서의 지침에서는 “준수 대체 버전”이라는 용어를 사용하지 않는다.</p>
+            <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conforming-alt-versions">준수 대체 버전 이해</a>를 참고하라.</p>
          </section>
       </section>
       <section id="dfn-content">
          <div class="header-wrapper">
-            <h4 id="x7-3-7-dfn-content">content</h4>
-            <a class="self-link" href="#dfn-content" aria-label="섹션 고유링크- content"></a>
+            <h4 id="x7-3-7-dfn-content">콘텐츠(content) (웹 콘텐츠)</h4>
+            <a class="self-link" href="#dfn-content" aria-label="섹션 고유링크- 콘텐츠"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>information and sensory experience to be communicated to the user by means of a <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-user-agents" id="ref-for-dfn-user-agents-8" title="any software that retrieves and presents Web content for users">사용자 에이전트</a>, including code or markup that defines the content's <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-structure" id="ref-for-dfn-structure-2" title="The way the parts of a Web page are organized in relation to each other; and The way a collection of Web pages is organized">structure</a>, <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-presentation" id="ref-for-dfn-presentation-6" title="rendering of the content in a form to be perceived by users">presentation</a>, and interactions
+            <p>
+               콘텐츠의 <a href="#dfn-structure" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-structure-2" title="웹 페이지의 각 부분이 서로 연관되어 구성되는 방식, 웹페이지 모음이 조직되는 방식">구조</a>, <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-5" title="사용자가 인식할 수 있는 형태로 콘텐츠를 렌더링하는 것">표현(presentation)</a> 및 상호 작용을 정의하는 코드 또는 마크업을 포함하여, <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-8" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>를 통해 사용자에게 전달되는 정보와 감각 경험
             </p>
          </blockquote>
          <section id="applying-content-web-content-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-7-1-applying-content-web-content-to-non-web-documents-and-software">Applying “content (Web Content)”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-content-web-content-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “content (Web Content)” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-7-1-applying-content-web-content-to-non-web-documents-and-software">“콘텐츠 (웹 콘텐츠)”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-content-web-content-to-non-web-documents-and-software" aria-label="섹션 고유링크- 콘텐츠 (웹 콘텐츠)”를 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>See the guidance on <a href="#content-on-and-off-the-web">content in the Key Terms section</a>.
-            </p>
+            <p><a href="#content-on-and-off-the-web">주요 용어 섹션의 콘텐츠</a> 관련 지침을 참조하라.</p>
          </section>
       </section>
       <section id="dfn-contrast-ratio">
          <div class="header-wrapper">
-            <h4 id="x7-3-8-dfn-contrast-ratio">contrast ratio</h4>
-            <a class="self-link" href="#dfn-contrast-ratio" aria-label="섹션 고유링크- contrast ratio"></a>
+            <h4 id="x7-3-8-dfn-contrast-ratio">명도대비율(contrast ratio)</h4>
+            <a class="self-link" href="#dfn-contrast-ratio" aria-label="섹션 고유링크- 명도대비율"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>(L1 + 0.05) / (L2 + 0.05), where</p>
+            <p>(L1 + 0.05) / (L2 + 0.05), 여기에서</p>
             <ul>
-               <li>L1 is the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-relative-luminance" id="ref-for-dfn-relative-luminance-1" title="the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white">relative luminance</a> of the lighter of the colors, and       </li>
-               <li>L2 is the <a class="internalDFN" data-link-type="dfn" href="https://a11ykr.github.io/wcag22/#dfn-relative-luminance" id="ref-for-dfn-relative-luminance-2" title="the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white">relative luminance</a> of the darker of the colors.     </li>
+               <li>L1는 더 밝은 색상의 <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relative-luminance-1" title="색 공간상에 있는 모든 지점의 상대적 밝기. 가장 어두운 검은색의 경우 0으로, 가장 밝은 흰색의 경우 1로 표준화되어 있음">상대 휘도</a>이고,</li>
+               <li>L2는 더 어두운 색상의 <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relative-luminance-2" title="색 공간상에 있는 모든 지점의 상대적 밝기. 가장 어두운 검은색의 경우 0으로, 가장 밝은 흰색의 경우 1로 표준화되어 있음">상대 휘도</a>이다.</li>
             </ul>
             <div class="note" id="wcag-noteissue-container-generatedID--91" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--91" role="heading"><span>참고 1</span>
                </div>
-               <p class="">Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).
-               </p>
+               <p class="">명도대비율은 1에서 21까지(일반적으로 1:1에서 21:1로 기술함)의 범위에 있을 수 있다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--92" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--92" role="heading"><span>참고 2</span>
                </div>
-               <p class="">Because authors do not have control over user settings as to how text is rendered       (for example font smoothing or anti-aliasing), the contrast ratio for text can be       evaluated with anti-aliasing turned off.
-               </p>
+               <p class="">저작자는 텍스트 렌더링 방법[예: 글꼴 다듬기(smoothing) 또는 안티앨리어싱(anti-aliasing)]에 대한 사용자 설정을 제어할 수 없기 때문에, 텍스트의 명도대비율은 안티앨리어싱이 꺼진 상태에서 평가할 수 있다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--93" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--93" role="heading"><span>참고 3</span>
                </div>
-               <p class="">For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect       to the specified background over which the text is rendered in normal usage. If no       background color is specified, then white is assumed.
-               </p>
+               <p class="">성공기준 1.4.3 명도대비(최소)와 1.4.6 명도대비(향상된)의 목적을 달성하기 위하여, 명도대비는 텍스트가 정상적으로 사용될 때 렌더링되는 특정 배경과 관련하여 측정된다. 어떠한 배경색도 지정되지 않은 경우, 흰색으로 가정한다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--94" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--94" role="heading"><span>참고 4</span>
                </div>
-               <p class="">Background color is the specified color of content over which the text is to be rendered       in normal usage. It is a failure if no background color is specified when the text       color is specified, because the user's default background color is unknown and cannot       be evaluated for sufficient contrast. For the same reason, it is a failure if no text       color is specified when a background color is specified.
-               </p>
+               <p class="">배경색은 텍스트가 정상적으로 사용될 때 렌더링되는 특정 콘텐츠의 색상이다. 사용자의 기본 배경색을 알 수 없고 충분한 명도대비를 평가할 수 없기 때문에, 텍스트 색상을 지정할 때 어떠한 배경색도 지정되지 않은 경우, 준수하지 못한 것이다. 동일한 이유로, 배경색을 지정할 때 어떠한 텍스트 색상도 지정하지 않은 경우도 준수하지 못한 것이다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--95" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--95" role="heading"><span>참고 5</span>
                </div>
-               <p class="">When there is a border around the letter, the border can add contrast and would be       used in calculating the contrast between the letter and its background. A narrow border       around the letter would be used as the letter. A wide border around the letter that       fills in the inner details of the letters acts as a halo and would be considered background.
-               </p>
+               <p class="">문자 주위에 테두리가 있으면, 테두리는 명도대비를 추가할 수 있으며, 문자와 배경 간의 명도대비를 계산하는 데 사용된다. 문자 주위의 좁은 테두리는 문자로 사용될 것이다. 문자의 안쪽 세부사항을 채우는 문자 주위의 넓은 테두리는 후광 역할을 하며, 배경으로 간주된다.</p>
             </div>
             <div class="note" id="wcag-noteissue-container-generatedID--96" role="note">
                <div aria-level="3" class="note-title marker" id="wcag-noteh-note--96" role="heading"><span>참고 6</span>
                </div>
-               <p class="">WCAG conformance should be evaluated for color pairs specified in the content that       an author would expect to appear adjacent in typical presentation. Authors need not       consider unusual presentations, such as color changes made by the user agent, except       where caused by authors' code.
-               </p>
+               <p class="">저작자가 일반적인 표현(presentation)에 인접하여 나타날 것으로 예상되는 콘텐츠에 지정된 색상 쌍을 대상으로 WCAG 준수 여부를 평가해야 한다. 저작자의 코드에 인해 발생하는 상황을 제외하고, 사용자 에이전트에 의해 발생한 색상 변경과 같은 특이한 표현을 고려할 필요가 없다.</p>
             </div>
          </blockquote>
          <section id="applying-contrast-ratio-to-non-web-documents-and-software">
             <div class="header-wrapper">
-               <h5 id="x7-3-8-1-applying-contrast-ratio-to-non-web-documents-and-software">Applying “contrast ratio”지침을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
-               <a class="self-link" href="#applying-contrast-ratio-to-non-web-documents-and-software" aria-label="섹션 고유링크- Applying “contrast ratio” 을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
+               <h5 id="x7-3-8-1-applying-contrast-ratio-to-non-web-documents-and-software">“명도대비율”을 웹이 아닌 문서 및 소프트웨어에 적용</h5>
+               <a class="self-link" href="#applying-contrast-ratio-to-non-web-documents-and-software" aria-label="섹션 고유링크- “명도대비율”을 웹이 아닌 문서 및 소프트웨어에 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary.
+            <p>이는 WCAG 2 용어집의 원문 그대로 쓰인다.
             </p>
             <div class="note" role="note" id="issue-container-generatedID-166">
                <div role="heading" class="note-title marker" id="h-note-166" aria-level="6"><span>참고(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  <p>Because relative luminance is defined such that it cannot directly apply to hardware, please note the text in the introduction which reads: “This document does not comment on hardware aspects of products, because the basic constructs on which WCAG 2 is built do not apply to these.”</p>
+                  <p>상대 휘도는 그 정의상 하드웨어에 직접 적용될 수 없으므로, 본 문서 서문에 다음과 같은 문장이 명시되어 있음을 참고하라. “본 문서는 제품의 하드웨어 측면에 대해서는 다루지 않는다. 이는 WCAG 2가 기반하고 있는 기본 개념들이 이러한 하드웨어에 적용되지 않기 때문이다.”</p>
                </div>
             </div>
             <p>
@@ -5582,8 +5547,9 @@
             <a class="self-link" href="#dfn-css-pixels" aria-label="섹션 고유링크- CSS 픽셀"></a>
          </div>
          <blockquote class="wcag-quote">
-            <p>visual angle of about 0.0213 degrees</p>
-            <p>A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.     This unit is density-independent, and distinct from actual hardware pixels present       in a display. User agents and operating systems should ensure that a CSS pixel is       set as closely as possible to the <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [<cite><a class="bibref" data-link-type="biblio" href="https://www.w3.org/TR/wcag22/#bib-css3-values" title="CSS Values and Units Module Level 3">css3-values</a></cite>], which takes into account the physical dimensions of the display       and the assumed viewing distance (factors that cannot be determined by content authors).
+            <p>약 0.0213도의 시야각</p>
+            <p>
+               CSS 픽셀은 CSS의 모든 길이와 측정을 위한 표준 측정 단위이다. 이 단위는 밀도와 무관하며, 디스플레이에서 제시되는 실제 하드웨어 픽셀과는 구별된다. 사용자 에이전트와 운영체제는 CSS 픽셀이 디스플레이의 물리적 치수 및 예상 시청거리(콘텐츠 개발자가 결정할 수 없는 요소)를 고려한 <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS 값 및 단위 모듈 레벨 3 준거 픽셀</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-css3-values" title="CSS Values and Units Module Level 3">css3 값(css3-values)</a></cite>]에 최대한 가깝게 설정되었는지 확인해야 한다.
             </p>
          </blockquote>
          <section id="applying-css-pixel-to-non-web-documents-and-software">
@@ -5591,14 +5557,13 @@
                <h5 id="x7-3-9-1-applying-css-pixel-to-non-web-documents-and-software">웹이 아닌 문서 및 소프트웨어에서 CSS 픽셀 적용</h5>
                <a class="self-link" href="#applying-css-pixel-to-non-web-documents-and-software" aria-label="섹션 고유링크- 웹이 아닌 문서 및 소프트웨어에서 CSS 픽셀 적용"></a>
             </div>
-            <p>이는 원문 그대로 쓰이며,  the WCAG 2 glossary.
-            </p>
+            <p>WCAG 2 용어집에서 정의된 내용을 그대로 적용한다.</p>
             <div class="note" role="note" id="issue-container-generatedID-167">
                <div role="heading" class="note-title marker" id="h-note-167" aria-level="6"><span>참고 1(추가됨)</span>
                </div>
                <div class="wcag2ict">
                   <p>
-                     <a href="#software">Non-web software</a> and its accompanying <a href="#platform-software">플랫폼 소프트웨어</a> do not use CSS pixel measurements. Therefore, use platform-defined density-independent pixel measurements which approximate the CSS reference pixel. Examples of platform-defined density-independent pixel measurements include: points (pt) for iOS and macOS, density-independent pixels (dp) for Android, and effective pixels (epx) for Windows.
+                     <a href="#software">웹이 아닌 소프트웨어</a>와 해당 <a href="#platform-software">플랫폼 소프트웨어</a>는 CSS 픽셀 단위를 사용하지 않는다. 따라서 CSS 기준 픽셀에 근접한 플랫폼 정의 밀도 독립 픽셀 단위(플랫폼별 기준 픽셀, density-independent pixel)를 사용해야 한다. 플랫폼별 기준 픽셀의 예로는 iOS 및 macOS의 포인트(pt), Android의 밀도 독립 픽셀(dp, density-independent pixel), Windows의 유효 픽셀(epx, effective pixels)이 있다.
                   </p>
                </div>
             </div>
@@ -5608,15 +5573,17 @@
                <div role="heading" class="note-title marker" id="h-note-168" aria-level="6"><span>참고 2(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  Examples where a density-independent pixel may not be defined in the platform:
+                  다음과 같은 경우에는 플랫폼별 기준 픽셀 단위가 정의되지 않을 수 있다.
                   <ul>
-                     <li>Software designed for specific hardware, such as kiosks or office equipment, where the author knows the physical screen size and, potentially, the pixel density.</li>
-                     <li>Software, such as streaming apps on smart TV platforms or similar software, where the author may lack information about the physical screen size but may know an appropriate viewing distance or viewing angle.</li>
+                     <li>키오스크나 사무기기와 같이 특정 하드웨어를 대상으로 설계된 소프트웨어로, 작성자가 실제 화면 크기와 픽셀 밀도를 알고 있는 경우</li>
+                     <li>스마트 TV 플랫폼의 스트리밍 앱처럼, 작성자가 실제 화면 크기는 알 수 없지만 적절한 시청 거리 또는 시청 각도를 알고 있는 경우</li>
                   </ul>
-                  <p>When there is no platform-defined density-independent pixel measurement, the reference pixel size can be approximated in the following manner:</p>
+                  <p>플랫폼 정의 밀도 독립 픽셀이 없는 경우, 기준 픽셀 크기를 다음과 같은 방법으로 추정할 수 있다.</p>
                   <ul>
-                     <li>Determine a viewing distance that matches the use case and display type. For instance, in the case of a touchscreen, the viewing distance is normally less than the length of an arm, typically around 28 inches (71 cm).</li>
-                     <li>Calculate the size of the reference pixel: Divide the viewing distance by 2688. The number 2688 is obtained by dividing 28 inches (arm's length) by the derived reference pixel size (1/96 inch). </li>
+                     <li>사용 사례와 디스플레이 유형에 적합한 시청 거리를 설정한다. 예를 들어 터치스크린의 경우 일반적으로 팔 길이보다 짧은 약 28인치(71cm)의 시청 거리를 기준으로 한다.</li>
+                     <li>기준 픽셀 크기를 계산한다: 시청 거리를 2688로 나눈다. 여기서 2688이라는 수치는 28인치(팔 길이)를 기준 픽셀 크기인 1/96인치로 나눈 값이다.
+                        <p>[역자 주] 28인치(약 71cm)거리의 96dpi인 화면에서 보이는 총합을 2688픽셀로 계산함.<br>2688 = 28 ÷ (1/96) = 28 × 96</p>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -5624,14 +5591,21 @@
                <div role="heading" class="note-title marker" id="h-note-169" aria-level="6"><span>참고 3(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  Most software and devices are usable at more than one viewing distance. However, only viewing distances that are plausible for the product can be considered an appropriate approximation for the reference pixel. For example, in software designed for use with a touchscreen, a visual-angle pixel longer than 0.11 inch (0.28 mm) would not be plausible, because this would signify a viewing distance of more than arm’s length.
+                  <p>대부분의 소프트웨어와 장치는 둘 이상의 시청 거리에서 사용될 수 있다. 그러나 해당 제품에 대해 현실적인 시청 거리만을 기준 픽셀의 근사값 산정에 활용할 수 있다. 예를 들어 터치스크린에서 사용하는 소프트웨어의 경우, 시야각 기준 픽셀이 0.11인치(0.28mm)보다 크다면 이는 팔 길이보다 먼 시청 거리를 전제로 한 것이므로 현실적이지 않다.</p>
+                  <p>[역자주] 예제는 DPI가 매우 낮은 경우를 상정한 것이며, 터치스크린 기기에는 현실적이지 않은 설정임을 설명하는 내용이다.</p>
                </div>
             </div>
             <div class="note" role="note" id="issue-container-generatedID-170">
                <div role="heading" class="note-title marker" id="h-note-170" aria-level="6"><span>참고 4(추가됨)</span>
                </div>
                <div class="wcag2ict">
-                  People with low vision often use devices at less than the standard viewing distance. However, basing the density-independent pixel on a typical viewing distance provides a balance of benefits for users with disabilities. If a longer viewing distance were chosen as the basis for the density-independent pixel, the viewport would be measured with a smaller number of larger pixels, causing Success Criterion 1.4.10 재정렬 to be less stringent. If a shorter viewing distance were chosen, user interface components would be measured with a larger number of smaller pixels, causing some success criteria, such as 2.5.8 Target Size, to be less stringent.
+                  <p>
+                     저시력 사용자는 표준 시청 거리보다 가까이에서 장치를 사용하는 경우가 많다. 하지만 밀도 독립 픽셀은 일반적인 시청 거리를 기준으로 설정해야 다양한 사용자의 요구를 균형 있게 반영할 수 있다.
+                  </p>
+                  <p>
+                     시청 거리가 길어지면 뷰포트는 더 적은 수의 큰 픽셀로 측정되어 성공 기준 1.4.10(재정렬)의 요구 수준이 낮아지고, 시청 거리가 짧아지면 UI 구성 요소는 더 많은 작은 픽셀로 측정되어 성공 기준 2.5.8(타겟 크기) 등의 기준이 덜 엄격해질 수 있다.
+                  </p>
+                  <p>[역자주] 시청 거리가 달라져도 화면의 실제 해상도는 바뀌지 않는다. 하지만 기준 픽셀은 시청 거리와 시야각(visual angle)에 따라 크기가 달라지므로, 시청 거리가 멀어지면 같은 화면이라도 더 큰 픽셀로 계산되며 가상의 해상도가 달라진 것처럼 해석된다.</p>
                </div>
             </div>
          </section>
