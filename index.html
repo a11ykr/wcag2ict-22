@@ -910,16 +910,16 @@
          <a class="tocxref" href="#success-criteria-problematic-for-closed-functionality">A. 폐쇄형 기능에 문제가 될 수 있는 성공 기준</a>
       </li>
       <li class="tocline">
-         <a class="tocxref" href="#background-on-text-command-line-terminal-applications-and-interfaces">B. Background on Text / Command-line / Terminal Applications and Interfaces</a>
+         <a class="tocxref" href="#background-on-text-command-line-terminal-applications-and-interfaces">B. 텍스트 기반 / 명령줄 / 터미널 응용프로그램 및 인터페이스에 대한 배경</a>
          <ol class="toc">
             <li class="tocline">
-               <a class="tocxref" href="#how-text-interfaces-are-realized">B.1 How text interfaces are realized</a>
+               <a class="tocxref" href="#how-text-interfaces-are-realized">B.1 텍스트 인터페이스의 구현 방식</a>
             </li>
             <li class="tocline">
-               <a class="tocxref" href="#how-text-applications-have-been-made-accessible-via-assistive-technology">B.2 How text applications have been made accessible via assistive technology</a>
+               <a class="tocxref" href="#how-text-applications-have-been-made-accessible-via-assistive-technology">B.2 보조 기술을 통한 텍스트 애플리케이션의 접근성 보장 방식</a>
             </li>
             <li class="tocline">
-               <a class="tocxref" href="#applying-wcag-2-to-text-applications">B.3 Applying WCAG 2 to text applications</a>
+               <a class="tocxref" href="#applying-wcag-2-to-text-applications">B.3 텍스트 애플리케이션에 WCAG 2 적용</a>
             </li>
          </ol>
       </li>
@@ -1756,7 +1756,7 @@
       <li>출력 옵션은 기존의 강력하고 널리 사용되는 입출력 리디렉션 및 파이핑 기능 외에도 기계적 판독이 가능한 구조화된 텍스트 형식(JSON 같은)을 포함하는 경우가 많다. 이러한 환경에서는 보조 기술 사용자도 CLI 환경을 선호하는 다른 사용자들과 동일한 범위의 출력 옵션을 활용할 수 있다.</li>
    </ul>
    <p>
-      <a href="#background-on-text-command-line-terminal-applications-and-interfaces">부록 B. 텍스트/명령줄/터미널 애플리케이션 및 인터페이스 배경(Appendix B. Background on Text / Command-line / Terminal Applications and Interfaces)</a>에서 설명한 바와 같이, WCAG를 텍스트/명령줄 애플리케이션에 적용하려면 텍스트 애플리케이션이 렌더링되는 방식, 보조 기술을 통해 접근성을 보장하는 방법, 그리고 "접근성 지원" 및 "프로그램적으로 판별됨" 개념을 텍스트 애플리케이션에 적용하는 방식을 이해해야 한다.
+      <a href="#background-on-text-command-line-terminal-applications-and-interfaces">부록 B. 텍스트/명령줄/터미널 애플리케이션 및 인터페이스 배경(Appendix B. 텍스트 기반 / 명령줄 / 터미널 응용프로그램 및 인터페이스에 대한 배경)</a>에서 설명한 바와 같이, WCAG를 텍스트/명령줄 애플리케이션에 적용하려면 텍스트 애플리케이션이 렌더링되는 방식, 보조 기술을 통해 접근성을 보장하는 방법, 그리고 "접근성 지원" 및 "프로그램적으로 판별됨" 개념을 텍스트 애플리케이션에 적용하는 방식을 이해해야 한다.
    </p>
 </section>
 <section id="comments-on-conformance">
@@ -7038,57 +7038,48 @@
          </section>
          <section class="appendix"  id="background-on-text-command-line-terminal-applications-and-interfaces">
             <div class="header-wrapper">
-               <h2 id="b-background-on-text-command-line-terminal-applications-and-interfaces">B. Background on Text / Command-line / Terminal Applications and Interfaces</h2>
-               <a class="self-link" href="#background-on-text-command-line-terminal-applications-and-interfaces" aria-label="섹션 고유링크- B. Background on Text / Command-line / Terminal Applications and Interfaces"></a>
+               <h2 id="b-background-on-text-command-line-terminal-applications-and-interfaces">B. 텍스트 기반 / 명령줄 / 터미널 응용프로그램 및 인터페이스에 대한 배경</h2>
+               <a class="self-link" href="#background-on-text-command-line-terminal-applications-and-interfaces" aria-label="섹션 고유링크- B. 텍스트 기반 / 명령줄 / 터미널 응용프로그램 및 인터페이스에 대한 배경"></a>
             </div>
             <section id="how-text-interfaces-are-realized">
                <div class="header-wrapper">
-                  <h3 id="b-1-how-text-interfaces-are-realized">B.1 How text interfaces are realized</h3>
-                  <a class="self-link" href="#how-text-interfaces-are-realized" aria-label="섹션 고유링크- B.1 How text interfaces are realized"></a>
+                  <h3 id="b-1-how-text-interfaces-are-realized">B.1 텍스트 인터페이스의 구현 방식</h3>
+                  <a class="self-link" href="#how-text-interfaces-are-realized" aria-label="섹션 고유링크- B.1 텍스트 인터페이스의 구현 방식"></a>
                </div>
-               <p>The interface of a text application is realized through a server application directing which characters should be placed on the screen, along with either a hardware terminal or a terminal application that displays the characters. The client terminal application for text applications is analogous to a web user agent for web pages. Also, like web applications, text applications may execute primarily on a remote server or execute locally.
-               </p>
-               <p>Some text applications render like a TeleTYpewriter (TTY); their output is always appended, like an ever-growing file. Such text applications are often called “command-line applications” or occasionally “TTY-applications”, and their output can optionally be redirected to a file for later review. Others explicitly place text into a matrix of fixed width character cells on a screen (sometimes with specific foreground and background colors).
-               </p>
-               <p>Historically, input to the text application itself is provided exclusively through a keyboard interface, though Automatic Speech Recognition (ASR) based voice input is sometimes now an alternative option - especially on mobile devices.
-               </p>
+               <p>텍스트 애플리케이션의 인터페이스는 서버 애플리케이션이 화면에 어떤 문자를 배치할지를 지시하고, 이를 하드웨어 터미널 또는 문자 출력을 표시하는 터미널 애플리케이션이 출력하는 방식으로 구현된다. 이러한 텍스트 애플리케이션의 클라이언트 터미널 애플리케이션은 웹 페이지의 사용자 에이전트에 해당하며, 텍스트 애플리케이션 역시 웹 애플리케이션과 마찬가지로 원격 서버에서 실행되거나 로컬에서 실행될 수 있다.</p>
+               <p>일부 텍스트 애플리케이션은 텔레타이프(TeleTYpewriter, TTY) 방식처럼 출력 내용을 순차적으로 추가하며, 이는 마치 계속 확장되는 파일과 같다. 이러한 유형의 텍스트 애플리케이션은 일반적으로 “명령줄 애플리케이션(command-line applications)” 또는 경우에 따라 “TTY 애플리케이션”이라 불리며, 그 출력은 파일로 리디렉션하여 나중에 검토할 수도 있다. 반면, 다른 애플리케이션은 고정 폭의 문자 셀로 구성된 행렬에 텍스트를 명시적으로 배치하며, 경우에 따라 전경색 및 배경색도 지정된다.</p>
+               <p>역사적으로 텍스트 애플리케이션의 입력은 키보드 인터페이스를 통해서만 제공되었으나, 최근에는 특히 모바일 기기에서 음성인식(Automatic Speech Recognition, ASR) 기반의 음성 입력이 대체 수단으로 제공되기도 한다.</p>
             </section>
             <section id="how-text-applications-have-been-made-accessible-via-assistive-technology">
                <div class="header-wrapper">
-                  <h3 id="b-2-how-text-applications-have-been-made-accessible-via-assistive-technology">B.2 How text applications have been made accessible via assistive technology</h3>
-                  <a class="self-link" href="#how-text-applications-have-been-made-accessible-via-assistive-technology" aria-label="섹션 고유링크- B.2 How text applications have been made accessible via assistive technology"></a>
+                  <h3 id="b-2-how-text-applications-have-been-made-accessible-via-assistive-technology">B.2 보조 기술을 통한 텍스트 애플리케이션의 접근성 보장 방식</h3>
+                  <a class="self-link" href="#how-text-applications-have-been-made-accessible-via-assistive-technology" aria-label="섹션 고유링크- B.2 보조 기술을 통한 텍스트 애플리케이션의 접근성 보장 방식"></a>
                </div>
-               <p>Strategies for making text applications accessible through assistive technology involve two key tasks: (1) obtaining all of the text displayed in the interface, and (2) performing an analysis on that text to detect screen updates and attempt to discern structural elements.
-               </p>
-               <p>For example, a text application screen reader might directly access the matrix of character cells in the interface and provide a screen review mechanism for the user to review that matrix of characters (by sending the output to synthetic speech and/or a braille display). Alternately, a text application screen reader might directly consume the output rendered (perhaps by acting as its own terminal application or by analyzing the “TTY” output). A text application screen reader might also attempt to analyze the spacing and layout of the text in the matrix, to provide features such as reading columns of text in a multi-column layout; discerning headers through analysis of line spacing, indentation, and capitalization; and discerning input fields or user interface components by scanning for the use of inverse video, for text appearing in brackets, or for text from the character graphics codepage (ASCII codes greater than ‘0x7F’). Some of this analysis might also be done through the use of filter tools that transform the output of a program (e.g., through reformatting “TTY” output rendered to a file or as direct input to a filter tool).
-               </p>
-               <p>Similarly, a text application screen magnifier would gain access to the matrix of character cells to magnify them or re-display them in a larger font. It would scan for screen refreshes and updates and then apply heuristics to what had changed in order to decide what sub-matrix of character cells should appear in a magnified view. It would also scan for inverse video and a moving text cursor to track text being input by the user (and might combine the text matrix scanning with scanning of the keyboard input to match user input to what is appearing on the screen).
-               </p>
+               <p>보조 기술을 활용하여 텍스트 애플리케이션의 접근성을 확보하기 위한 전략은 다음의 두 가지 핵심 과업으로 구성된다. (1) 인터페이스에 표시된 모든 텍스트를 획득하는 것, 그리고 (2) 해당 텍스트를 분석하여 화면 갱신을 감지하고 구조적 요소를 식별하려는 시도이다.</p>
+               <p>예를 들어, 텍스트 애플리케이션용 스크린 리더는 인터페이스에 존재하는 문자 셀 매트릭스에 직접 접근하여, 해당 문자 행렬을 음성 합성 출력이나 점자 디스플레이를 통해 사용자가 검토할 수 있도록 화면 검토(screen review) 기능을 제공할 수 있다. 또는, 텍스트 애플리케이션 스크린 리더는 터미널 애플리케이션의 역할을 수행하거나 “TTY” 출력 자체를 분석함으로써 렌더링된 출력을 직접 수신할 수도 있다. 일부 스크린 리더는 문자 셀 매트릭스 내 텍스트의 간격과 배치를 분석하여 다단 구성의 텍스트 열을 읽는 기능, 줄 간격·들여쓰기·대문자 사용 등을 통해 헤더를 식별하는 기능, 역영상(inverse video), 괄호로 둘러싸인 텍스트, 혹은 문자 그래픽 코드페이지(ASCII 코드 0x7F 이상의 문자 등)를 활용하여 입력 필드나 사용자 인터페이스 구성요소를 감지하는 기능을 제공하기도 한다. 이러한 분석 작업은 프로그램의 출력을 필터링하거나 재구성하는 도구를 통해 수행될 수도 있으며, 예컨대 “TTY” 출력을 파일로 저장하거나 필터 도구에 직접 전달하여 가공하는 방식이 이에 해당한다.</p>
+               <p>이와 유사하게, 텍스트 애플리케이션용 화면 확대기(screen magnifier)는 문자 셀 매트릭스에 접근하여 해당 셀을 확대하거나 더 큰 글꼴로 재표시한다. 이때 화면 갱신 및 업데이트를 탐지하고, 변경된 내용을 기반으로 어떤 문자 셀의 하위 행렬(sub-matrix)을 확대하여 보여줄지를 결정하기 위해 다양한 휴리스틱을 적용한다. 또한 역영상이나 움직이는 텍스트 커서를 감지하여 사용자가 입력 중인 내용을 추적하며, 문자 셀 매트릭스 분석과 키보드 입력 분석을 결합하여 사용자의 입력과 화면에 나타나는 내용을 일치시키는 방식으로 구현되기도 한다.</p>
+               <p>[역자주] 문자 셀 매트릭스(Character Cell Matrix)는 전통적인 터미널에서 행과 열로 구성된 문자 단위의 격자 구조를 의미하지만, 접근성 보조 기술, 특히 화면 확대기의 관점에서는 텍스트의 시각적이면서도 논리적인 위치 정보를 파악하고 해석하는 단위로 이해할 수 있다.</p>
             </section>
             <section id="applying-wcag-2-to-text-applications">
                <div class="header-wrapper">
-                  <h3 id="b-3-applying-wcag-2-to-text-applications">B.3 Applying WCAG 2 to text applications</h3>
-                  <a class="self-link" href="#applying-wcag-2-to-text-applications" aria-label="섹션 고유링크- B.3 Applying WCAG 2 to text applications"></a>
+                  <h3 id="b-3-applying-wcag-2-to-text-applications">B.3 텍스트 애플리케이션에 WCAG 2 적용</h3>
+                  <a class="self-link" href="#applying-wcag-2-to-text-applications" aria-label="섹션 고유링크- B.3 텍스트 애플리케이션에 WCAG 2 적용"></a>
                </div>
-               <p>To apply WCAG to text applications, it is necessary to apply the glossary terms <a href="#dfn-accessibility-supported">접근성 지원</a> and <a href="#dfn-programmatically-determinable">programmatically determined</a> in the context of how text applications are rendered and the history of assistive technologies that made them accessible.
-               </p>
-               <p>As noted above, in a text interface the terminal application renders the characters on the screen, just as a Web browser typically renders content for a Web application. As an example, for success criterion <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a>, a text application could achieve 200 percent resizing when the terminal application client that is rendering it has this capability (cf. WCAG 2 Technique <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G142">G142 Using a technology that has commonly-available user agents that support zoom</a>). Many web pages and web applications use this approach to meet success criterion <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a> through no explicit action of their own.
-               </p>
-               <p>A similar approach could also be used for success criterion <a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">1.4.3 Contrast (minimum)</a> (cf. WCAG 2 Technique <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G148">G148: Not specifying background color, not specifying text color, and not using technology features that change those defaults</a>): relying on the terminal application client to render the text with sufficient contrast against the background. In fact, many terminal applications allow the user to force all text to share a single user-chosen foreground color (and a single user-chosen background color), overriding the text application's specified colors to meet the user's desires or needs.
-               </p>
-               <p>Since many assistive technology analysis techniques depend upon discerning the location of the text input cursor, terminal application use of “soft cursors” and “highlight bars” may bypass those analysis techniques and cause failures of success criteria.
-               </p>
+               <p>텍스트 응용프로그램에 WCAG을 적용하려면, 텍스트 응용프로그램의 렌더링 방식과 접근성 보조 기술의 발전 배경을 고려하여, 용어집의 <a href="#dfn-accessibility-supported">접근성 지원</a> 및 <a href="#dfn-programmatically-determinable">프로그래밍 방식으로 판별 가능한</a> 개념을 해당 맥락에 맞게 적용해야 한다.</p>
+               <p>앞서 설명한 바와 같이, 텍스트 인터페이스에서는 터미널 응용프로그램이 화면에 문자를 렌더링하며, 이는 웹 응용프로그램의 콘텐츠를 일반적으로 렌더링하는 웹 브라우저와 유사하다. 예를 들어, 성공 기준 <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a>의 경우, 해당 텍스트 응용프로그램을 렌더링하는 터미널 응용프로그램 클라이언트가 텍스트를 200%로 확대할 수 있는 기능을 제공하면 이 기준을 충족할 수 있다(cf. WCAG 2 기법 <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G142">G142 Using a technology that has commonly-available user agents that support zoom</a>). 실제로 많은 웹페이지와 웹 응용프로그램은 자체적인 조치 없이도 이 방식을 통해 <a href="https://www.w3.org/TR/WCAG22/#resize-text">1.4.4 텍스트 크기 조정</a> 기준을 충족하고 있다.</p>
+               <p>비슷한 접근 방식은 성공 기준 <a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">1.4.3 명도 대비 (최소)</a>에도 적용할 수 있다(cf. WCAG 2 기법 <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G148">G148: Not specifying background color, not specifying text color, and not using technology features that change those defaults</a>). 이 경우, 터미널 응용프로그램 클라이언트가 배경과 충분한 대비를 갖춘 텍스트를 렌더링하도록 하는 방식이다. 실제로 많은 터미널 응용프로그램은 사용자가 모든 텍스트에 대해 동일한 전경색 및 배경색을 설정하도록 허용함으로써, 텍스트 응용프로그램이 지정한 색상을 무시하고 사용자의 필요나 선호에 맞게 색상을 조정할 수 있게 한다.</p>
+               <p>많은 접근성 보조 기술의 분석 기법은 텍스트 입력 커서의 위치를 판별하는 데 기반하고 있기 때문에, 터미널 응용프로그램이 사용하는 소프트 커서(soft cursor) 또는 강조 표시(highlight bar)는 이러한 분석 기법을 우회하게 되어 성공 기준 충족에 실패할 수 있다.</p>
                <div class="note" role="note" id="issue-container-generatedID-218">
                   <div role="heading" class="note-title marker" id="h-note-218" aria-level="4"><span>참고 1</span>
                   </div>
-                  <div class="">It is outside of the scope of this document to define WCAG techniques for non-web ICT. These examples are simply illustrations of how WCAG 2 success criteria can be applied to this class of non-web software applications.</div>
+                  <div class="">본 문서의 범위는 비웹 ICT에 대한 WCAG 기술 방법(technique)을 정의하는 것이 아니며, 위의 사례는 WCAG 2의 성공 기준이 이러한 유형의 비웹 소프트웨어 응용프로그램에 어떻게 적용될 수 있는지를 설명하기 위한 예시일 뿐이다.</div>
                </div>
-               <p>The way to think about "accessibility supported" and "programmatically determined" may seem a little different for text applications, but the definitions are unchanged. Unlike the semantic objects of graphical user interfaces and web pages, the output of text-based applications consists of plain text. A terminal emulator acts as the user agent for text-based applications; it might render some content such as escape codes as semantic elements, but otherwise exposes only lines of text to assistive technology. Where assistive technology is able to interpret the text and any semantic objects accurately, the content is "programmatically determinable"—even though no explicit markup was necessarily used to make it so.
-               </p>
+               <p>텍스트 응용프로그램에 있어서 접근성 지원과 프로그래밍 방식으로 판별이라는 개념은 다소 다르게 느껴질 수 있으나, 이 용어의 정의 자체는 변하지 않는다.</p>
+               <p>그래픽 사용자 인터페이스나 웹페이지의 시맨틱 객체와는 달리, 텍스트 기반 응용프로그램의 출력은 단순 텍스트로 구성되어 있다. 터미널 에뮬레이터는 텍스트 기반 응용프로그램의 사용자 에이전트 역할을 하며, 이 과정에서 일부 이스케이프 코드(escape code)를 시맨틱 요소로 렌더링할 수 있지만, 대부분 보조 기술에 노출되는 것은 텍스트 줄에 불과하다. 보조 기술이 이 텍스트와 시맨틱 요소를 정확히 해석할 수 있다면, 해당 콘텐츠는 프로그래밍 방식으로 판별 가능한 것으로 간주되며, 이는 반드시 명시적 마크업을 사용해야 한다는 의미는 아니다.</p>
                <div class="note" role="note" id="issue-container-generatedID-219">
                   <div role="heading" class="note-title marker" id="h-note-219" aria-level="4"><span>참고 2</span>
                   </div>
-                  <div class="">The terminal application itself is “traditional” non-web software ICT. It is only for the text application that there is a need to take this approach with these glossary terms.</div>
+                  <div class="">터미널 응용프로그램 자체는 전통적인 웹이 아닌 소프트웨어 ICT에 해당한다. 위에서 설명한 용어 적용 방식은 텍스트 응용프로그램에 한해 필요한 접근 방식이다.</div>
                </div>
             </section>
          </section>
